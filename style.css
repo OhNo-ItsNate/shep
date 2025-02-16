@@ -999,7 +999,16 @@ select {
     appearance: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) and (orientation: portrait), screen and (min-width: 600px) and (max-height: 600px) {
+    .health {
+        width: 35.4%;
+    }
+    .health input {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 700px) and (orientation: landscape) {
     
     /* ORDER */
 
