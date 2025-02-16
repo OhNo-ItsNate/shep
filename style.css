@@ -1,0 +1,1429 @@
+/* CONTENT */
+
+#human > div:not(.characterBasics):not(.health):not(.miscInfo1):before,
+#human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
+.container:before,
+.frame1:before,
+.frame2:before,
+#human > div:not(.characterBasics):not(.health):not(.miscInfo1):after,
+#human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):after,
+.container:after,
+.frame1:after,
+.frame2:after {
+    content: "";
+}
+
+/* DISPLAY & POSITION */
+
+.inspCheck ~ .inspIcon,
+.offhand:checked ~ .dmgMod {
+    display: none;
+}
+
+.hidden,
+#hybrid,
+#werewolf,
+.cantrips,
+.item1,
+.item2 {
+    display: none !important;
+}
+
+.inspCheck:checked + .inspIcon {
+    display: initial;
+}
+
+.realEquip {
+    display: inline;
+}
+
+.miscInfo1 *:not(.insp *),
+.health *:not(input),
+.spellSlot,
+.realSpellSlot,
+.expertise,
+.realExpertise,
+.mastery,
+.realMastery,
+.disadvantage,
+.realDisadvantage,
+.skills p,
+.realOffhand,
+.dmgMod,
+.realSaveCheck {
+    display: inline-block;
+}
+
+#human,
+.characterBasics,
+.stats,
+.miscInfo1,
+.miscInfo2,
+.defCond,
+.senses,
+.profTrain,
+.skills,
+.actions,
+.spells,
+.inventory,
+.featTrait,
+.details,
+.cantrips,
+.lvlSpells,
+.weaponAttacks,
+.container:not(.actions .container):not(.spells .container),
+.init,
+.insp {
+    display: flex;
+}
+
+/* FLEX-DIRECTION */
+
+.actions,
+.actions .container,
+.featTrait,
+.miscInfo1,
+.spells,
+.lvlSpells,
+.skills,
+.init .container,
+.insp .container {
+    flex-direction: column;
+}
+
+/* FLEX-WRAP */
+
+#human,
+.characterBasics,
+.stats,
+.miscInfo1,
+.miscInfo2,
+.defCond,
+.senses,
+.spells,
+.profTrain,
+.inventory,
+.details,
+.cantrips,
+.lvlSpells,
+.weaponAttacks,
+.container {
+    flex-wrap: wrap;
+}
+
+.skills,
+.actions,
+.featTrait {
+    flex-wrap: nowrap;
+}
+
+/* JUSTIFY-CONTENT */
+
+.spells,
+.inventory {
+    justify-content: flex-start;
+}
+
+.actions,
+.stats .container {
+    justify-content: space-around;
+}
+
+#human,
+.health,
+.stats,
+.miscInfo2,
+.featTrait,
+.details,
+.senses,
+.defCond,
+.weaponAttacks,
+.lvlSpells {
+    justify-content: space-between;
+}
+
+.init .container,
+.insp .container {
+    justify-content: center;
+}
+
+/* ALIGN-CONTENTS */
+
+.init .container,
+.insp .container {
+    align-items: center;
+}
+
+.miscInfo1 {
+    align-items: flex-end;
+}
+
+/* ALIGN-SELF */
+
+.health,
+.init,
+.insp {
+    align-self: center;
+}
+
+/* ORDER */
+
+.characterBasics {
+    order: 0;
+}
+
+.miscInfo1 {
+    order: 1;
+}
+
+.stats {
+    order: 2;
+}
+
+.miscInfo2 {
+    order: 3;
+}
+
+.skills {
+    order: 4;
+}
+
+.actions {
+    order: 5;
+}
+
+.spells {
+    order: 6;
+}
+
+.inventory {
+    order: 7;
+}
+
+.featTrait {
+    order: 8;
+}
+
+.details {
+    order: 9;
+}
+
+/* POSITION */
+
+#human,
+#hybrid,
+#werewolf,
+.characterBasics,
+.stats,
+.health,
+.miscInfo1,
+.miscInfo2,
+.miscInfo3,
+.senses,
+.profTrain,
+.skills,
+.actions,
+.spells,
+.inventory,
+.featTrait,
+.details,
+.stg,
+.dex,
+.con,
+.int,
+.wis,
+.cha,
+.abilityScore,
+.init,
+.insp,
+.inspCheck,
+.frame,
+.characterOverview, 
+.spellSlot,
+.spacer,
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+.scaleMail,
+.handCrossbow,
+.crossbowBolts,
+.handaxe,
+.handAxe,
+.bite,
+.claws,
+.unarmed,
+.offhand,
+.save {
+    position: relative;
+}
+
+#human > div:before,
+#human > div h2:not(.stats h2):before,
+.container:before,
+#human > div:after,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.modifier,
+.inspIcon,
+.frame1:before,
+.frame1:after,
+.frame2:before,
+.frame2:after,
+.spellSlot input,
+.realSpellSlot,
+.expertise,
+.mastery,
+.disadvantage,
+.realOffhand,
+.saveCheck,
+.equip,
+.realEquip {
+    position: absolute;
+}
+
+/* TOP */
+
+.inspIcon {
+    top: 55%;
+}
+
+
+.realOffhand {
+    top: 128px;
+}
+
+.modifier {
+    top: 109px;
+}
+
+.equip,
+.realEquip {
+    top: 4px;
+}
+
+.saveCheck {
+    top: 0;
+}
+
+#human > div h2:not(.stats h2):before,
+.container:before,
+.frame2:before,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.frame2:after {
+    top: -8px
+}
+
+/* RIGHT */
+
+.realOffhand {
+    right: 78px;
+}
+
+.con .saveCheck {
+    right: 27px;
+}
+
+.int .saveCheck {
+    right: 26px;
+}
+
+.cha .saveCheck {
+    right: 21px;
+}
+
+.stg .saveCheck,
+.dex .saveCheck,
+.wis .saveCheck {
+    right: 20px;
+}
+
+.realOffhand {
+    right: 14px;
+}
+
+#human > div:after,
+.frame1:after,
+.frame2:after,
+#human > div h2:not(.stats):after,
+.container:after {
+    right: -8px;
+}
+
+/* BOTTOM */
+
+.expertise,
+.mastery,
+.disadvantage {
+    bottom: 13px;
+}
+
+.realExpertise,
+.realMastery,
+.realDisadvantage {
+    bottom: 1px;
+}
+
+#human > div:before,
+.frame1:before,
+#human > div:after,
+.frame1:after {
+    bottom: -8px;
+}
+
+/* LEFT */
+
+.stg .modifier,
+.dex .modifier,
+.wis .modifier,
+.cha .modifier {
+    left: 18px;
+}
+
+.con .modifier {
+    left: 25px;
+}
+
+.int .modifier {
+    left: 24px;
+}
+
+#human > div:before,
+.frame1:before,
+.frame2:before,
+#human > div h2:not(.stats):before,
+.container:before {
+    left: -8px;
+}
+
+.equip,
+.realEquip {
+    left: -15px;
+}
+
+/* Z-INDEX */
+
+.inspCheck,
+.actions:before,
+.actions .container:before,
+.actions::after,
+.actions .container:after,
+.spellSlot input,
+.expertise,
+.mastery,
+.disadvantage,
+.offhand,
+.equip {
+    z-index: 100;
+}
+
+/* WIDTH */
+
+h2,
+h3,
+h4,
+.stats,
+.skills,
+.miscInfo2,
+.inventory,
+.health,
+.spellSlots,
+.fastAdd,
+.money,
+.def,
+.def textarea,
+.cond,
+.cond textarea,
+.armor,
+.armor textarea,
+.weapons,
+.weapons textarea,
+.tools,
+.tools textarea,
+.lang,
+.lang textarea,
+.stats .container,
+.inspCheck {
+    width: 100%;
+}
+
+.passPer,
+.passInv,
+.passInv,
+.darkVis,
+.weaponAttacks > div {
+    width: 50%;
+}
+
+.frame,
+.frame1,
+.frame2 {
+    width: 111px;
+}
+
+.characterImage,
+.weaponAttacks > div {
+    width: 95px;
+}
+
+.saveCheck {
+    width: 40px;
+}
+
+input[type="number"],
+input[type="text"],
+.inspIcon {
+    width: 25px;
+}
+
+.realOffhand {
+    width: 15px;
+}
+
+#human > div::before,
+#human > div h2:not(.stats):before,
+.container:before,
+.frame1:before,
+.frame2:before,
+#human > div:after,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.frame1:after,
+.frame2:after,
+.spellSlot,
+.realSpellSlot,
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+.realEquip {
+    width: 10px;
+}
+
+/* HEIGHT */
+
+.frame,
+.frame1,
+.frame2,
+.fastAdd {
+    height: 111px;
+}
+
+.characterImage {
+    height: 95px;
+}
+
+.inspCheck {
+    height: 29px;
+}
+
+input[type="number"]:not(.characterOverview input[type="number"]):not(.spells p input[type="number"]),
+input[type="text"],
+select,
+.inspIcon {
+    height: 25px;
+}
+
+.saveCheck {
+    height: 20px;
+}
+
+.realOffhand {
+    height: 15px;
+}
+
+#human > div:before,
+#human > div h2:not(.stats h2):before,
+.container:before,
+.frame1:before,
+.frame2:before,
+#human > div:after,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.frame1:after,
+.frame2:after,
+.spellSlot,
+.realSpellSlot,
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+.realEquip {
+    height: 10px;
+}
+
+/* OVERFLOW */
+
+.container {
+    overflow: scroll;
+}
+
+/* FONT-SIZES */
+
+body {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3,
+.health {
+    font-size: 1.3em;
+}
+
+h4,
+.abilityScore  {
+    font-size: 1.1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+p,
+ul,
+ol,
+input,
+textarea,
+select {
+    font-size: 0.8em;
+}
+
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+.realOffhand {
+    font-size: 0.6em;
+}
+
+/* FONT-WEIGHT */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+.health {
+    font-weight: 700;
+}
+
+/* FONT-FAMILY */
+
+body {
+    font-family: "Tahoma";
+}
+
+/* TEXT-ALIGN */
+
+input[type="number"],
+input[type="text"],
+.money,
+.health,
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+.realOffhand,
+.stats .container > div {
+    text-align: center;
+}
+
+/* TEXT-ALIGN-LAST */
+
+select {
+    text-align-last: center;
+}
+
+/* LINE-HEIGHT */
+
+.realExpertise,
+.realMastery,
+.realDisadvantage {
+    line-height: 1.55em;
+}
+
+.realOffhand {
+    line-height: 2em;
+}
+
+/* BORDER */
+
+input,
+textarea,
+select {
+    border: none;
+}
+
+/* BORDER-SIZE */
+
+#human > div:not(.characterBasics):not(.miscInfo1):not(.def),
+#human > div:before,
+#human > div h2:not(.stats h2):before,
+.container:before,
+#human > div:after,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.stats input,
+.modifier,
+.inspIcon,
+.characterImage,
+.frame1:before,
+.frame1:after,
+.frame2:before,
+.frame2:after,
+.realSpellSlot,
+.saveCheck + .realSaveCheck,
+.realEquip {
+    border-width: 3px;
+}
+
+.modifier input[type="number"] {
+    border-width: 0;
+}
+
+/* BORDER-SOLID */
+
+#human > div:not(.characterBasics):not(.miscInfo1),
+#human > div:before,
+#human > div h2:not(.stats h2):before,
+.container:before,
+#human > div:after,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.stats input,
+.modifier,
+.inspIcon,
+.characterImage,
+.frame1:before,
+.frame1:after,
+.frame2:before,
+.frame2:after,
+.realSpellSlot,
+.realEquip {
+    border-style: solid;
+}
+
+.saveCheck + .realSaveCheck {
+    border-style: dotted;
+}
+
+/* BORDER-RADIUS */
+
+.inspIcon,
+.stats input,
+.saveCheck + .realSaveCheck {
+    border-radius: 100%;
+}
+
+/* OUTLINE-WIDTH */
+
+#human > div:not(.characterBasics):not(.miscInfo1),
+.inspIcon,
+.characterImage {
+    outline-width: 1px;
+}
+
+/* OUTLINE-STYLE */
+
+.inspIcon {
+    outline-style: dotted;
+}
+
+#human > div:not(.characterBasics):not(.miscInfo1),
+.characterImage {
+    outline-style: solid;
+}
+
+/* OUTLINE-OFFSET */
+
+#human > div:not(.characterBasics):not(.miscInfo1),
+.inspIcon,
+.characterImage {
+    outline-offset: 4px;
+}
+
+.inspIcon {
+    outline-radius: 100%;
+}
+
+/* BORDER-COLOR */
+
+.saveCheck + .realSaveCheck {
+    border-color: transparent;
+}
+
+#human > div:not(.characterBasics):not(.miscInfo1),
+#human > div:before,
+#human > div h2:not(.stats h2):before,
+.container:before,
+#human > div:after,
+#human > div h2:not(.stats h2):after,
+.container:after,
+.abilityScore,
+.modifier,
+.save input,
+.inspIcon,
+.characterImage,
+.frame1:before,
+.frame1:after,
+.frame2:before,
+.frame2:after,
+.saveCheck:checked + .realSaveCheck {
+    border-color: indianred;
+}
+
+
+.realSpellSlot,
+.realEquip {
+    border-color:blanchedalmond;
+}
+
+/* OUTLINE-COLOR */
+
+#human > div:not(.characterBasics):not(.miscInfo1),
+.inspIcon,
+.characterImage {
+    outline-color: indianred;
+}
+
+/* COLOR */
+
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+.realOffhand {
+    color: blanchedalmond;
+}
+
+/* BACKGROUND-COLOR */
+
+.initNum,
+.modifier input {
+    background-color: transparent;
+}
+
+.health input {
+    background-color: rgba(250,250,250,0.2);
+}
+
+.health,
+.spellSlot input:checked + .realSpellSlot,
+.expertise:checked + .realExpertise,
+.mastery:checked + .realMastery,
+.disadvantage:checked + .realDisadvantage,
+.offhand:checked + .realOffhand,
+.equip:checked + .realEquip {
+    background-color: indianred;
+}
+
+input:not(.health input):not(.initNum),
+select,
+textarea,
+.modifier,
+.initValue,
+.spellSlot input + .realSpellSlot,
+.expertise + .realExpertise,
+.mastery + .realMastery,
+.disadvantage + .realDisadvantage,
+.offhand + .realOffhand,
+.equip + .realEquip {
+    background-color: blanchedalmond;
+}
+
+/* BACKGROUND */
+
+#human {
+    background: linear-gradient(0deg, rgba(80,40,40,0.2), rgba(85,63,32,0.15)), blanchedalmond
+}
+
+/* OPACITY */
+
+.inspCheck,
+.spellSlot input,
+.expertise,
+.mastery,
+.disadvantage,
+.offhand,
+.saveCheck,
+.equip {
+    opacity: 0;
+}
+
+/* MARGIN */
+
+.save {
+    margin: 38px 0 0 0;
+}
+
+#human > div {
+    margin: 10px;
+}
+
+.dmgMod {
+    margin: 5px 0;
+}
+
+.inventory > div:not(.money) {
+    margin: 0 15px 10px;
+}
+
+.defCond div textarea {
+    margin: 10px 0 0 0;
+}
+
+body,
+.characterBasics *,
+.init p:nth-child(2),
+.health p,
+.realSpellSlot,
+.realExpertise,
+.realMastery,
+.realDisadvantage,
+#human .miscInfo1 {
+    margin: 0;
+}
+
+#human .init {
+    margin: 0 5px 0 10px;
+}
+
+#human .insp {
+    margin: 0 5px;
+}
+
+.spellSlot {
+    margin: 0 10px;
+}
+
+#human .health {
+    margin: 0 10px 10px;
+}
+
+.frame {
+    margin: 0 0 15px 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p:not(.init p:nth-child(2)):not(.health p):not(.characterOverview p:last-child),
+ul,
+ol,
+.spellSlots,
+.fastAdd,
+.spacer,
+.def,
+.cond,
+.armor,
+.weapons,
+.tools,
+.lang,
+.passPer div,
+.passInv div,
+.passIns div,
+.darkVis div,
+.money input {
+    margin: 0 0 15px;
+}
+
+.characterOverview {
+    margin: 0 0 0 20px;
+}
+
+.realMastery,
+.realDisadvantage {
+    margin: 0 5px 0 0;
+}
+
+/* PADDING */
+
+.abilityScore {
+    padding: 25px;
+}
+
+#human {
+    padding: 10px;
+}
+
+#human > div:not(.characterBasics):not(.miscInfo1) {
+    padding: 15px;
+}
+
+.stg,
+.dex,
+.con,
+.int,
+.wis,
+.cha,
+input[type="number"]:not(.characterBasics input[type="number"]):not(.abilityScore):not(.modifier input[type="number"]):not(.initNum),
+.characterImage,
+.inventory > div:not(.money) {
+    padding: 5px;
+}
+
+.modifier input[type="number"],
+.initNum {
+    padding: 5px 5px 5px 0;
+}
+
+.initValue,
+.modifier {
+    padding: 0 0 0 10px;
+}
+
+/* STYLING FOR INPUT TYPE="NUMBER" */
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* STYLING FOR SELECT */
+
+select {
+    appearance: none;
+}
+
+@media screen and (min-width: 700px) {
+    
+    /* ORDER */
+
+    .health {
+        order: 2;
+    }
+
+    /* WIDTH */
+
+    .stats .container {
+        width: 77.6%;
+    }
+
+    .health {
+        width: 50%;
+    }
+
+    .stats,
+    .miscInfo2 {
+        width: 41%;
+    }
+
+    .actions {
+        width: 28%;
+    }
+    
+    .skills {
+        width: 26.39%;
+    }
+
+    .spells {
+        width: 20%;
+    }
+
+    /* HEIGHT */
+
+    .skills,
+    .actions,
+    .spells {
+        height: 1010px;
+    }
+
+    /* MARGIN */
+
+    #human .miscInfo1 {
+        margin: 20px 10px 0 5px;
+    }
+
+    .health input {
+        margin: 5px 0;
+    }
+
+    #human .health {
+        margin: 0 auto 10px ;
+    }
+
+    .stats .container {
+        margin: auto;
+    }
+}
+
+@media  screen and (min-width: 1000px) {
+
+    /* TOP */
+
+    .realOffhand {
+        top: 141px;
+    }
+
+    .modifier {
+        top: 115px;
+    }
+
+    /* RIGHT */
+
+    .realOffhand {
+        right: 81px;
+    }
+
+    .con .saveCheck {
+        right: 37px;
+    }
+
+    .int .saveCheck {
+        right: 36px;
+    }
+
+    .cha .saveCheck {
+        right: 24px;
+    }
+
+    /* LEFT */
+
+    .stg .modifier {
+        left: 22px;
+    }
+    
+    .dex .modifier {
+        left: 23px;
+    }
+    
+    .con .modifier {
+        left: 39px;
+    }
+    
+    .int .modifier {
+        left: 37px;
+    }
+    
+    .wis .modifier {
+        left: 17px;
+    }
+    
+    .cha .modifier {
+        left: 24px;
+    }
+
+    /* WIDTH */
+
+    .stats,
+    .stats .container,
+    .miscInfo2 {
+        width: 100%;
+    }
+
+    .weaponAttacks > div {
+        width: 50%;
+    }
+
+    .actions {
+        width: 35%;
+    }
+
+    .senses,
+    .defCond,
+    .profTrain {
+        width: 30%;
+    }
+
+    .spells {
+        width: 25%;
+    }
+
+    .skills {
+        width: 22%;
+    }
+
+    .saveCheck {
+        width: 48px;
+    }
+
+    /* FONT-SIZE */
+
+    body {
+        font-size: 16px;
+    }
+
+    /* LINE-HEIGHT */
+
+    .realExpertise,
+    .realMastery,
+    .realDisadvantage {
+        line-height: 1.05em;
+    }
+
+    .realOffhand {
+        line-height: 1.5em;
+    }
+
+    /* MARGIN */
+
+    #human .health {
+        margin: 0 auto 10px;
+    }
+
+    .dmgMod {
+        margin: 0;
+    }
+
+    .health input {
+        margin: intial;
+    }
+}
+
+@media screen and (min-width: 1422px) {
+
+    /* FLEX-DIRECTION */
+
+    #human,
+    .characterBasics,
+    .health,
+    .stats,
+    .stats .container,
+    .miscInfo2,
+    .defCond,
+    .profTrain,
+    .inventory,
+    .details,
+    .senses,
+    .cantrips,
+    .weaponAttacks {
+        flex-direction: row;
+    }
+
+    /* JUSTIFY-CONTENT */
+
+    .weaponAttacks {
+        justify-content: center;
+    }
+
+    .stats .container {
+        justify-content: space-between;
+    }
+
+    /* ORDER */
+
+    .health {
+        order: initial;
+    }
+
+    /* TOP */
+
+    .realSpellSlot {
+        top: 1px;
+    }
+
+    /* BOTTOM */
+
+    .characterOverview {
+        bottom: 15px;
+    }
+
+    /* RIGHT */
+
+    .realOffhand {
+        right: 63px;
+    }
+
+    /* LEFT */
+
+    .realExpertise,
+    .realMastery,
+    .realDisadvantage {
+        left: 3px;
+    }
+
+    /* WIDTH */
+
+    .stats .container,
+    .spacer {
+        width: 100%;
+    }
+
+    .health {
+        width: 69.9%;
+    }
+
+    .actions,
+    .spells {
+        width: 34%;
+    }
+
+    .profTrain {
+        width: 33.34%;
+    }
+    
+    .weaponAttacks > div {
+        width: 30%;
+    }
+
+    .characterBasics {
+        width: 25%;
+    }
+
+    .health {
+        width: 22.7%;
+    }
+
+    .inventory > div:not(.money),
+    .senses,
+    .defCond {
+        width: 20%;
+    }
+
+    .skills {
+        width: 15%;
+    }
+
+    .miscInfo1 {
+        width: 12%;
+    }
+
+    .armor,
+    .armor textarea,
+    .weapons,
+    .weapons textarea,
+    .tools,
+    .tools textarea,
+    .lang,
+    .lang textarea{
+        width: initial;
+    }
+
+    /* HEIGHT */
+
+    .actions,
+    .skills,
+    .spells {
+        height: 1010px;
+    }
+
+    .characterBasics,
+    .miscInfo1 {
+        height: 130px;
+    }
+
+    .init,
+    .insp {
+        height: 80px;
+    }
+
+    .defCond textarea,
+    .profTrain textarea {
+        height: 55px;
+    }
+
+    .health {
+        height: 40px;
+    }
+
+    /* FONT-SIZES */
+
+    .abilityScore {
+        font-size: 1.5em;
+    }
+
+    /* MARGIN */
+
+    .save {
+        margin: 38px 0 0 0;
+    }
+
+    #human > div,
+    #human .init,
+    #human .insp {
+        margin: 20px;
+    }
+
+    .weaponAttacks > div,
+    .inventory > div:not(.money) {
+        margin: 0 15px 10px;
+    }
+
+    .defCond div textarea {
+        margin: 10px 0 0 0;
+    }
+
+    .spellSlot {
+        margin: 0 10px;
+    }
+
+    .profTrain div {
+        margin: 0 20px;
+    }
+
+    .frame {
+        margin: 0 0 15px 0;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p:not(.init p:nth-child(2)):not(.health p),
+    ul,
+    ol,
+    .spellSlots,
+    .fastAdd,
+    .spacer {
+        margin: 0 0 15px;
+    }
+
+    .characterOverview {
+        margin: 0 0 0 20px;
+    }
+
+    /* PADDING */
+
+    .abilityScore {
+        padding: 25px;
+    }
+
+    #human {
+        padding: 20px;
+    }
+
+    .health {
+        padding: 20px 15px 15px;
+    }
+
+    #human > div:not(.characterBasics):not(.miscInfo1):not(.health) {
+        padding: 15px;
+    }
+
+    .stg,
+    .dex,
+    .con,
+    .int,
+    .wis,
+    .cha,
+    input[type="number"]:not(.characterBasics input[type="number"]):not(.abilityScore):not(.modifier input[type="number"]):not(.initNum),
+    .characterImage,
+    .inventory > div:not(.money) {
+        padding: 5px;
+    }
+
+    .modifier input[type="number"],
+    .initNum {
+        padding: 5px 5px 5px 0;
+    }
+
+    .initValue,
+    .modifier {
+        padding: 0 0 0 10px;
+    }
+}
