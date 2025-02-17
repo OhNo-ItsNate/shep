@@ -361,7 +361,7 @@
 .realExpertise,
 .realMastery,
 .realDisadvantage {
-    bottom: 1px;
+    bottom: 2px;
 }
 
 #human > div:before,
@@ -386,6 +386,12 @@
 
 .int .modifier {
     left: 24px;
+}
+
+.realExpertise,
+.realMastery,
+.realDisadvantage {
+    left: 2px;
 }
 
 #human > div:before,
@@ -920,7 +926,7 @@ ul,
 ol,
 .spellSlots,
 .fastAdd,
-.spacer,
+.spacer:not(.spacer:last-child),
 .def,
 .cond,
 .armor,
@@ -999,16 +1005,179 @@ select {
     appearance: none;
 }
 
-/* @media screen and (min-width: 600px) and (orientation: portrait), screen and (min-width: 600px) and (max-height: 600px) {
-    .health {
-        width: 35.4%;
-    }
-    .health input {
-        margin: 5px 0;
-    }
-} */
+@media screen and (min-width: 550px) and (min-height: 1299px) {
 
-@media screen and (min-width: 700px) and (orientation: landscape) {
+    /* ALIGN-ITEMS */
+
+    .stats .container {
+        align-items: center;
+    }
+
+    /* ORDER */
+
+    .skills {
+        order: 2;
+    }
+    
+    /* TOP */
+
+    .realOffhand {
+        top: 147px;
+    }
+
+    .modifier {
+        top: 115px;
+    }
+
+    /* RIGHT */
+
+    .realOffhand {
+        right: 156px;
+    }
+
+    .con .saveCheck {
+        right: 37px;
+    }
+
+    .int .saveCheck {
+        right: 36px;
+    }
+
+    .cha .saveCheck {
+        right: 24px;
+    }
+
+    /* BOTTOM */
+
+    .realExpertise,
+    .realMastery,
+    .realDisadvantage {
+        bottom: -1px;
+    }
+
+    /* LEFT */
+
+    .stg .modifier {
+        left: 22px;
+    }
+    
+    .dex .modifier {
+        left: 23px;
+    }
+    
+    .con .modifier {
+        left: 39px;
+    }
+    
+    .int .modifier {
+        left: 37px;
+    }
+    
+    .wis .modifier {
+        left: 17px;
+    }
+    
+    .cha .modifier {
+        left: 24px;
+    }
+
+    /* WIDTH */
+
+    .defCond,
+    .weaponAttacks > div {
+        width: 100%;
+    }
+
+    .stats,
+    .actions,
+    .skills,
+    .spells {
+        width: 40%;
+    }
+    
+    #human .health {
+        width: 30%;
+    }
+
+    .offhand,
+    .realOffhand {
+        width: 20px;
+    }
+
+    .realExpertise,
+    .realMastery,
+    .realDisadvantage {
+        width: 15px;
+    }
+
+    /* HEIGHT */
+
+    .actions,
+    .spells {
+        height: 1065px;
+    }
+
+    .stats .container > div {
+        height: 250px;
+    }
+
+    .offhand,
+    .realOffhand {
+        height: 20px;
+    }
+
+    .realExpertise,
+    .realMastery,
+    .realDisadvantage {
+        height: 15px;
+    }
+
+    /* FONT-SIZE */
+
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font: 1.4em;
+    }
+
+    .stats h2 {
+        font-size: 1.1em;
+    }
+
+    .stats h3 {
+        font-size: 0.9em;
+    }
+
+    .characterBasics {
+        font-size: 0.9em;
+    }
+
+    .skills p {
+        font-size: 0.7em;
+    }
+
+    /* LINE-HEIGHT */
+
+    .realOffhand {
+        line-height: 1.5em;
+    }
+
+    .realExpertise,
+    .realMastery,
+    .realDisadvantage {
+        line-height: 1.3em;
+    }
+
+    /* MARGIN */
+
+    .dmgMod {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 676px) and (orientation: landscape) and (max-height: 1290px) {
     
     /* ORDER */
 
