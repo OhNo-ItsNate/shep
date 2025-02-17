@@ -1099,6 +1099,12 @@ select {
         width: 30%;
     }
 
+    input[type="number"],
+    input[type="text"],
+    .inspIcon {
+        width: 30px;
+    }
+
     .offhand,
     .realOffhand {
         width: 20px;
@@ -1119,6 +1125,13 @@ select {
 
     .stats .container > div {
         height: 250px;
+    }
+
+    input[type="number"]:not(.characterOverview input[type="number"]):not(.spells p input[type="number"]),
+    input[type="text"],
+    select,
+    .inspIcon {
+        height: 30px;
     }
 
     .offhand,
@@ -1146,8 +1159,14 @@ select {
         font-size: 1.1em;
     }
 
+    p,
+    ul,
+    ol,
+    input,
+    textarea,
+    select,
     .stats h3 {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .characterBasics {
