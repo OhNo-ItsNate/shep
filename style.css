@@ -1022,29 +1022,26 @@ select {
     /* TOP */
 
     .realOffhand {
-        top: 147px;
+        top: 155px;
     }
 
     .modifier {
-        top: 115px;
+        top: 120px;
     }
 
     /* RIGHT */
 
     .realOffhand {
-        right: 156px;
+        right: 181px;
     }
 
-    .con .saveCheck {
-        right: 37px;
-    }
-
-    .int .saveCheck {
-        right: 36px;
-    }
-
+    .stg .saveCheck,
+    .dex .saveCheck,
+    .con .saveCheck,
+    .int .saveCheck,
+    .wis .saveCheck,
     .cha .saveCheck {
-        right: 24px;
+        right: 44px;
     }
 
     /* BOTTOM */
@@ -1057,34 +1054,18 @@ select {
 
     /* LEFT */
 
-    .stg .modifier {
-        left: 22px;
-    }
-    
-    .dex .modifier {
-        left: 23px;
-    }
-    
-    .con .modifier {
-        left: 39px;
-    }
-    
-    .int .modifier {
-        left: 37px;
-    }
-    
-    .wis .modifier {
-        left: 17px;
-    }
-    
+    .stg .modifier,
+    .dex .modifier,
+    .con .modifier,
+    .int .modifier,
+    .wis .modifier,
     .cha .modifier {
-        left: 24px;
+        left: 42px;
     }
 
     /* WIDTH */
 
-    .defCond,
-    .weaponAttacks > div {
+    .defCond {
         width: 100%;
     }
 
@@ -1107,6 +1088,19 @@ select {
         width: 32%;
     }
 
+    .init,
+    .insp {
+        width: 10%;
+    }
+
+    .weaponAttacks > div {
+        width: 292px;
+    }
+
+    .stats .container > div {
+        width: 135px;
+    }
+
     input[type="number"],
     input[type="text"],
     .inspIcon {
@@ -1122,11 +1116,6 @@ select {
     .realMastery,
     .realDisadvantage {
         width: 15px;
-    }
-
-    .init,
-    .insp {
-        width: 10%;
     }
 
     /* HEIGHT */
@@ -1168,10 +1157,6 @@ select {
         font-size: 1.4em;
     }
 
-    .stats h2 {
-        font-size: 1.1em;
-    }
-
     p,
     ul,
     ol,
@@ -1186,7 +1171,6 @@ select {
         font-size: 0.9em;
     }
 
-    .skills p,
     .health p,
     .health input {
         font-size: 0.7em;
@@ -1195,13 +1179,13 @@ select {
     /* LINE-HEIGHT */
 
     .realOffhand {
-        line-height: 1.5em;
+        line-height: 1.9em;
     }
 
     .realExpertise,
     .realMastery,
     .realDisadvantage {
-        line-height: 1.3em;
+        line-height: 1.5em;
     }
 
     /* MARGIN */
