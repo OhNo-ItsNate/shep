@@ -1096,7 +1096,7 @@ select {
     .actions,
     .skills,
     .spells {
-        width: 40%;
+        width: 45%;
     }
     
     #human .health {
@@ -1197,9 +1197,9 @@ select {
 
     /* MARGIN */
 
-    .health input:last-child {
+    /* .health input:last-child {
         margin: 10px 0 0;
-    }
+    } */
 
     .dmgMod {
         margin: 0;
