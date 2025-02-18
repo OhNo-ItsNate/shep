@@ -1088,6 +1088,10 @@ select {
         width: 100%;
     }
 
+    .miscInfo1 {
+        width: 60%;
+    }
+
     .characterBasics {
         width: 55%;
     }
@@ -1096,7 +1100,7 @@ select {
     .actions,
     .skills,
     .spells {
-        width: 45%;
+        width: 40%;
     }
     
     #human .health {
@@ -1118,6 +1122,11 @@ select {
     .realMastery,
     .realDisadvantage {
         width: 15px;
+    }
+
+    .init,
+    .insp {
+        width: 10%;
     }
 
     /* HEIGHT */
