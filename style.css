@@ -1088,6 +1088,10 @@ select {
         width: 100%;
     }
 
+    .characterBasics {
+        width: 60%;
+    }
+
     .stats,
     .actions,
     .skills,
@@ -1152,7 +1156,7 @@ select {
     }
 
     h1 {
-        font: 1.4em;
+        font-size: 1.4em;
     }
 
     .stats h2 {
@@ -1173,7 +1177,9 @@ select {
         font-size: 0.9em;
     }
 
-    .skills p {
+    .skills p,
+    .health p,
+    .health input {
         font-size: 0.7em;
     }
 
@@ -1190,6 +1196,10 @@ select {
     }
 
     /* MARGIN */
+
+    .health input:last-child {
+        margin: 10px 0 0;
+    }
 
     .dmgMod {
         margin: 0;
@@ -1259,6 +1269,12 @@ select {
 }
 
 @media  screen and (min-width: 1000px) {
+
+    /* ORDER */
+
+    .skills {
+        order: 4;
+    }
 
     /* TOP */
 
