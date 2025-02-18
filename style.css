@@ -1103,11 +1103,11 @@ select {
 
     input[type="number"],
     input[type="text"],
-    .inspIcon {
+    .inspIcon,
+    .offhand {
         width: 30px;
     }
 
-    .offhand,
     .realOffhand {
         width: 20px;
     }
