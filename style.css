@@ -1089,7 +1089,7 @@ select {
     }
 
     .characterBasics {
-        width: 60%;
+        width: 55%;
     }
 
     .stats,
@@ -1100,7 +1100,7 @@ select {
     }
     
     #human .health {
-        width: 30%;
+        width: 32%;
     }
 
     input[type="number"],
