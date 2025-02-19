@@ -21,13 +21,13 @@
                     <p>Human - Level <input type="number" value="2" /></p>
                 </div>
             </div>
-            <div class="health">
+            <div class="health" id="healthHuman">
                 <p>Health</p><!-- 1/2 hit die + con mod + 1 -->
                 <input type="number" value="20" /><p> / </p><input type="number" value="20" />
                 <p>Temporary HP</p>
                 <input type="number" value="" />
             </div>            
-            <div class="stats">
+            <div class="stats" id="statsHuman">
                 <div class="container">
                     <div class="stg">
                         <h2>Strength</h2>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="init">
+            <div class="init" id="initiativeHuman">
                 <div class="container">
                     <p>Initiative</p>
                     <div class="initValue">+<input type="number" class="initNum" value="3" /></div>
@@ -112,7 +112,7 @@
                     <input type="number" value="15" />&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
-            <div class="miscInfo2">
+            <div class="miscInfo2" id="sensesHuman">
                 <div class="senses">
                     <h2>Senses</h2>
                     <div class="passPer">
@@ -160,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills">
+            <div class="skills" id="skillsHuman">
                 <h2>Skills</h2>
                 <div class="spacer">
                     <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
@@ -289,7 +289,7 @@
                     <input type="number" value="0" />
                 </div>
             </div>
-            <div class="actions">
+            <div class="actions" id="actionsHuman">
                 <div class="container">
                     <h2>Actions</h2>
                     <div class="weaponAttacks">
@@ -425,7 +425,7 @@
                     <h3>Other</h3>
                 </div>
             </div>
-            <div class="spells">
+            <div class="spells" id="spellsHuman">
                 <div class="container">
                     <h2>Spells</h2>
                 <div class="cantrips">
@@ -490,9 +490,9 @@
                 </div>
                 </div>
             </div>
-            <div class="inventory">
-                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="48" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
+            <div class="inventory" id="inventoryHuman">
                 <h2>Inventory</h2>
+                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="48" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
                 <h3>Equipment</h3>
                 <div class="scaleMail">
                     <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
@@ -649,7 +649,7 @@
                 <h4>Quick Addition</h4>
                 <textarea name="" id="" class="fastAdd"></textarea>
             </div>
-            <div class="featTrait">
+            <div class="featTrait" id="featuresTraitsHuman">
                 <h2>Features & Traits</h2>
                 <h3>Class Features</h3>
                 <h4>Conquered Curse - Curse of Lycanthropy</h4>
@@ -720,7 +720,7 @@
                 <h4>Savage Attacker</h4>
                 <p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
             </div>
-            <div class="details">
+            <div class="details" id="detailsHuman">
                 <h2>Details</h2>
                 <h3>Appearance</h3>
                 <p><strong>Species</strong>: Human</p>
@@ -755,6 +755,24 @@
                 </ul>
                 <h3>Quick Addition</h3>
                 <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <input type="checkbox" class="menuToggle" />
+            <div class="realMenuToggle">JUMP</div>
+            <div class="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#initiativeHuman">Initiative</a></li>
+                        <li><a href="#healthHuman">Health</a></li>
+                        <li><a href="#statsHuman">Stats</a></li>
+                        <li><a href="#sensesHuman">Senses</a></li>
+                        <li><a href="#skillsHuman">Skills</a></li>
+                        <li><a href="#actionsHuman">Actions</a></li>
+                        <li><a href="#spellsHuman">Spells</a></li>
+                        <li><a href="#inventoryHuman">Inventory</a></li>
+                        <li><a href="#featuresTraitsHuman">Features & Traits</a></li>
+                        <li><a href="#detailsHuman">Details</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- <div id="werewolf"></div> -->

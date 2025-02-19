@@ -1,11 +1,11 @@
 /* CONTENT */
 
-#human > div:not(.characterBasics):not(.health):not(.miscInfo1):before,
+#human > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):before,
 #human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
 .container:before,
 .frame1:before,
 .frame2:before,
-#human > div:not(.characterBasics):not(.health):not(.miscInfo1):after,
+#human > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):after,
 #human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):after,
 .container:after,
 .frame1:after,
@@ -16,7 +16,8 @@
 /* DISPLAY & POSITION */
 
 .inspCheck ~ .inspIcon,
-.offhand:checked ~ .dmgMod {
+.offhand:checked ~ .dmgMod,
+.menuToggle + .realMenuToggle + .menu {
     display: none;
 }
 
@@ -29,7 +30,8 @@
     display: none !important;
 }
 
-.inspCheck:checked + .inspIcon {
+.inspCheck:checked + .inspIcon,
+.menuToggle:checked + .realMenuToggle + .menu {
     display: initial;
 }
 
@@ -50,7 +52,8 @@
 .skills p,
 .realOffhand,
 .dmgMod,
-.realSaveCheck {
+.realSaveCheck,
+.realMenuToggle {
     display: inline-block;
 }
 
@@ -73,7 +76,8 @@
 .weaponAttacks,
 .container:not(.actions .container):not(.spells .container),
 .init,
-.insp {
+.insp,
+.realMenuToggle {
     display: flex;
 }
 
@@ -150,7 +154,8 @@
 /* ALIGN-CONTENTS */
 
 .init .container,
-.insp .container {
+.insp .container,
+.realMenuToggle {
     align-items: center;
 }
 
@@ -281,6 +286,12 @@
     position: absolute;
 }
 
+.menuToggle,
+.realMenuToggle,
+.menu {
+    position: fixed;
+}
+
 /* TOP */
 
 .inspIcon {
@@ -339,7 +350,7 @@
 }
 
 .realOffhand {
-    right: 14px;
+    right: 2px;
 }
 
 #human > div:after,
@@ -360,8 +371,14 @@
 
 .realExpertise,
 .realMastery,
-.realDisadvantage {
+.realDisadvantage,
+.menuToggle {
     bottom: 2px;
+}
+
+.realMenuToggle,
+.menu {
+    bottom: 0;
 }
 
 #human > div:before,
@@ -388,6 +405,10 @@
     left: 24px;
 }
 
+.menuToggle {
+    left: 23px;
+}
+
 .realExpertise,
 .realMastery,
 .realDisadvantage {
@@ -409,17 +430,22 @@
 
 /* Z-INDEX */
 
+.menu {
+    z-index: 98;
+}
+
+.realMenuToggle {
+    z-index: 99;
+}
+
 .inspCheck,
-.actions:before,
-.actions .container:before,
-.actions::after,
-.actions .container:after,
 .spellSlot input,
 .expertise,
 .mastery,
 .disadvantage,
 .offhand,
-.equip {
+.equip,
+.menuToggle {
     z-index: 100;
 }
 
@@ -472,8 +498,14 @@ h4,
     width: 95px;
 }
 
-.saveCheck {
+.saveCheck,
+.menuToggle,
+.realMenuToggle {
     width: 40px;
+}
+
+.dice {
+    width: 35px;
 }
 
 input[type="number"],
@@ -516,6 +548,15 @@ input[type="text"],
 
 .characterImage {
     height: 95px;
+}
+
+.menuToggle,
+.realMenuToggle {
+    height: 40px;
+}
+
+.dice {
+    height: 35px;
 }
 
 .inspCheck {
@@ -572,7 +613,8 @@ h1 {
     font-size: 2em;
 }
 
-h2{
+h2,
+.menu ul li a {
     font-size: 1.5em;
 }
 
@@ -647,7 +689,17 @@ select {
     text-align-last: center;
 }
 
+/* TEXT-DECORATION */
+
+.menu ul li a {
+    text-decoration: none;
+}
+
 /* LINE-HEIGHT */
+
+.realOffhand {
+    line-height: 2em;
+}
 
 .realExpertise,
 .realMastery,
@@ -655,15 +707,22 @@ select {
     line-height: 1.55em;
 }
 
-.realOffhand {
-    line-height: 2em;
+.realMenuToggle {
+    line-height: 0em;
+}
+
+/* LIST-STYLE-TYPE */
+
+.menu ul li {
+    list-style-type: none;
 }
 
 /* BORDER */
 
 input,
 textarea,
-select {
+select,
+.realMenuToggle {
     border: none;
 }
 
@@ -804,8 +863,13 @@ select {
 .realExpertise,
 .realMastery,
 .realDisadvantage,
-.realOffhand {
+.realOffhand,
+.realMenuToggle {
     color: blanchedalmond;
+}
+
+.menu ul li a {
+    color: indianred;
 }
 
 /* BACKGROUND-COLOR */
@@ -825,7 +889,8 @@ select {
 .mastery:checked + .realMastery,
 .disadvantage:checked + .realDisadvantage,
 .offhand:checked + .realOffhand,
-.equip:checked + .realEquip {
+.equip:checked + .realEquip,
+.realMenuToggle {
     background-color: indianred;
 }
 
@@ -839,7 +904,8 @@ textarea,
 .mastery + .realMastery,
 .disadvantage + .realDisadvantage,
 .offhand + .realOffhand,
-.equip + .realEquip {
+.equip + .realEquip,
+.menu {
     background-color: blanchedalmond;
 }
 
@@ -858,7 +924,8 @@ textarea,
 .disadvantage,
 .offhand,
 .saveCheck,
-.equip {
+.equip,
+.menuToggle {
     opacity: 0;
 }
 
@@ -868,7 +935,9 @@ textarea,
     margin: 38px 0 0 0;
 }
 
-#human > div {
+#human > div,
+.menuToggle,
+.realMenuToggle {
     margin: 10px;
 }
 
@@ -937,7 +1006,8 @@ ol,
 .passInv div,
 .passIns div,
 .darkVis div,
-.money input {
+.money input,
+.menu ul li:not(ul li:last-child) {
     margin: 0 0 15px;
 }
 
@@ -960,7 +1030,11 @@ ol,
     padding: 10px;
 }
 
-#human > div:not(.characterBasics):not(.miscInfo1) {
+.menu {
+    padding: 15px 15px 40px 15px;
+}
+
+#human > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu) {
     padding: 15px;
 }
 
@@ -986,6 +1060,11 @@ input[type="number"]:not(.characterBasics input[type="number"]):not(.abilityScor
     padding: 0 0 0 10px;
 }
 
+#human .realMenuToggle,
+#human .menu ul {
+    padding: 0;
+}
+
 /* STYLING FOR INPUT TYPE="NUMBER" */
 
 input[type="number"] {
@@ -1005,7 +1084,7 @@ select {
     appearance: none;
 }
 
-@media screen and (min-width: 749px) and (min-height: 1299px) {
+@media screen and (min-width: 749px) and (max-width: 800px) and (min-height: 1299px) {
 
     /* ALIGN-ITEMS */
 
@@ -1032,7 +1111,7 @@ select {
     /* RIGHT */
 
     .realOffhand {
-        right: 181px;
+        right: 175px;
     }
 
     .stg .saveCheck,
@@ -1101,6 +1180,10 @@ select {
         width: 135px;
     }
 
+    .dice {
+        width: 40px;
+    }
+
     input[type="number"],
     input[type="text"],
     .inspIcon,
@@ -1127,6 +1210,10 @@ select {
 
     .stats .container > div {
         height: 250px;
+    }
+
+    .dice {
+        height: 40px;
     }
 
     input[type="number"]:not(.characterOverview input[type="number"]):not(.spells p input[type="number"]),
@@ -1199,12 +1286,20 @@ select {
     }
 }
 
-@media screen and (min-width: 676px) and (orientation: landscape) and (max-height: 1290px) {
+@media screen and (min-width: 676px) and (max-height: 1290px) {
     
     /* ORDER */
 
     .health {
         order: 2;
+    }
+
+    /* TOP */
+
+    /* RIGHT */
+
+    .realOffhand {
+        right: 77px;
     }
 
     /* WIDTH */
@@ -1215,6 +1310,10 @@ select {
 
     .health {
         width: 50%;
+    }
+
+    .characterBasics {
+        width: 45%;
     }
 
     .stats,
@@ -1234,12 +1333,16 @@ select {
         width: 20%;
     }
 
+    .weaponAttacks > div {
+        width: 171px;
+    }
+
     /* HEIGHT */
 
     .skills,
     .actions,
     .spells {
-        height: 1010px;
+        height: 970px;
     }
 
     /* MARGIN */
@@ -1254,6 +1357,10 @@ select {
 
     #human .health {
         margin: 0 auto 10px ;
+    }
+
+    .dmgMod {
+        margin: 0;
     }
 
     .stats .container {
@@ -1282,7 +1389,7 @@ select {
     /* RIGHT */
 
     .realOffhand {
-        right: 81px;
+        right: 75px;
     }
 
     .con .saveCheck {
@@ -1331,10 +1438,6 @@ select {
         width: 100%;
     }
 
-    .weaponAttacks > div {
-        width: 50%;
-    }
-
     .actions {
         width: 35%;
     }
@@ -1355,6 +1458,14 @@ select {
 
     .saveCheck {
         width: 48px;
+    }
+
+    /* HEIGHT */
+
+    .actions,
+    .skills,
+    .spells {
+        height: 1019px;
     }
 
     /* FONT-SIZE */
@@ -1438,12 +1549,6 @@ select {
         bottom: 15px;
     }
 
-    /* RIGHT */
-
-    .realOffhand {
-        right: 63px;
-    }
-
     /* LEFT */
 
     .realExpertise,
@@ -1470,10 +1575,6 @@ select {
 
     .profTrain {
         width: 33.34%;
-    }
-    
-    .weaponAttacks > div {
-        width: 30%;
     }
 
     .characterBasics {
@@ -1554,6 +1655,10 @@ select {
         margin: 20px;
     }
 
+    #human .realMenuToggle {
+        margin: 10px;
+    }
+
     .weaponAttacks > div,
     .inventory > div:not(.money) {
         margin: 0 15px 10px;
@@ -1607,7 +1712,7 @@ select {
         padding: 20px 15px 15px;
     }
 
-    #human > div:not(.characterBasics):not(.miscInfo1):not(.health) {
+    #human > div:not(.characterBasics):not(.miscInfo1):not(.health):not(.realMenuToggle):not(.menu) {
         padding: 15px;
     }
 
@@ -1631,5 +1736,9 @@ select {
     .initValue,
     .modifier {
         padding: 0 0 0 10px;
+    }
+
+    #human .realMenuToggle {
+        padding: 0;
     }
 }
