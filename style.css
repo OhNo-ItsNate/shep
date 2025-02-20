@@ -488,14 +488,17 @@ h4,
     width: 50%;
 }
 
+.weaponAttacks > div {
+    width: 171px;
+}
+
 .frame,
 .frame1,
 .frame2 {
     width: 111px;
 }
 
-.characterImage,
-.weaponAttacks > div {
+.characterImage {
     width: 95px;
 }
 
@@ -1287,7 +1290,7 @@ select {
     }
 }
 
-@media screen and (min-width: 676px) and (orientation: lanscape), screen and (orientation: portrait) and (min-width:676px) and (max-width: 748px) and (max-height: 1290px) {
+@media screen and (min-width: 676px) and (orientation: lanscape), screen and (orientation: portrait) and (min-width:676px) and (max-height: 1290px) {
     
     /* ORDER */
 
@@ -1343,7 +1346,7 @@ select {
     .skills,
     .actions,
     .spells {
-        height: 970px;
+        height: 995px;
     }
 
     /* MARGIN */
