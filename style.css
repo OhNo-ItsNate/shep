@@ -1088,7 +1088,7 @@ select {
     appearance: none;
 }
 
-@media screen and (min-width: 749px) and (max-width: 800px) and (min-height: 1199px) {
+@media screen and (min-width: 749px) and (min-height: 1199px) {
 
     /* ALIGN-ITEMS */
 
