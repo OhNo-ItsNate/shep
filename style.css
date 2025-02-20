@@ -1,6 +1,6 @@
 /* CONTENT */
 
-#human > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):before,
+#human > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):not(.menu):before,
 #human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
 .container:before,
 .frame1:before,
@@ -748,9 +748,12 @@ select,
 .frame2:before,
 .frame2:after,
 .realSpellSlot,
-.saveCheck + .realSaveCheck,
 .realEquip {
     border-width: 3px;
+}
+
+.saveCheck + .realSaveCheck {
+    border-width: 6px;
 }
 
 .modifier input[type="number"] {
@@ -936,7 +939,7 @@ textarea,
 /* MARGIN */
 
 .save {
-    margin: 38px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 #human > div,
@@ -1281,9 +1284,9 @@ select {
 
     /* MARGIN */
 
-    /* .health input:last-child {
+    .health input:last-child {
         margin: 10px 0 0;
-    } */
+    }
 
     .dmgMod {
         margin: 0;
