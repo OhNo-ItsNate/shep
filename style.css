@@ -17,7 +17,8 @@
 
 .inspCheck ~ .inspIcon,
 .offhand:checked ~ .dmgMod,
-.menuToggle + .realMenuToggle + .menu {
+.menuToggle + .realMenuToggle + .menu,
+.masteryDescToggle + .masteryDesc {
     display: none;
 }
 
@@ -31,7 +32,8 @@
 }
 
 .inspCheck:checked + .inspIcon,
-.menuToggle:checked + .realMenuToggle + .menu {
+.menuToggle:checked + .realMenuToggle + .menu,
+.masteryDescToggle:checked + .masteryDesc {
     display: initial;
 }
 
@@ -146,7 +148,9 @@
     justify-content: space-between;
 }
 
+.init,
 .init .container,
+.insp,
 .insp .container,
 .realMenuToggle {
     justify-content: center;
@@ -283,7 +287,9 @@
 .realOffhand,
 .saveCheck,
 .equip,
-.realEquip {
+.realEquip,
+.masteryDescToggle,
+.masteryDesc {
     position: absolute;
 }
 
@@ -296,16 +302,20 @@
 /* TOP */
 
 .inspIcon {
-    top: 55%;
+    top: 49%;
 }
 
 
 .realOffhand {
-    top: 128px;
+    top: 131px;
 }
 
 .modifier {
     top: 109px;
+}
+
+.masteryDescToggle {
+    top: 10px;
 }
 
 .equip,
@@ -350,8 +360,8 @@
     right: 20px;
 }
 
-.realOffhand {
-    right: 2px;
+.masteryDesc {
+    right: 5px;
 }
 
 #human > div:after,
@@ -391,13 +401,6 @@
 
 /* LEFT */
 
-.stg .modifier,
-.dex .modifier,
-.wis .modifier,
-.cha .modifier {
-    left: 18px;
-}
-
 .con .modifier {
     left: 25px;
 }
@@ -408,6 +411,13 @@
 
 .menuToggle {
     left: 23px;
+}
+
+.stg .modifier,
+.dex .modifier,
+.wis .modifier,
+.cha .modifier {
+    left: 18px;
 }
 
 .realExpertise,
@@ -431,11 +441,13 @@
 
 /* Z-INDEX */
 
-.menu {
+.menu,
+.masteryDesc {
     z-index: 98;
 }
 
-.realMenuToggle {
+.realMenuToggle,
+.masteryDescToggle {
     z-index: 99;
 }
 
@@ -476,7 +488,8 @@ h4,
 .lang,
 .lang textarea,
 .stats .container,
-.inspCheck {
+.inspCheck,
+.masteryDescToggle {
     width: 100%;
 }
 
@@ -490,6 +503,10 @@ h4,
 
 .weaponAttacks > div {
     width: 171px;
+}
+
+.masteryDesc {
+    width: 120px;
 }
 
 .frame,
@@ -543,6 +560,10 @@ input[type="text"],
 
 /* HEIGHT */
 
+.weaponAttacks > div {
+    height: 172px;
+}
+
 .frame,
 .frame1,
 .frame2,
@@ -574,7 +595,8 @@ select,
     height: 25px;
 }
 
-.saveCheck {
+.saveCheck,
+.masteryDescToggle {
     height: 20px;
 }
 
@@ -604,7 +626,8 @@ select,
 /* OVERFLOW */
 
 .container {
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* FONT-SIZES */
@@ -655,14 +678,17 @@ select {
 /* FONT-WEIGHT */
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
     font-weight: 500;
 }
 
+h3,
+h4 {
+    font-weight: 600;
+}
+
+h5,
+h6,
 .health {
     font-weight: 700;
 }
@@ -748,12 +774,14 @@ select,
 .frame2:before,
 .frame2:after,
 .realSpellSlot,
-.realEquip {
+.realEquip,
+.masteryDesc {
     border-width: 3px;
 }
 
 .saveCheck + .realSaveCheck {
-    border-width: 6px;
+    border-width: 5px;
+    border-width: 5px;
 }
 
 .modifier input[type="number"] {
@@ -778,7 +806,8 @@ select,
 .frame2:before,
 .frame2:after,
 .realSpellSlot,
-.realEquip {
+.realEquip,
+.masteryDesc {
     border-style: solid;
 }
 
@@ -796,9 +825,13 @@ select,
 
 /* OUTLINE-WIDTH */
 
+.inspIcon {
+    outline-width: 5px;
+}
+
 #human > div:not(.characterBasics):not(.miscInfo1),
-.inspIcon,
-.characterImage {
+.characterImage,
+.masteryDesc {
     outline-width: 1px;
 }
 
@@ -809,7 +842,8 @@ select,
 }
 
 #human > div:not(.characterBasics):not(.miscInfo1),
-.characterImage {
+.characterImage,
+.masteryDesc {
     outline-style: solid;
 }
 
@@ -817,7 +851,8 @@ select,
 
 #human > div:not(.characterBasics):not(.miscInfo1),
 .inspIcon,
-.characterImage {
+.characterImage,
+.masteryDesc {
     outline-offset: 4px;
 }
 
@@ -847,7 +882,8 @@ select,
 .frame1:after,
 .frame2:before,
 .frame2:after,
-.saveCheck:checked + .realSaveCheck {
+.saveCheck:checked + .realSaveCheck,
+.masteryDesc {
     border-color: indianred;
 }
 
@@ -861,17 +897,24 @@ select,
 
 #human > div:not(.characterBasics):not(.miscInfo1),
 .inspIcon,
-.characterImage {
+.characterImage,
+.masteryDesc {
     outline-color: indianred;
 }
 
 /* COLOR */
 
+body {
+    color: dimgray;
+}
+
 .realExpertise,
 .realMastery,
 .realDisadvantage,
 .realOffhand,
-.realMenuToggle {
+.realMenuToggle,
+.health p,
+.health input {
     color: blanchedalmond;
 }
 
@@ -912,7 +955,8 @@ textarea,
 .disadvantage + .realDisadvantage,
 .offhand + .realOffhand,
 .equip + .realEquip,
-.menu {
+.menu,
+.masteryDesc {
     background-color: blanchedalmond;
 }
 
@@ -932,7 +976,8 @@ textarea,
 .offhand,
 .saveCheck,
 .equip,
-.menuToggle {
+.menuToggle,
+.masteryDescToggle {
     opacity: 0;
 }
 
@@ -946,10 +991,6 @@ textarea,
 .menuToggle,
 .realMenuToggle {
     margin: 10px;
-}
-
-.dmgMod {
-    margin: 5px 0;
 }
 
 .inventory > div:not(.money) {
@@ -1041,7 +1082,8 @@ ol,
     padding: 15px 15px 40px 15px;
 }
 
-#human > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu) {
+#human > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
+.masteryDesc {
     padding: 15px;
 }
 
@@ -1108,11 +1150,15 @@ select {
     /* TOP */
 
     .realOffhand {
-        top: 155px;
+        top: 164px;
     }
 
     .modifier {
-        top: 120px;
+        top: 124px;
+    }
+
+    .masteryDesc {
+        top: 20px;
     }
 
     /* RIGHT */
@@ -1160,7 +1206,7 @@ select {
     }
 
     .characterBasics {
-        width: 55%;
+        width: 54%;
     }
 
     .stats,
@@ -1171,7 +1217,7 @@ select {
     }
     
     #human .health {
-        width: 32%;
+        width: 35%;
     }
 
     .init,
@@ -1185,6 +1231,11 @@ select {
 
     .stats .container > div {
         width: 135px;
+    }
+
+    .menuToggle,
+    .realMenuToggle {
+        width: 80px;
     }
 
     .dice {
@@ -1219,6 +1270,11 @@ select {
         height: 250px;
     }
 
+    .menuToggle,
+    .realMenuToggle {
+        height: 80px;
+    }
+
     .dice {
         height: 40px;
     }
@@ -1244,7 +1300,7 @@ select {
     /* FONT-SIZE */
 
     body {
-        font-size: 4.5mm;
+        font-size: 5mm;
     }
 
     h1 {
@@ -1284,12 +1340,21 @@ select {
 
     /* MARGIN */
 
-    .health input:last-child {
-        margin: 10px 0 0;
+    .handaxe,
+    .bite,
+    .claws,
+    .unarmed {
+        margin: 10px 0;
     }
 
-    .dmgMod {
-        margin: 0;
+    .weaponAttacks {
+        margin: 0 0 20px 0;
+    }
+
+    /* PADDING */
+
+    .menu {
+        padding: 15px 15px 80px;
     }
 }
 
@@ -1386,11 +1451,15 @@ select {
     /* TOP */
 
     .realOffhand {
-        top: 141px;
+        top: 147px;
     }
 
     .modifier {
         top: 115px;
+    }
+
+    .masteryDescToggle {
+        top: 20px;
     }
 
     /* RIGHT */
@@ -1445,6 +1514,14 @@ select {
         width: 100%;
     }
 
+    .characterBasics {
+        width: 48%;
+    }
+
+    .health {
+        width: 40%;
+    }
+
     .actions {
         width: 35%;
     }
@@ -1494,6 +1571,10 @@ select {
     }
 
     /* MARGIN */
+
+    .weaponAttacks {
+        margin: 0 0 20px 0;
+    }
 
     #human .health {
         margin: 0 auto 10px;
@@ -1656,7 +1737,7 @@ select {
         margin: 38px 0 0 0;
     }
 
-    #human > div,
+    #human > div:not(.menu):not(.realMenuToggle),
     #human .init,
     #human .insp {
         margin: 20px;

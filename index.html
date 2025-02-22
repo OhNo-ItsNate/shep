@@ -4,7 +4,7 @@
         <title>Lucas Shepard - Dragonlance: Shadow of the Dragon Queen</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body>
+    <body id="top">
         <div id="human">
             <div class="characterBasics">
                 <div class="frame">
@@ -94,7 +94,7 @@
             <div class="insp">
                 <div class="container">
                     <p>Inspiration</p>
-                    <input type="checkbox" class="inspCheck" />
+                    <input type="checkbox" class="inspCheck" checked />
                     <div class="inspIcon"></div>
                 </div>
             </div>
@@ -295,7 +295,7 @@
                     <div class="weaponAttacks">
                         <div class="handCrossbow">
                             <img src="" alt="" class="attackIcon" /> 
-                            <p>Hand Crossbow</p>
+                            <h4>Hand Crossbow</h4>
                             <p>30ft (120ft) Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -317,7 +317,7 @@
                         </div>
                         <div class="handaxe">
                             <img src="" alt="" class="attackIcon" /> 
-                            <p>Handaxe</p>
+                            <h4>Handaxe</h4>
                             <p>20ft (60ft) Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -339,7 +339,7 @@
                         </div>
                         <div class="handaxe">
                             <img src="" alt="" class="attackIcon" /> 
-                            <p>Handaxe</p>
+                            <h4>Handaxe</h4>
                             <p>20ft (60ft) Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -361,7 +361,8 @@
                         </div>
                         <div class="bite">
                             <img src="" alt="" class="attackIcon" /> 
-                            <p>Bite &ndash; <em>Sap</em></p>
+                            <h4>Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
                             <p>5ft Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -383,7 +384,8 @@
                         </div>
                         <div class="claws">
                             <img src="" alt="" class="attackIcon" /> 
-                            <p>Claws &ndash; <em>Vex</em></p>
+                            <h4>Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
                             <p>5ft Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -431,7 +433,7 @@
                 <div class="cantrips">
                     <h3>Cantrips</h3>
                     <div id="spell1">
-                        <p>SPELL_2</p>
+                        <h4>SPELL_2</h4>
                         <p>RANGE</p>
                         <p>CAST_TIME</p>
                         <p>COMPONENTS</p>
@@ -441,7 +443,7 @@
                         <p>NOTES</p>
                     </div>
                     <div id="spell2">
-                        <p>SPELL_2</p>
+                        <h4>SPELL_2</h4>
                         <p>RANGE</p>
                         <p>CAST_TIME</p>
                         <p>COMPONENTS</p>
@@ -468,7 +470,7 @@
                         </div>
                     </div>
                     <div id="spell1">
-                        <p>Bane</p>
+                        <h4>Bane</h4>
                         <p>Range - 30ft</p>
                         <p>Casting Time - 1 action</p>
                         <p>Components - Verbal, Somatic, Material (a drop of blood)</p>
@@ -478,7 +480,7 @@
                         <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
                     </div>
                     <div id="spell2">
-                        <p>Longstrider</p>
+                        <h4>Longstrider</h4>
                         <p>Touch</p>
                         <p>Casting Time - 1 action</p>
                         <p>Components - Verbal, Somatic, Material (a pinch of dirt)</p>
@@ -492,7 +494,7 @@
             </div>
             <div class="inventory" id="inventoryHuman">
                 <h2>Inventory</h2>
-                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="48" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
+                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="100" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
                 <h3>Equipment</h3>
                 <div class="scaleMail">
                     <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
@@ -766,6 +768,7 @@
             <div class="menu">
                 <div class="container">
                     <ul>
+                        <li><a href="#top">Top</a></li>
                         <li><a href="#initiativeHuman">Initiative</a></li>
                         <li><a href="#healthHuman">Health</a></li>
                         <li><a href="#statsHuman">Stats</a></li>
