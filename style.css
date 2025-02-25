@@ -632,8 +632,8 @@ select,
 
 /* FONT-SIZES */
 
-body {
-    font-size: 12px;
+html {
+    font-size: 75%;
 }
 
 h1 {
@@ -695,7 +695,7 @@ h6,
 
 /* FONT-FAMILY */
 
-body {
+html {
     font-family: "Tahoma";
 }
 
@@ -904,7 +904,9 @@ select,
 
 /* COLOR */
 
-body {
+html,
+input,
+select {
     color: dimgray;
 }
 
@@ -1133,7 +1135,91 @@ select {
     appearance: none;
 }
 
-@media screen and (min-width: 749px) and (min-height: 1199px) {
+@media screen and (min-width: 676px) and (orientation: lanscape), screen and (orientation: portrait) and (min-width:676px) and (max-height: 1198px) {
+    
+    /* ORDER */
+
+    .health {
+        order: 2;
+    }
+
+    /* TOP */
+
+    /* RIGHT */
+
+    .realOffhand {
+        right: 77px;
+    }
+
+    /* WIDTH */
+
+    .stats .container {
+        width: 77.6%;
+    }
+
+    .health {
+        width: 50%;
+    }
+
+    .characterBasics {
+        width: 45%;
+    }
+
+    .stats,
+    .miscInfo2 {
+        width: 41%;
+    }
+
+    .actions {
+        width: 28%;
+    }
+    
+    .skills {
+        width: 26.39%;
+    }
+
+    .spells {
+        width: 20%;
+    }
+
+    .weaponAttacks > div {
+        width: 171px;
+    }
+
+    /* HEIGHT */
+
+    .skills,
+    .actions,
+    .spells {
+        height: 995px;
+    }
+
+    /* MARGIN */
+
+    #human .miscInfo1 {
+        margin: 20px 10px 0 5px;
+    }
+
+    .health input {
+        margin: 5px 0;
+    }
+
+    #human .health {
+        margin: 0 auto 10px ;
+    }
+
+    .dmgMod {
+        margin: 0;
+    }
+
+    .stats .container {
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 789px) and (min-height: 1199px) {
 
     /* ALIGN-ITEMS */
 
@@ -1299,8 +1385,8 @@ select {
 
     /* FONT-SIZE */
 
-    body {
-        font-size: 5mm;
+    html {
+        font-size: 118.5%;
     }
 
     h1 {
@@ -1358,87 +1444,7 @@ select {
     }
 }
 
-@media screen and (min-width: 676px) and (orientation: lanscape), screen and (orientation: portrait) and (min-width:676px) and (max-height: 1190px) {
-    
-    /* ORDER */
 
-    .health {
-        order: 2;
-    }
-
-    /* TOP */
-
-    /* RIGHT */
-
-    .realOffhand {
-        right: 77px;
-    }
-
-    /* WIDTH */
-
-    .stats .container {
-        width: 77.6%;
-    }
-
-    .health {
-        width: 50%;
-    }
-
-    .characterBasics {
-        width: 45%;
-    }
-
-    .stats,
-    .miscInfo2 {
-        width: 41%;
-    }
-
-    .actions {
-        width: 28%;
-    }
-    
-    .skills {
-        width: 26.39%;
-    }
-
-    .spells {
-        width: 20%;
-    }
-
-    .weaponAttacks > div {
-        width: 171px;
-    }
-
-    /* HEIGHT */
-
-    .skills,
-    .actions,
-    .spells {
-        height: 995px;
-    }
-
-    /* MARGIN */
-
-    #human .miscInfo1 {
-        margin: 20px 10px 0 5px;
-    }
-
-    .health input {
-        margin: 5px 0;
-    }
-
-    #human .health {
-        margin: 0 auto 10px ;
-    }
-
-    .dmgMod {
-        margin: 0;
-    }
-
-    .stats .container {
-        margin: auto;
-    }
-}
 
 @media  screen and (min-width: 1000px) {
 
