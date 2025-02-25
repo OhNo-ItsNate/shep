@@ -1560,8 +1560,8 @@ select {
 
     /* FONT-SIZE */
 
-    body {
-        font-size: 16px;
+    html {
+        font-size: 98%;
     }
 
     /* LINE-HEIGHT */
