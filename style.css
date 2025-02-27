@@ -1444,8 +1444,6 @@ select {
     }
 }
 
-
-
 @media  screen and (min-width: 1000px) {
 
     /* ORDER */
@@ -1588,6 +1586,11 @@ select {
 
     .dmgMod {
         margin: 0;
+    }
+
+    #human .init,
+    #human .miscInfo1 {
+        margin: 0 auto;
     }
 
     .health input {
