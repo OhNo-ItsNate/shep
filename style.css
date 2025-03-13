@@ -21,31 +21,20 @@
     content: "";
 }
 
-.sheetSelect[value="human"]:after {
-    content: "Human";
-}
-
-.sheetSelect[value="hybrid"]:after {
-    content: "Hybrid";
-}
-
-.sheetSelect[value="werewolf"]:after {
-    content: "Werewolf";
-}
-
 /* DISPLAY & POSITION */
 
 .inspCheck ~ .inspIcon,
 .offhand:checked ~ .dmgMod,
 .menuToggle + .realMenuToggle + .menu,
 .masteryDescToggle + .masteryDesc,
-.sheetSelect + label,
 input[value="human"] + label + #human,
 input[value="hybrid"] + label + #hybrid,
 input[value="werewolf"] + label + #werewolf {
     display: none;
 }
 
+.sheetSelect,
+.sheetSelect + label,
 .hidden,
 .cantrips,
 .item1,
@@ -333,6 +322,7 @@ body,
 }
 
 .sheetSelect,
+.sheetSelect + label,
 .menuToggle,
 .realMenuToggle,
 .menu {
@@ -364,6 +354,7 @@ body,
 }
 
 .sheetSelect,
+.sheetSelect + label,
 .saveCheck {
     top: 0;
 }
@@ -454,11 +445,13 @@ body,
 
 /* LEFT */
 
-.sheetSelect[value="werewolf"] {
+.sheetSelect[value="werewolf"],
+.sheetSelect[value="werewolf"] + label {
     left: 100px;
 }
 
-.sheetSelect[value="hybrid"] {
+.sheetSelect[value="hybrid"],
+.sheetSelect[value="hybrid"] + label {
     left: 50px;
 }
 
@@ -487,7 +480,8 @@ body,
     left: 2px;
 }
 
-.sheetSelect[value="human"] {
+.sheetSelect[value="human"],
+.sheetSelect[value="human"] + label {
     left: 0;
 }
 
@@ -510,6 +504,7 @@ body,
 
 /* Z-INDEX */
 
+.sheetSelect + label,
 .menu,
 .masteryDesc {
     z-index: 98;
@@ -587,6 +582,10 @@ h4,
 
 .characterImage {
     width: 95px;
+}
+
+.sheetSelect {
+    width: 100px;
 }
 
 .saveCheck,
@@ -1033,6 +1032,7 @@ select {
     color: dimgray;
 }
 
+.sheetSelect + label,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
@@ -1058,6 +1058,7 @@ select {
     background-color: rgba(250,250,250,0.2);
 }
 
+.sheetSelect + label,
 .health,
 .spellSlot input:checked + .realSpellSlot,
 .expertise:checked + .realExpertise,
@@ -1095,6 +1096,7 @@ textarea,
 
 /* OPACITY */
 
+.sheetSelect,
 .inspCheck,
 .spellSlot input,
 .expertise,
@@ -1113,6 +1115,10 @@ textarea,
 .save {
     margin: 50px 0 0 0;
 }
+
+/* .sheetSelect {
+    margin: 10px 20px;
+} */
 
 #human > div,
 #hybrid > div,
