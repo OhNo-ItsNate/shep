@@ -283,7 +283,8 @@ body,
 .claws,
 .unarmed,
 .offhand,
-.save {
+.save,
+.stats .container div:not(.modifier):not(.realSaveCheck) {
     position: relative;
 }
 
@@ -455,23 +456,8 @@ body,
     left: 50px;
 }
 
-.con .modifier {
-    left: 25px;
-}
-
-.int .modifier {
-    left: 24px;
-}
-
-.menuToggle {
-    left: 23px;
-}
-
-.stg .modifier,
-.dex .modifier,
-.wis .modifier,
-.cha .modifier {
-    left: 18px;
+.stats .container div .modifier {
+    left: 50px;
 }
 
 .realExpertise,
@@ -568,6 +554,10 @@ h4,
 
 .weaponAttacks > div {
     width: 171px;
+}
+
+.stats .container div:not(.modifier):not(.realSaveCheck) {
+    width: 148px;
 }
 
 .masteryDesc {
@@ -1393,7 +1383,7 @@ select {
     }
 
     .modifier {
-        top: 124px;
+        top: 130px;
     }
 
     .masteryDesc {
@@ -1425,13 +1415,8 @@ select {
 
     /* LEFT */
 
-    .stg .modifier,
-    .dex .modifier,
-    .con .modifier,
-    .int .modifier,
-    .wis .modifier,
-    .cha .modifier {
-        left: 42px;
+    .stats .container div .modifier {
+        left: 50px;
     }
 
     /* WIDTH */
@@ -1614,7 +1599,7 @@ select {
     }
 
     .modifier {
-        top: 115px;
+        top: 120px;
     }
 
     .masteryDescToggle {
@@ -1641,28 +1626,8 @@ select {
 
     /* LEFT */
 
-    .stg .modifier {
-        left: 22px;
-    }
-    
-    .dex .modifier {
-        left: 23px;
-    }
-    
-    .con .modifier {
-        left: 39px;
-    }
-    
-    .int .modifier {
-        left: 37px;
-    }
-    
-    .wis .modifier {
-        left: 17px;
-    }
-    
-    .cha .modifier {
-        left: 24px;
+    .stats .container div .modifier {
+        left: 50x;
     }
 
     /* WIDTH */
