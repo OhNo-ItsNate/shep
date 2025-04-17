@@ -1595,7 +1595,7 @@ select {
     /* TOP */
 
     .realOffhand {
-        top: 147px;
+        top: 156px;
     }
 
     .modifier {
@@ -1612,16 +1612,8 @@ select {
         right: 75px;
     }
 
-    .con .saveCheck {
-        right: 37px;
-    }
-
-    .int .saveCheck {
-        right: 36px;
-    }
-
-    .cha .saveCheck {
-        right: 24px;
+    .stats .container div .saveCheck {
+        right: 48px;
     }
 
     /* LEFT */
