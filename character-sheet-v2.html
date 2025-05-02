@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucas Shepard - Dragonlance: Shadow of the Dragon Queen</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="top">
+        <input class="sheetSelect" type="radio" name="form" value="human" checked /><label for="human">Human</label>
+        <div id="human">
+            <div class="characterBasics">
+                <div class="frame">
+                    <div class="frame1">
+                        <div class="frame2">
+                            <img src="img/lucasShepardHuman.png" class="characterImage" alt="Lucas Shepard"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="characterOverview">
+                    <h1>Lucas Shepard</h1>
+                    <p>Accursed - Curse of Lycanthropy <input type="number" value="3" /></p>
+                    <p>Hit Die: <input type="number" value="3" /> d10/level</p>
+                    <p>Human - Level <input type="number" value="3" /></p>
+                </div>
+            </div>
+            <div class="health" id="healthHuman">
+                <p>Health</p><!-- 1/2 hit die + con mod + 1 -->
+                <input type="number" value="28" /><p> / </p><input type="number" value="28" />
+                <p>Temporary HP</p>
+                <input type="number" value="" />
+            </div>            
+            <div class="stats" id="statsHuman">
+                <div class="container">
+                    <div class="stg">
+                        <h2>Strength</h2>
+                        <input type="number" value="16" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="3" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="3" /></div>
+                        </div>
+                    </div>
+                    <div class="dex">
+                        <h2>Dexterity</h2>
+                        <input type="number" value="13" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="1" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="1" /></div>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <h2>Constitution</h2>
+                        <input type="number" value="12" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="1" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="1" /></div>
+                        </div>
+                    </div>
+                    <div class="int">
+                        <h2>Intelligence</h2>
+                        <input type="number" value="10" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="0" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="0" /></div>
+                        </div>
+                    </div>
+                    <div class="wis">
+                        <h2>Wisdom</h2>
+                        <input type="number" value="10" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="0" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" checked /> <div class="realSaveCheck"><input type="number" value="2" /></div>
+                        </div>
+                    </div>
+                    <div class="cha">
+                        <h2>Charisma</h2>
+                        <input type="number" value="14" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="2" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" checked /> <div class="realSaveCheck"><input type="number" value="4" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="init" id="initiativeHuman">
+                <div class="container">
+                    <p>Initiative</p>
+                    <div class="initValue">+<input type="number" class="initNum" value="3" /></div>
+                </div>
+            </div>
+            <div class="insp">
+                <div class="container">
+                    <p>Inspiration</p>
+                    <input type="checkbox" class="inspCheck" checked />
+                    <div class="inspIcon"></div>
+                </div>
+            </div>
+            <div class="miscInfo1">
+                <div class="profBonus">
+                    <p>Proficiency Bonus</p>
+                    <input type="number" value="2" />&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="speed">
+                    <p>Walking Speed</p>
+                    <input type="number" value="30" /> ft
+                </div>
+                <div id="armor">
+                    <p>Armor Class</p>
+                    <input type="number" value="15" />&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="miscInfo2" id="sensesHuman">
+                <div class="senses">
+                    <h2>Senses</h2>
+                    <div class="passPer">
+                        <div><input type="number" value="12" /></div><p>Passive Perception</p>
+                    </div>
+                    <div class="passInv">
+                        <div><input type="number" value="10" /></div><p>Passive Investigation</p>
+                    </div>
+                    <div class="passIns">
+                        <div><input type="number" value="10" /></div><p>Passive Insight</p>
+                    </div>
+                    <div class="darkVis">
+                        <div><input type="number" value="0" /> ft</div><p>Darkvision</p>
+                    </div>
+                    <div class="hidden">
+                    </div>
+                </div>
+                <div class="defCond">
+                    <div class="def">
+                        <h2>Defences</h2>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="cond">
+                        <h2>Conditions</h2>
+                        <textarea rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="profTrain">
+                    <h2>Proficiencies & Training</h2>
+                    <div class="armor">
+                        <p>Armor</p>
+                        <textarea rows="2">Light armor, Medium armor</textarea>
+                    </div>
+                    <div class="weapons">
+                        <p>Weapons</p>
+                        <textarea rows="2">Simple weapons, hand crossbows</textarea>
+                    </div>
+                    <div class="tools">
+                        <p>Tools</p>
+                        <textarea rows="2">Carpenter's Tools</textarea>
+                    </div>
+                    <div class="lang">
+                        <p>Languages</p>
+                        <textarea rows="2">Abanasinian, Common, Draconic, Goblin</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="skills" id="skillsHuman">
+                <h2>Skills</h2>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Acrobatics</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Animal Handling</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Arcana</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>STR Athletics</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="3" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Deception</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT History</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Insight</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Intimidation</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Investigation</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Medicine</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Nature</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Perception</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Performance</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Persuasion</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Religion</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Sleight of Hand</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Stealth</p>
+                    <input type="checkbox" class="disadvantage" checked /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Survival</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+            </div>
+            <div class="actions" id="actionsHuman">
+                <div class="container">
+                    <h2>Actions</h2>
+                    <div class="weaponAttacks">
+                        <div class="handCrossbow">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Hand Crossbow</h4>
+                            <p>30ft (120ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="1" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="handaxe">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Handaxe</h4>
+                            <p>20ft (60ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                 <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="handaxe">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Handaxe</h4>
+                            <p>20ft (60ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" checked />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="bite">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                            <p>5ft Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4" selected>d4</option>
+                                    <option value="d6">d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="claws">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                            <p>5ft Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4" selected>d4</option>
+                                    <option value="d6">d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="unarmed">
+                            <img src="" alt="Unarmed" class="attackIcon" /> 
+                            <p>Unarmed Strike</p>
+                            <p>5ft Reach</p>
+                            <p>+5</p>
+                            <p>3</p>
+                            <img src="" alt="Bludgeoning" class="dmgTypeIcon" />
+                        </div>
+                    </div>
+                    <h4>Actions in Combat</h4>
+                    <p>Attack, Jinx, Hybrid Shift, Dash, Disengage, Dodge, Grapple, Help, Hide, Improvise, Influence, Magic, Ready, Search, Shove, Study, Utilize</p>
+                    <h4>Jinx</h4>
+                    <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                    <ul>
+                        <li>The target has disadvantage on the next ability check it makes.</li>
+                        <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
+                    </ul>
+                    <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                    <h4>Hybrid Shift</h4>
+                    <p>Also starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
+                    <ul>
+                        <li>You can make a natural weapon attack as a bonus action on your turn.</li>
+                        <li>Your lycanthropy constantly reknits your wounds to maintain the form. At the start of each of your turns, you regain a number of hit points equal to half your accursed level. If you take damage from a silvered weapon, this benefit doesn't function at the start of your next turn.</li>
+                    </ul>
+                    <p>Your hybrid form lasts for 1 minute. It ends early if you choose to end it (no action required by you), or if you drop to 0 hit points or die.</p>
+                    <p>Once you use this feature, you must finish a short or long rest before you can use it again. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
+                    <h4>Unarmed Strike</h4>
+                    <p>You make a melee attack that involves using your body to deal one of the following effects:</p>
+                    <p><b><i>Damgage</i> - You make an attack roll against the creature, and on a hit, you deal 1 + STR Bludgeoning damage.</b></p>
+                    <p><b><i>Grapple</i> - </b>The target must succeed on a Strength or Dexterity saving throw (it chooses which), or it has the Grappled condition. The DC for the saving throw and any escape attempts equals 8 plus your Strength modifier and Proficiency Bonus. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it.</p>
+                    <p><b><i>Shove</i></b> -  The target must succeed on a Strength or Dexterity saving throw (it chooses which), or you either push it 5 feet away or cause it to have the Prone condition. The DC for the saving throw equals 8 plus your Strength modifier and Proficiency Bonus. This shove is possible only if the target is no more than one size larger than you.</b></p>
+                    <h3>Bonus Actions</h3>
+                    <p><b><i>Bonus Attack with Natural Weapons</i></b> - Immediately after you take the Attack action on your turn using your natural weapon, you can make an additional natural weapon attack as a bonus action.</p>
+                    <h3>Reactions</h3>
+                    <h3>Other</h3>
+                </div>
+            </div>
+            <div class="spells" id="spellsHuman">
+                <div class="container">
+                    <h2>Spells</h2>
+                <div class="cantrips">
+                    <h3>Cantrips</h3>
+                    <div id="spell1">
+                        <h4>SPELL_2</h4>
+                        <p>RANGE</p>
+                        <p>CAST_TIME</p>
+                        <p>COMPONENTS</p>
+                        <p>DURATION</p>
+                        <p>HIT_DC</p>
+                        <p>EFFECT <input type="number" value="" /> <img src="" alt="" class="dmgTypeIcon" /></p>
+                        <p>NOTES</p>
+                    </div>
+                    <div id="spell2">
+                        <h4>SPELL_2</h4>
+                        <p>RANGE</p>
+                        <p>CAST_TIME</p>
+                        <p>COMPONENTS</p>
+                        <p>DURATION</p>
+                        <p>HIT_DC</p>
+                        <p>EFFECT <input type="number" value="" /> <img src="" alt="" class="dmgTypeIcon" /></p>
+                        <p>NOTES</p>
+                    </div>
+                </div>
+                <div class="lvlSpells">
+                    <h3>1st Level</h3>
+                    <div class="spellSlots">
+                        <div class="spellSlot">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                        <div class="spellSlot">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                        <div class="spellSlot hidden">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                    </div>
+                    <div id="spell1">
+                        <h4>Bane</h4>
+                        <p>Range - 30ft</p>
+                        <p>Casting Time - 1 action</p>
+                        <p>Components - Verbal, Somatic, Material (a drop of blood)</p>
+                        <p>Duration - 1 minute</p>
+                        <p>DC <input type="number" value="12" /></p>
+                        <p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                    </div>
+                    <div id="spell2">
+                        <h4>Longstrider</h4>
+                        <p>Touch</p>
+                        <p>Casting Time - 1 action</p>
+                        <p>Components - Verbal, Somatic, Material (a pinch of dirt)</p>
+                        <p>Duration - 1 hour</p>
+                        <p>None</p>
+                        <p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. </p>
+                    </div>
+                    <div id="spell3">
+                        <h4>Ailment Control</h4>
+                        <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either affliicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
+                        <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
+                        <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="inventory" id="inventoryHuman">
+                <h2>Inventory</h2>
+                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="100" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
+                <h3>Equipment</h3>
+                <div class="scaleMail">
+                    <input type="checkbox" class="equip" /><div class="realEquip"></div>
+                    <p>Scale Mail</p>
+                    <p>Wt:&nbsp; <input type="number" value="45" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>50 Gold</p>
+                    <p>14 AC, Stealth at disadvantage</p>
+                </div>
+                <div class="handCrossbow">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Hand Crossbow</p>
+                    <p>Wt:&nbsp; <input type="number" value="3" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>75 Gold</p>
+                    <p>Martial, Ammunition, Range (30/120), Light, Loading, <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="crossbowBolts">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Crossbow Bolts</p>
+                    <p>Wt:&nbsp; <input type="number" value="1.5" /> lbs</p>
+                    <p>Qty: <input type="number" value="20" /></p>
+                    <p>1 Gold</p>
+                    <p>Damage, Combat</p>
+                </div>
+                <div class="handAxe">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Handaxe</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Gold</p>
+                    <p>Simple, Light, Throw, Range (20/60),  <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="handAxe">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Handaxe</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Gold</p>
+                    <p>Simple, Light, Throw, Range (20/60),  <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="arcaneFocus">
+                    <input type="checkbox" style="display: none;" />
+                    <p>Arcane Focus (Crystal in small stone from Schallsea worn as necklace)</p>
+                    <p>-</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>-</p>
+                    <p>Utility</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Backpack</h3>
+                <div class="bedroll">
+                    <p>Bedroll</p>
+                    <p>Wt:&nbsp; <input type="number" value="7" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>1 Gold</p>
+                    <p>Utility</p>
+                </div>
+                <div class="oil">
+                    <p>Oil</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="2" /></p>
+                    <p>2 Silver</p>
+                    <p>Damage, Utility, Combat</p>
+                </div>
+                <div class="rations">
+                    <p>Rations</p>
+                    <p>Wt:&nbsp; <input type="number" value="20" /> lbs</p>
+                    <p>Qty: <input type="number" value="10" /></p>
+                    <p>5 Gold</p>
+                    <p>Social, Utility, Consumable</p>
+                </div>
+                <div class="rope">
+                    <p>Rope</p>
+                    <p>Wt:&nbsp; <input type="number" value="5" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>1 Gold</p>
+                    <p>-</p>
+                </div>
+                <div class="tinderbox">
+                    <p>Tinderbox</p>
+                    <p>Wt:&nbsp; <input type="number" value="1" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Silver</p>
+                    <p>Utility, Explosion</p>
+                </div>
+                <div class="torch">
+                    <p>Torch</p>
+                    <p>Wt:&nbsp; <input type="number" value="10" /> lbs</p>
+                    <p>Qty: <input type="number" value="10" /></p>
+                    <p>1 Silver</p>
+                    <p>Damage, Utility, Exploration, Combat</p>
+                </div>
+                <div class="waterskin">
+                    <p>Waterskin</p>
+                    <p>Wt:&nbsp; <input type="number" value="5" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>2 Silver</p>
+                    <p>Container</p>
+                </div>
+                <div class="dart">
+                    <p>Dart</p>
+                    <p>Wt:&nbsp; <input type="number" value="0.75" /> lbs</p>
+                    <p>Qty: <input type="number" value="3" /></p>
+                    <p>15 Silver</p>
+                    <p>Damage Combat</p>
+                </div>
+                <div class="travlersClothes">
+                    <p>Travler's Clothes</p>
+                    <p>Wt:&nbsp; <input type="number" value="4" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>2 Gold</p>
+                    <p>Social, Outerwear</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Attunement</h3>
+                <div class="item1">
+                    <input type="checkbox" />
+                    <p>ITEM_1</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <div class="item2">
+                    <input type="checkbox" />
+                    <p>ITEM_2</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Other Possessions</h3>
+                <div class="item1">
+                    <input type="checkbox" />
+                    <p>ITEM_1</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <div class="item2">
+                    <input type="checkbox" />
+                    <p>ITEM_2</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <div class="featTrait" id="featuresTraitsHuman">
+                <h2>Features & Traits</h2>
+                <h3>Class Features</h3>
+                <h4>Conquered Curse - Curse of Lycanthropy</h4>
+                <h4>Lycanthropy Ailments</h4>
+                <p>As a creature afflicted with lycanthropy, you suffer the following ailments:</p>
+                <ul>
+                    <li>You have vulnerability to damage from silvered
+                        weapons.</li>
+                    <li>Due to the enhanced metabolism caused by lycanthropy, you have to consume much more food than a normal creature. At the end of each day that you don't consume at least two pounds of food, you automatically suffer one level of exhaustion.</li>
+                </ul>
+                <h4>Enahnced Senses</h4>
+                <p>At 1st level, you gain proficiency in the Perception skill. Additionally, you have advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+                <h4>Minor Shift</h4>
+                <p>Also starting at 1st level, you learn to control your lycanthropy enough to shift small parts of your body for short periods without giving in to your feral instincts. You count as a shapechanger, in addition to your other types. Your original form is your fully humanoid form for the purpose of the moonbeam spell and similar effects.</p>
+                <p>As you attack, you can shift your teeth into fangs or tusks or your hands into hooves or claws, allowing you to create a natural weapon. You are proficient with your natural weapon, which is a melee weapon that deals 1d4 bludgeoning, piercing, or slashing damage (your choice each time you make an attack with it).</p>
+                <p>Immediately after you take the Attack action on your turn using your natural weapon, you can make an additional natural weapon attack as a bonus action.</p>
+                <p>Your natural weapon's damage increases to 1d6 at 5th level, to 1d8 at 11th level, and to 1d10 at 17th level.</p>
+                <p>Additionally, starting when you reach 6th level in this class, your natural weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+                <h4>Jinx</h4>
+                <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                <ul>
+                    <li>The target has disadvantage on the next ability check it makes.</li>
+                    <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
+                </ul>
+                <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                <h4>Malediction Metamophosis</h4>
+                <p>Starting at 2nd level, your curse begins evolving within you, changed by your manipulation of its purpose. You can guide this mutation to compliment your capabilities, or open new avenues of power for yourself.</p>
+                <p>You gain one malediction metamorphosis of your choice. When you reach certain accursed levels, you gain additional metamorphoses of your choice, as shown in the Malediction Metamorphoses column of the Accursed table.</p>
+                <p><strong><i>Hex Armor</i></strong>: When you're in danger, the magicks of your curse manifest around you like a suit of armor. Your AC can't be less than 13 + your curse ability modifier, regardless of what kind of armor you're wearing.</p>
+                <h4>Spellcasting</h4>
+                <p>At 2nd level, you learn to use your curse's vile magics to fuel the casting of spells. To cast one of these spells, you must expend a spell slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+                <p>Each Conquered Curse has a list of spells &mdash; its curse spells &mdash; that you learn when you reach certain levels in this class. You ignore the material component requirement of a curse spell if it has one.</p>
+                <p>You know the curse spell you gain at 2nd level from your Conquered Curse, and one 1st-level spell of your choice from the accursed spell list, for a total of two spells known.</p>
+                <p>Additionally, when you gain a level in this class, you can choose one of the accursed spells you know &mdash; which can be one of your curse spells &mdash; and replace it with another spell from the accursed spell list, which must also be of a level for which you have spell slots.</p>
+                <ul>
+                    <li>Spell save DC = 8 + proficiency bonus + charisma modifier</li>
+                    <li>Spell attack modifier = proficiency bonus + charisma modifier</li>
+                </ul>
+                <p><strong><i>Arcane Focus</i></strong>: A stone from Lucas' homeland he took with him just before he getting on the boat to leave. By chance, that stone contained a crystal that he could use as an arcane focus. Opted to have it crafted into a necklace he could wear to keep close to his heart.</p>
+                <h5>Accursed Spells</h5>
+                <p><strong><i>Bane</i></strong>: Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                <h5>Lycanthropy Curse Spells</h5>
+                <p><strong><i>Longstrider</i></strong>: You touch a creature. The target's speed increases by 10 feet until the spell ends. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                <h4>Ailment Control</h4>
+                <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either afflicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
+                <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an affliction creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
+                <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                <h4>Jealous Blight</h4>
+                <p>At 3rd level, your curse begins possessively guarding you from others of its ilk, refusing to share its host. When you touch or attune to a cursed object other than curse doesn't affect you.</p>
+                <p>Once you reach 7th level in this class, your curse protects you from a wider range of effects. You are immune to curse effects other than your curse, such as the <em>hex</em> and <em>bestow curse</em> spells, and your hit point maximum and ability scores can't be reduced against your will.</p>
+                <p>Once you reach 14th level in this class! a magical effect other than your curse can't age you, possess you, put you to sleep! or transform you against your will</p>
+                <p>Once you reach 20th level in this class, a magical effect other than your curse can't impose disadvantage on any roll you make</p>
+                <h4>Hybrid Shift</h4>
+                <p>Also starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
+                <ul>
+                    <li>You can make a natural weapon attack as a bonus action on your turn.</li>
+                    <li>Your lycanthropy constantly reknits your wounds to maintain the form. At the start of each of your turns, you regain a number of hit points equal to half your accursed level. If you take damage from a silvered weapon, this benefit doesn't function at the start of your next turn.</li>
+                </ul>
+                <p>Your hybrid form lasts for 1 minute. It ends early if you choose to end it (no action required by you), or if you drop to 0 hit points or die.</p>
+                <p>Once you use this feature, you must finish a short or long rest before you can use it again. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
+                <h3>Species Traits</h3>
+                <h4>Creature Type</h4>
+                <p>Humanoid</p>
+                <h4>Size</h4>
+                <p>Medium</p>
+                <h4>Speed</h4>
+                <p>30 feet</p>
+                <h4>Resourceful</h4>
+                <p>Gain heroic inspiration after finishing a long rest</p>
+                <h4>Skillful</h4>
+                <p>Gained proficiency in persuasion.</p>
+                <p></p>
+                <h4>Versatile</h4>
+                <p>Gained "Alert" feat</p>
+                <h4>Languages (asides from Common)</h4>
+                <p>Abanasinian, Draconic, Goblin</p>
+                <h3>Feats</h3>
+                <h4>Alert</h4>
+                <p><b><i>Initiative Proficiency</i>.</b> When you roll Initiative, you can add your Proficiency Bonus to the roll.</p>
+                <p><b><i>Initiative Swap</i>.</b> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</p>
+                <h4>Savage Attacker</h4>
+                <p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
+            </div>
+            <div class="details" id="detailsHuman">
+                <h2>Details</h2>
+                <h3>Appearance</h3>
+                <p><strong>Species</strong>: Human</p>
+                <p><strong>Age</strong>: 23 years old</p>
+                <p><strong>Gender</strong>: Male</p>
+                <p><strong>Eye Color</strong>: Green</p>
+                <p><strong>Hair Color</strong>: Black</p>
+                <p><strong>Skin Tone</strong>: Tanned (farmer's tan, fair complexion otherwise)</p>
+                <p><strong>Height</strong>: 5ft 8in</p>
+                <p><strong>Weight</strong>: 165lbs</p>
+                <h3>Background</h3>
+                <p>Born and raised in the port city of Qué-Theh on the isle of Schallsea, Lucas, born , was accustomed to a peaceful quiet life. This stands in stark contrast to his ancestors. Before their relocation to Schallsea, the Qué-Nal, Lucas' people, where a nomadic race warriors from the plains of Abanasinia. It was during this time that a Qué-Nal legend sprung up regarding one of his ancestors. There are variations on the details of the story. In one version he startled Chislev while she was in the guise of a horse, and in some versions of this he tried to catch and tame her. In other versions he was enamored with Chislev and tried to make her his bride. They all share one detail in common: this ancestor was cursed to be a werewolf by Chislev. Some tellers claim those of his descendants born under the red wolf moon while it shares the sky with the planet Chislev carry the curse, and that they too are werewolves. Of course, this was long before the other tribes defeated the Qué-Nal, and they were forced to leave and settle in Schallsea.</p>
+                <p>While there are some tall tales about sporadic distant relatives, Lucas' family never put much stock in them or the legend they stem from. Growing up, Lucas was like any of the other boys in his village. He quarreled with siblings, roughhoused, hunted, fished, and helped his father with whatever needed doing. It was during an argument with one of his siblings that the first signs began to show that there was truth to the old stories. As his mother was coming over to breakup the escalating argument and make peace, she saw Lucas's eyes flash a pale yellow, with the white's of the eye disappearing.</p>
+                <p>As he got older, these incidents became more common for a period of time. Eyes would change yellow, his teeth would become fangs, he would grow claws. As rumors swirled in the village, Lucas was allowed out less and less. In time, Lucas began to show some ability to control these changes, enabling some since of normalcy; he at least could help his father or neighbors. However, he was not allowed to roughhouse or learn to fight to help defend his village. This left him crestfallen; all he could do was watch the other young men of his village as they learned. Sometimes, while alone late at night, Lucas would try to practice what he saw the others learning.</p>
+                <p>It was on a rather calm, beautiful day that his Schallsea was invaded by the Blue Dragon Army. Living in a port city, Lucas' village was among the first hit. He and others not trained or able to fight were forced to leave while others ensured they could make an escape. Lucas knew he needed to help defend his island and retake his home; he needed to learn to fight and rid himself of this curse. Before slipping away in a small boat, he picked up a small stone to carry a piece of his home and remind himself why he's away.</p>
+                <p>Leaving his once serene home to save it -- and his family's future -- was the hardest thing he's ever had to do. As he travels abroad, he adopted the name Lucas Shepard in an attempt to obscure his Qué-Nal identity to avoid any lingering animosity that may still exist from any other Abanasinian Plainsmen he may encounter on his quest.</p>
+                <h4>Soldier</h4>
+                <p>You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.</p>
+                <p>Gained proficiencies in athletics and deception.</p>
+                <p>Gained darts tool proficiency.</p>
+                <p>Gained savage attacker feat.</p>
+                <p>Boosted strength by 1 and constituion by 2.</p>
+                <h3>Backstory</h3>
+                <h3>Alignment</h3>
+                <p>Neutral Good</p>
+                <h3>Allies</h3>
+                <ul>
+                    <li>Good-aligned lycanthropes</li>
+                    <li>Those who give him a chance despite knowing he's a lycanthrope</li>
+                    <li>Isbern Greenshield</li>
+                </ul>
+                <h3>Enemies</h3>
+                <ul>
+                    <li>People who indescriminately hate lycanthropes</li>
+                    <li>Evil-aligned lycanthropes</li>
+                    <li>Blue Dragon Army</li>
+                </ul>
+                <h3>Quick Addition</h3>
+                <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <input type="checkbox" class="menuToggle" />
+            <div class="realMenuToggle">JUMP</div>
+            <div class="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#initiativeHuman">Initiative</a></li>
+                        <li><a href="#healthHuman">Health</a></li>
+                        <li><a href="#statsHuman">Stats</a></li>
+                        <li><a href="#sensesHuman">Senses</a></li>
+                        <li><a href="#skillsHuman">Skills</a></li>
+                        <li><a href="#actionsHuman">Actions</a></li>
+                        <li><a href="#spellsHuman">Spells</a></li>
+                        <li><a href="#inventoryHuman">Inventory</a></li>
+                        <li><a href="#featuresTraitsHuman">Features & Traits</a></li>
+                        <li><a href="#detailsHuman">Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <input class="sheetSelect" type="radio" name="form" value="hybrid" /><label for="hybrid">Hybrid</label>
+        <div id="hybrid">
+            <div class="characterBasics">
+                <div class="frame">
+                    <div class="frame1">
+                        <div class="frame2">
+                            <img src="img/lucasShepardWerewolf.png" class="characterImage" alt="Lucas Shepard"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="characterOverview">
+                    <h1>Lucas Shepard</h1>
+                    <p>Accursed - Curse of Lycanthropy <input type="number" value="2" /></p>
+                    <p>Hit Die: <input type="number" value="2" /> d10/level</p>
+                    <p>Human - Level <input type="number" value="2" /></p>
+                </div>
+            </div>
+            <div class="health" id="healthHuman">
+                <p>Health</p><!-- 1/2 hit die + con mod + 1 -->
+                <input type="number" value="20" /><p> / </p><input type="number" value="20" />
+                <p>Temporary HP</p>
+                <input type="number" value="" />
+            </div>            
+            <div class="stats" id="statsHuman">
+                <div class="container">
+                    <div class="stg">
+                        <h2>Strength</h2>
+                        <input type="number" value="16" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="3" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="3" /></div>
+                        </div>
+                    </div>
+                    <div class="dex">
+                        <h2>Dexterity</h2>
+                        <input type="number" value="13" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="1" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="1" /></div>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <h2>Constitution</h2>
+                        <input type="number" value="12" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="1" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="1" /></div>
+                        </div>
+                    </div>
+                    <div class="int">
+                        <h2>Intelligence</h2>
+                        <input type="number" value="10" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="0" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="0" /></div>
+                        </div>
+                    </div>
+                    <div class="wis">
+                        <h2>Wisdom</h2>
+                        <input type="number" value="10" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="0" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" checked /> <div class="realSaveCheck"><input type="number" value="2" /></div>
+                        </div>
+                    </div>
+                    <div class="cha">
+                        <h2>Charisma</h2>
+                        <input type="number" value="14" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="2" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" checked /> <div class="realSaveCheck"><input type="number" value="4" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="init" id="initiativeHuman">
+                <div class="container">
+                    <p>Initiative</p>
+                    <div class="initValue">+<input type="number" class="initNum" value="3" /></div>
+                </div>
+            </div>
+            <div class="insp">
+                <div class="container">
+                    <p>Inspiration</p>
+                    <input type="checkbox" class="inspCheck" checked />
+                    <div class="inspIcon"></div>
+                </div>
+            </div>
+            <div class="miscInfo1">
+                <div class="profBonus">
+                    <p>Proficiency Bonus</p>
+                    <input type="number" value="2" />&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="speed">
+                    <p>Walking Speed</p>
+                    <input type="number" value="30" /> ft
+                </div>
+                <div id="armor">
+                    <p>Armor Class</p>
+                    <input type="number" value="15" />&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="miscInfo2" id="sensesHuman">
+                <div class="senses">
+                    <h2>Senses</h2>
+                    <div class="passPer">
+                        <div><input type="number" value="12" /></div><p>Passive Perception</p>
+                    </div>
+                    <div class="passInv">
+                        <div><input type="number" value="10" /></div><p>Passive Investigation</p>
+                    </div>
+                    <div class="passIns">
+                        <div><input type="number" value="10" /></div><p>Passive Insight</p>
+                    </div>
+                    <div class="darkVis">
+                        <div><input type="number" value="0" /> ft</div><p>Darkvision</p>
+                    </div>
+                    <div class="hidden">
+                    </div>
+                </div>
+                <div class="defCond">
+                    <div class="def">
+                        <h2>Defences</h2>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="cond">
+                        <h2>Conditions</h2>
+                        <textarea rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="profTrain">
+                    <h2>Proficiencies & Training</h2>
+                    <div class="armor">
+                        <p>Armor</p>
+                        <textarea rows="2">Light armor, Medium armor</textarea>
+                    </div>
+                    <div class="weapons">
+                        <p>Weapons</p>
+                        <textarea rows="2">Simple weapons, hand crossbows</textarea>
+                    </div>
+                    <div class="tools">
+                        <p>Tools</p>
+                        <textarea rows="2">Carpenter's Tools</textarea>
+                    </div>
+                    <div class="lang">
+                        <p>Languages</p>
+                        <textarea rows="2">Abanasinian, Common, Draconic, Goblin</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="skills" id="skillsHuman">
+                <h2>Skills</h2>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Acrobatics</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Animal Handling</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Arcana</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>STR Athletics</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="3" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Deception</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT History</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Insight</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Intimidation</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Investigation</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Medicine</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Nature</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Perception</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Performance</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Persuasion</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Religion</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Sleight of Hand</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Stealth</p>
+                    <input type="checkbox" class="disadvantage" checked /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Survival</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+            </div>
+            <div class="actions" id="actionsHuman">
+                <div class="container">
+                    <h2>Actions</h2>
+                    <div class="weaponAttacks">
+                        <div class="handCrossbow">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Hand Crossbow</h4>
+                            <p>30ft (120ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="1" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="handaxe">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Handaxe</h4>
+                            <p>20ft (60ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                 <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="handaxe">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Handaxe</h4>
+                            <p>20ft (60ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" checked />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="bite">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                            <p>5ft Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4" selected>d4</option>
+                                    <option value="d6">d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="claws">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                            <p>5ft Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4" selected>d4</option>
+                                    <option value="d6">d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="unarmed">
+                            <img src="" alt="Unarmed" class="attackIcon" /> 
+                            <p>Unarmed Strike</p>
+                            <p>5ft Reach</p>
+                            <p>+5</p>
+                            <p>3</p>
+                            <img src="" alt="Bludgeoning" class="dmgTypeIcon" />
+                        </div>
+                    </div>
+                    <h4>Actions in Combat</h4>
+                    <p>Attack, Jinx, Hybrid Shift, Dash, Disengage, Dodge, Grapple, Help, Hide, Improvise, Influence, Magic, Ready, Search, Shove, Study, Utilize</p>
+                    <h4>Jinx</h4>
+                    <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                    <ul>
+                        <li>The target has disadvantage on the next ability check it makes.</li>
+                        <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
+                    </ul>
+                    <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                    <h4>Hybrid Shift</h4>
+                    <p>Also starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
+                    <ul>
+                        <li>You can make a natural weapon attack as a bonus action on your turn.</li>
+                        <li>Your lycanthropy constantly reknits your wounds to maintain the form. At the start of each of your turns, you regain a number of hit points equal to half your accursed level. If you take damage from a silvered weapon, this benefit doesn't function at the start of your next turn.</li>
+                    </ul>
+                    <p>Your hybrid form lasts for 1 minute. It ends early if you choose to end it (no action required by you), or if you drop to 0 hit points or die.</p>
+                    <p>Once you use this feature, you must finish a short or long rest before you can use it again. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
+                    <h4>Unarmed Strike</h4>
+                    <p>You make a melee attack that involves using your body to deal one of the following effects:</p>
+                    <p><b><i>Damgage</i> - You make an attack roll against the creature, and on a hit, you deal 1 + STR Bludgeoning damage.</b></p>
+                    <p><b><i>Grapple</i> - </b>The target must succeed on a Strength or Dexterity saving throw (it chooses which), or it has the Grappled condition. The DC for the saving throw and any escape attempts equals 8 plus your Strength modifier and Proficiency Bonus. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it.</p>
+                    <p><b><i>Shove</i></b> -  The target must succeed on a Strength or Dexterity saving throw (it chooses which), or you either push it 5 feet away or cause it to have the Prone condition. The DC for the saving throw equals 8 plus your Strength modifier and Proficiency Bonus. This shove is possible only if the target is no more than one size larger than you.</b></p>
+                    <h3>Bonus Actions</h3>
+                    <p><b><i>Bonus Attack with Natural Weapons</i></b> - Immediately after you take the Attack action on your turn using your natural weapon, you can make an additional natural weapon attack as a bonus action.</p>
+                    <h3>Reactions</h3>
+                    <h3>Other</h3>
+                </div>
+            </div>
+            <div class="spells" id="spellsHuman">
+                <div class="container">
+                    <h2>Spells</h2>
+                <div class="cantrips">
+                    <h3>Cantrips</h3>
+                    <div id="spell1">
+                        <h4>SPELL_2</h4>
+                        <p>RANGE</p>
+                        <p>CAST_TIME</p>
+                        <p>COMPONENTS</p>
+                        <p>DURATION</p>
+                        <p>HIT_DC</p>
+                        <p>EFFECT <input type="number" value="" /> <img src="" alt="" class="dmgTypeIcon" /></p>
+                        <p>NOTES</p>
+                    </div>
+                    <div id="spell2">
+                        <h4>SPELL_2</h4>
+                        <p>RANGE</p>
+                        <p>CAST_TIME</p>
+                        <p>COMPONENTS</p>
+                        <p>DURATION</p>
+                        <p>HIT_DC</p>
+                        <p>EFFECT <input type="number" value="" /> <img src="" alt="" class="dmgTypeIcon" /></p>
+                        <p>NOTES</p>
+                    </div>
+                </div>
+                <div class="lvlSpells">
+                    <h3>1st Level</h3>
+                    <div class="spellSlots">
+                        <div class="spellSlot">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                        <div class="spellSlot">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                        <div class="spellSlot hidden">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                    </div>
+                    <div id="spell1">
+                        <h4>Bane</h4>
+                        <p>Range - 30ft</p>
+                        <p>Casting Time - 1 action</p>
+                        <p>Components - Verbal, Somatic, Material (a drop of blood)</p>
+                        <p>Duration - 1 minute</p>
+                        <p>DC <input type="number" value="12" /></p>
+                        <p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                    </div>
+                    <div id="spell2">
+                        <h4>Longstrider</h4>
+                        <p>Touch</p>
+                        <p>Casting Time - 1 action</p>
+                        <p>Components - Verbal, Somatic, Material (a pinch of dirt)</p>
+                        <p>Duration - 1 hour</p>
+                        <p>None</p>
+                        <p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. </p>
+                    </div>
+                    <div id="spell3">
+                        <h4>Ailment Control</h4>
+                        <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either afflicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
+                        <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
+                        <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="inventory" id="inventoryHuman">
+                <h2>Inventory</h2>
+                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="100" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
+                <h3>Equipment</h3>
+                <div class="scaleMail">
+                    <input type="checkbox" class="equip" /><div class="realEquip"></div>
+                    <p>Scale Mail</p>
+                    <p>Wt:&nbsp; <input type="number" value="45" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>50 Gold</p>
+                    <p>14 AC, Stealth at disadvantage</p>
+                </div>
+                <div class="handCrossbow">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Hand Crossbow</p>
+                    <p>Wt:&nbsp; <input type="number" value="3" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>75 Gold</p>
+                    <p>Martial, Ammunition, Range (30/120), Light, Loading, <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="crossbowBolts">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Crossbow Bolts</p>
+                    <p>Wt:&nbsp; <input type="number" value="1.5" /> lbs</p>
+                    <p>Qty: <input type="number" value="20" /></p>
+                    <p>1 Gold</p>
+                    <p>Damage, Combat</p>
+                </div>
+                <div class="handAxe">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Handaxe</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Gold</p>
+                    <p>Simple, Light, Throw, Range (20/60),  <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="handAxe">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Handaxe</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Gold</p>
+                    <p>Simple, Light, Throw, Range (20/60),  <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="arcaneFocus">
+                    <input type="checkbox" style="display: none;" />
+                    <p>Arcane Focus (Crystal in small stone from Schallsea worn as necklace)</p>
+                    <p>-</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>-</p>
+                    <p>Utility</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Backpack</h3>
+                <div class="bedroll">
+                    <p>Bedroll</p>
+                    <p>Wt:&nbsp; <input type="number" value="7" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>1 Gold</p>
+                    <p>Utility</p>
+                </div>
+                <div class="oil">
+                    <p>Oil</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="2" /></p>
+                    <p>2 Silver</p>
+                    <p>Damage, Utility, Combat</p>
+                </div>
+                <div class="rations">
+                    <p>Rations</p>
+                    <p>Wt:&nbsp; <input type="number" value="20" /> lbs</p>
+                    <p>Qty: <input type="number" value="10" /></p>
+                    <p>5 Gold</p>
+                    <p>Social, Utility, Consumable</p>
+                </div>
+                <div class="rope">
+                    <p>Rope</p>
+                    <p>Wt:&nbsp; <input type="number" value="5" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>1 Gold</p>
+                    <p>-</p>
+                </div>
+                <div class="tinderbox">
+                    <p>Tinderbox</p>
+                    <p>Wt:&nbsp; <input type="number" value="1" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Silver</p>
+                    <p>Utility, Explosion</p>
+                </div>
+                <div class="torch">
+                    <p>Torch</p>
+                    <p>Wt:&nbsp; <input type="number" value="10" /> lbs</p>
+                    <p>Qty: <input type="number" value="10" /></p>
+                    <p>1 Silver</p>
+                    <p>Damage, Utility, Exploration, Combat</p>
+                </div>
+                <div class="waterskin">
+                    <p>Waterskin</p>
+                    <p>Wt:&nbsp; <input type="number" value="5" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>2 Silver</p>
+                    <p>Container</p>
+                </div>
+                <div class="dart">
+                    <p>Dart</p>
+                    <p>Wt:&nbsp; <input type="number" value="0.75" /> lbs</p>
+                    <p>Qty: <input type="number" value="3" /></p>
+                    <p>15 Silver</p>
+                    <p>Damage Combat</p>
+                </div>
+                <div class="travlersClothes">
+                    <p>Travler's Clothes</p>
+                    <p>Wt:&nbsp; <input type="number" value="4" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>2 Gold</p>
+                    <p>Social, Outerwear</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Attunement</h3>
+                <div class="item1">
+                    <input type="checkbox" />
+                    <p>ITEM_1</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <div class="item2">
+                    <input type="checkbox" />
+                    <p>ITEM_2</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Other Possessions</h3>
+                <div class="item1">
+                    <input type="checkbox" />
+                    <p>ITEM_1</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <div class="item2">
+                    <input type="checkbox" />
+                    <p>ITEM_2</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <div class="featTrait" id="featuresTraitsHuman">
+                <h2>Features & Traits</h2>
+                <h3>Class Features</h3>
+                <h4>Conquered Curse - Curse of Lycanthropy</h4>
+                <h4>Lycanthropy Ailments</h4>
+                <p>As a creature afflicted with lycanthropy, you suffer the following ailments:</p>
+                <ul>
+                    <li>You have vulnerability to damage from silvered
+                        weapons.</li>
+                    <li>Due to the enhanced metabolism caused by lycanthropy, you have to consume much more food than a normal creature. At the end of each day that you don't consume at least two pounds of food, you automatically suffer one level of exhaustion.</li>
+                </ul>
+                <h4>Enahnced Senses</h4>
+                <p>At 1st level, you gain proficiency in the Perception skill. Additionally, you have advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+                <h4>Minor Shift</h4>
+                <p>Also starting at 1st level, you learn to control your lycanthropy enough to shift small parts of your body for short periods without giving in to your feral instincts. You count as a shapechanger, in addition to your other types. Your original form is your fully humanoid form for the purpose of the moonbeam spell and similar effects.</p>
+                <p>As you attack, you can shift your teeth into fangs or tusks or your hands into hooves or claws, allowing you to create a natural weapon. You are proficient with your natural weapon, which is a melee weapon that deals 1d4 bludgeoning, piercing, or slashing damage (your choice each time you make an attack with it).</p>
+                <p>Immediately after you take the Attack action on your turn using your natural weapon, you can make an additional natural weapon attack as a bonus action.</p>
+                <p>Your natural weapon's damage increases to 1d6 at 5th level, to 1d8 at 11th level, and to 1d10 at 17th level.</p>
+                <p>Additionally, starting when you reach 6th level in this class, your natural weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+                <h4>Jinx</h4>
+                <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                <ul>
+                    <li>The target has disadvantage on the next ability heck it makes.</li>
+                    <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
+                </ul>
+                <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                <h4>Malediction Metamophosis</h4>
+                <p>Starting at 2nd level, your curse begins evolving within you, changed by your manipulation of its purpose. You can guide this mutation to compliment your capabilities, or open new avenues of power for yourself.</p>
+                <p>You gain one malediction metamorphosis of your choice. When you reach certain accursed levels, you gain additional metamorphoses of your choice, as shown in the Malediction Metamorphoses column of the Accursed table.</p>
+                <p><strong><i>Hex Armor</i></strong>: When you're in danger, the magicks of your curse manifest around you like a suit of armor. Your AC can't be less than 13 + your curse ability modifier, regardless of what kind of armor you're wearing.</p>
+                <h4>Spellcasting</h4>
+                <p>At 2nd level, you learn to use your curse's vile magics to fuel the casting of spells. To cast one of these spells, you must expend a spell slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+                <p>Each Conquered Curse has a list of spells &mdash; its curse spells &mdash; that you learn when you reach certain levels in this class. You ignore the material component requirement of a curse spell if it has one.</p>
+                <p>You know the curse spell you gain at 2nd level from your Conquered Curse, and one 1st-level spell of your choice from the accursed spell list, for a total of two spells known.</p>
+                <p>Additionally, when you gain a level in this class, you can choose one of the accursed spells you know &mdash; which can be one of your curse spells &mdash; and replace it with another spell from the accursed spell list, which must also be of a level for which you have spell slots.</p>
+                <ul>
+                    <li>Spell save DC = 8 + proficiency bonus + charisma modifier</li>
+                    <li>Spell attack modifier = proficiency bonus + charisma modifier</li>
+                </ul>
+                <p><strong><i>Arcane Focus</i></strong>: A stone from Lucas' homeland he took with him just before he getting on the boat to leave. By chance, that stone contained a crystal that he could use as an arcane focus. Opted to have it crafted into a necklace he could wear to keep close to his heart.</p>
+                <h5>Accursed Speels</h5>
+                <p><strong><i>Bane</i></strong>: Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                <h5>Lycanthropy Curse Spells</h5>
+                <p><strong><i>Longstrider</i></strong>: You touch a creature. The target's speed increases by 10 feet until the spell ends. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                <h4>Ailment Control</h4>
+                <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either afflicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
+                <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
+                <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                <h3>Species Traits</h3>
+                <h4>Creature Type</h4>
+                <p>Humanoid</p>
+                <h4>Size</h4>
+                <p>Medium</p>
+                <h4>Speed</h4>
+                <p>30 feet</p>
+                <h4>Resourceful</h4>
+                <p>Gain heroic inspiration after finishing a long rest</p>
+                <h4>Skillful</h4>
+                <p>Gained proficiency in persuasion.</p>
+                <p></p>
+                <h4>Versatile</h4>
+                <p>Gained "Alert" feat</p>
+                <h4>Languages (asides from Common)</h4>
+                <p>Abanasinian, Draconic, Goblin</p>
+                <h3>Feats</h3>
+                <h4>Alert</h4>
+                <p><b><i>Initiative Proficiency</i>.</b> When you roll Initiative, you can add your Proficiency Bonus to the roll.</p>
+                <p><b><i>Initiative Swap</i>.</b> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</p>
+                <h4>Savage Attacker</h4>
+                <p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
+            </div>
+            <div class="details" id="detailsHuman">
+                <h2>Details</h2>
+                <h3>Appearance</h3>
+                <p><strong>Species</strong>: Human</p>
+                <p><strong>Age</strong>: 23 years old</p>
+                <p><strong>Gender</strong>: Male</p>
+                <p><strong>Eye Color</strong>: Green</p>
+                <p><strong>Hair Color</strong>: Black</p>
+                <p><strong>Skin Tone</strong>: Tanned (farmer's tan, fair complexion otherwise)</p>
+                <p><strong>Height</strong>: 5ft 8in</p>
+                <p><strong>Weight</strong>: 165lbs</p>
+                <h3>Background</h3>
+                <p>Born and raised in the port city of Qué-Theh on the isle of Schallsea, Lucas, born , was accustomed to a peaceful quiet life. This stands in stark contrast to his ancestors. Before their relocation to Schallsea, the Qué-Nal, Lucas' people, where a nomadic race warriors from the plains of Abanasinia. It was during this time that a Qué-Nal legend sprung up regarding one of his ancestors. There are variations on the details of the story. In one version he startled Chislev while she was in the guise of a horse, and in some versions of this he tried to catch and tame her. In other versions he was enamored with Chislev and tried to make her his bride. They all share one detail in common: this ancestor was cursed to be a werewolf by Chislev. Some tellers claim those of his descendants born under the red wolf moon while it shares the sky with the planet Chislev carry the curse, and that they too are werewolves. Of course, this was long before the other tribes defeated the Qué-Nal, and they were forced to leave and settle in Schallsea.</p>
+                <p>While there are some tall tales about sporadic distant relatives, Lucas' family never put much stock in them or the legend they stem from. Growing up, Lucas was like any of the other boys in his village. He quarreled with siblings, roughhoused, hunted, fished, and helped his father with whatever needed doing. It was during an argument with one of his siblings that the first signs began to show that there was truth to the old stories. As his mother was coming over to breakup the escalating argument and make peace, she saw Lucas's eyes flash a pale yellow, with the white's of the eye disappearing.</p>
+                <p>As he got older, these incidents became more common for a period of time. Eyes would change yellow, his teeth would become fangs, he would grow claws. As rumors swirled in the village, Lucas was allowed out less and less. In time, Lucas began to show some ability to control these changes, enabling some since of normalcy; he at least could help his father or neighbors. However, he was not allowed to roughhouse or learn to fight to help defend his village. This left him crestfallen; all he could do was watch the other young men of his village as they learned. Sometimes, while alone late at night, Lucas would try to practice what he saw the others learning.</p>
+                <p>It was on a rather calm, beautiful day that his Schallsea was invaded by the Blue Dragon Army. Living in a port city, Lucas' village was among the first hit. He and others not trained or able to fight were forced to leave while others ensured they could make an escape. Lucas knew he needed to help defend his island and retake his home; he needed to learn to fight and rid himself of this curse. Before slipping away in a small boat, he picked up a small stone to carry a piece of his home and remind himself why he's away.</p>
+                <p>Leaving his once serene home to save it -- and his family's future -- was the hardest thing he's ever had to do. As he travels abroad, he adopted the name Lucas Shepard in an attempt to obscure his Qué-Nal identity to avoid any lingering animosity that may still exist from any other Abanasinian Plainsmen he may encounter on his quest.</p>
+                <h4>Soldier</h4>
+                <p>You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.</p>
+                <p>Gained proficiencies in athletics and deception.</p>
+                <p>Gained darts tool proficiency.</p>
+                <p>Gained savage attacker feat.</p>
+                <p>Boosted strength by 1 and constituion by 2.</p>
+                <h3>Backstory</h3>
+                <h3>Alignment</h3>
+                <p>Neutral Good</p>
+                <h3>Allies</h3>
+                <ul>
+                    <li>Good-aligned lycanthropes</li>
+                    <li>Those who give him a chance despite knowing he's a lycanthrope</li>
+                    <li>Isbern Greenshield</li>
+                </ul>
+                <h3>Enemies</h3>
+                <ul>
+                    <li>People who indescriminately hate lycanthropes</li>
+                    <li>Evil-aligned lycanthropes</li>
+                    <li>Blue Dragon Army</li>
+                </ul>
+                <h3>Quick Addition</h3>
+                <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <input type="checkbox" class="menuToggle" />
+            <div class="realMenuToggle">JUMP</div>
+            <div class="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#initiativeHuman">Initiative</a></li>
+                        <li><a href="#healthHuman">Health</a></li>
+                        <li><a href="#statsHuman">Stats</a></li>
+                        <li><a href="#sensesHuman">Senses</a></li>
+                        <li><a href="#skillsHuman">Skills</a></li>
+                        <li><a href="#actionsHuman">Actions</a></li>
+                        <li><a href="#spellsHuman">Spells</a></li>
+                        <li><a href="#inventoryHuman">Inventory</a></li>
+                        <li><a href="#featuresTraitsHuman">Features & Traits</a></li>
+                        <li><a href="#detailsHuman">Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <input class="sheetSelect" type="radio" name="form" value="werewolf" /><label for="werewolf">Werewolf</label>
+        <div id="werewolf">
+            <div class="characterBasics">
+                <div class="frame">
+                    <div class="frame1">
+                        <div class="frame2">
+                            <img src="img/lucasShepardWerewolf.png" class="characterImage" alt="Lucas Shepard"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="characterOverview">
+                    <h1>Lucas Shepard</h1>
+                    <p>Accursed - Curse of Lycanthropy <input type="number" value="2" /></p>
+                    <p>Hit Die: <input type="number" value="2" /> d10/level</p>
+                    <p>Human - Level <input type="number" value="2" /></p>
+                </div>
+            </div>
+            <div class="health" id="healthHuman">
+                <p>Health</p><!-- 1/2 hit die + con mod + 1 -->
+                <input type="number" value="20" /><p> / </p><input type="number" value="20" />
+                <p>Temporary HP</p>
+                <input type="number" value="" />
+            </div>            
+            <div class="stats" id="statsHuman">
+                <div class="container">
+                    <div class="stg">
+                        <h2>Strength</h2>
+                        <input type="number" value="16" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="3" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="3" /></div>
+                        </div>
+                    </div>
+                    <div class="dex">
+                        <h2>Dexterity</h2>
+                        <input type="number" value="13" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="1" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="1" /></div>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <h2>Constitution</h2>
+                        <input type="number" value="12" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="1" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="1" /></div>
+                        </div>
+                    </div>
+                    <div class="int">
+                        <h2>Intelligence</h2>
+                        <input type="number" value="10" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="0" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" /> <div class="realSaveCheck"><input type="number" value="0" /></div>
+                        </div>
+                    </div>
+                    <div class="wis">
+                        <h2>Wisdom</h2>
+                        <input type="number" value="10" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="0" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" checked /> <div class="realSaveCheck"><input type="number" value="2" /></div>
+                        </div>
+                    </div>
+                    <div class="cha">
+                        <h2>Charisma</h2>
+                        <input type="number" value="14" class="abilityScore" />
+                        <div class="modifier">+<input type="number" value="2" /></div>
+                        <div class="save">
+                            <h3>Save</h3>
+                            <input type="checkbox" class="saveCheck" checked /> <div class="realSaveCheck"><input type="number" value="4" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="init" id="initiativeHuman">
+                <div class="container">
+                    <p>Initiative</p>
+                    <div class="initValue">+<input type="number" class="initNum" value="3" /></div>
+                </div>
+            </div>
+            <div class="insp">
+                <div class="container">
+                    <p>Inspiration</p>
+                    <input type="checkbox" class="inspCheck" checked />
+                    <div class="inspIcon"></div>
+                </div>
+            </div>
+            <div class="miscInfo1">
+                <div class="profBonus">
+                    <p>Proficiency Bonus</p>
+                    <input type="number" value="2" />&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="speed">
+                    <p>Walking Speed</p>
+                    <input type="number" value="30" /> ft
+                </div>
+                <div id="armor">
+                    <p>Armor Class</p>
+                    <input type="number" value="15" />&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="miscInfo2" id="sensesHuman">
+                <div class="senses">
+                    <h2>Senses</h2>
+                    <div class="passPer">
+                        <div><input type="number" value="12" /></div><p>Passive Perception</p>
+                    </div>
+                    <div class="passInv">
+                        <div><input type="number" value="10" /></div><p>Passive Investigation</p>
+                    </div>
+                    <div class="passIns">
+                        <div><input type="number" value="10" /></div><p>Passive Insight</p>
+                    </div>
+                    <div class="darkVis">
+                        <div><input type="number" value="0" /> ft</div><p>Darkvision</p>
+                    </div>
+                    <div class="hidden">
+                    </div>
+                </div>
+                <div class="defCond">
+                    <div class="def">
+                        <h2>Defences</h2>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <div class="cond">
+                        <h2>Conditions</h2>
+                        <textarea rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="profTrain">
+                    <h2>Proficiencies & Training</h2>
+                    <div class="armor">
+                        <p>Armor</p>
+                        <textarea rows="2">Light armor, Medium armor</textarea>
+                    </div>
+                    <div class="weapons">
+                        <p>Weapons</p>
+                        <textarea rows="2">Simple weapons, hand crossbows</textarea>
+                    </div>
+                    <div class="tools">
+                        <p>Tools</p>
+                        <textarea rows="2">Carpenter's Tools</textarea>
+                    </div>
+                    <div class="lang">
+                        <p>Languages</p>
+                        <textarea rows="2">Abanasinian, Common, Draconic, Goblin</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="skills" id="skillsHuman">
+                <h2>Skills</h2>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Acrobatics</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Animal Handling</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Arcana</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>STR Athletics</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="3" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Deception</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT History</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Insight</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Intimidation</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Investigation</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Medicine</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Nature</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Perception</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Performance</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="2" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" checked /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>CHA Persuasion</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="4" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>INT Religion</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Sleight of Hand</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>DEX Stealth</p>
+                    <input type="checkbox" class="disadvantage" checked /><div class="realDisadvantage">D</div>
+                    <input type="number" value="1" />
+                </div>
+                <div class="spacer">
+                    <input type="checkbox" class="expertise" /><div class="realExpertise">E</div>
+                    <input type="checkbox" class="mastery" /><div class="realMastery">M</div>
+                    <p>WIS Survival</p>
+                    <input type="checkbox" class="disadvantage" /><div class="realDisadvantage">D</div>
+                    <input type="number" value="0" />
+                </div>
+            </div>
+            <div class="actions" id="actionsHuman">
+                <div class="container">
+                    <h2>Actions</h2>
+                    <div class="weaponAttacks">
+                        <div class="handCrossbow">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Hand Crossbow</h4>
+                            <p>30ft (120ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="1" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="handaxe">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Handaxe</h4>
+                            <p>20ft (60ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                 <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="handaxe">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Handaxe</h4>
+                            <p>20ft (60ft) Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4">d4</option>
+                                    <option value="d6" selected>d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" checked />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="bite">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                            <p>5ft Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4" selected>d4</option>
+                                    <option value="d6">d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="claws">
+                            <img src="" alt="" class="attackIcon" /> 
+                            <h4>Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
+                            <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                            <p>5ft Reach</p>
+                            <p>+ <input type="number" value="5" /></p>
+                            <div>
+                                <input type="number" value="1" />
+                                <select name="dice" class="dice">
+                                    <option value="d4" selected>d4</option>
+                                    <option value="d6">d6</option>
+                                    <option value="d8">d8</option>
+                                    <option value="d10">d10</option>
+                                    <option value="d12">d12</option>
+                                    <option value="d20">d20</option>
+                                    <option value="d100">d100</option>
+                                </select>
+                                <input type="checkbox" class="offhand" />
+                                <div class="realOffhand">Off</div>
+                                <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                <img src="" alt="" class="dmgTypeIcon" />
+                            </div>
+                        </div>
+                        <div class="unarmed">
+                            <img src="" alt="Unarmed" class="attackIcon" /> 
+                            <p>Unarmed Strike</p>
+                            <p>5ft Reach</p>
+                            <p>+5</p>
+                            <p>3</p>
+                            <img src="" alt="Bludgeoning" class="dmgTypeIcon" />
+                        </div>
+                    </div>
+                    <h4>Actions in Combat</h4>
+                    <p>Attack, Jinx, Dash, Disengage, Dodge, Grapple, Help, Hide, Improvise, Influence, Magic, Ready, Search, Shove, Study, Utilize</p>
+                    <h4>Jinx</h4>
+                    <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                    <ul>
+                        <li>The target has disadvantage on the next ability check it makes.</li>
+                        <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
+                    </ul>
+                    <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                    <h4>Unarmed Strike</h4>
+                    <p>You make a melee attack that involves using your body to deal one of the following effects:</p>
+                    <p><b><i>Damgage</i> - You make an attack roll against the creature, and on a hit, you deal 1 + STR Bludgeoning damage.</b></p>
+                    <p><b><i>Grapple</i> - </b>The target must succeed on a Strength or Dexterity saving throw (it chooses which), or it has the Grappled condition. The DC for the saving throw and any escape attempts equals 8 plus your Strength modifier and Proficiency Bonus. This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it.</p>
+                    <p><b><i>Shove</i></b> -  The target must succeed on a Strength or Dexterity saving throw (it chooses which), or you either push it 5 feet away or cause it to have the Prone condition. The DC for the saving throw equals 8 plus your Strength modifier and Proficiency Bonus. This shove is possible only if the target is no more than one size larger than you.</b></p>
+                    <h3>Bonus Actions</h3>
+                    <p><b><i>Bonus Attack with Natural Weapons</i></b> - Immediately after you take the Attack action on your turn using your natural weapon, you can make an additional natural weapon attack as a bonus action.</p>
+                    <h3>Reactions</h3>
+                    <h3>Other</h3>
+                </div>
+            </div>
+            <div class="spells" id="spellsHuman">
+                <div class="container">
+                    <h2>Spells</h2>
+                <div class="cantrips">
+                    <h3>Cantrips</h3>
+                    <div id="spell1">
+                        <h4>SPELL_2</h4>
+                        <p>RANGE</p>
+                        <p>CAST_TIME</p>
+                        <p>COMPONENTS</p>
+                        <p>DURATION</p>
+                        <p>HIT_DC</p>
+                        <p>EFFECT <input type="number" value="" /> <img src="" alt="" class="dmgTypeIcon" /></p>
+                        <p>NOTES</p>
+                    </div>
+                    <div id="spell2">
+                        <h4>SPELL_2</h4>
+                        <p>RANGE</p>
+                        <p>CAST_TIME</p>
+                        <p>COMPONENTS</p>
+                        <p>DURATION</p>
+                        <p>HIT_DC</p>
+                        <p>EFFECT <input type="number" value="" /> <img src="" alt="" class="dmgTypeIcon" /></p>
+                        <p>NOTES</p>
+                    </div>
+                </div>
+                <div class="lvlSpells">
+                    <h3>1st Level</h3>
+                    <div class="spellSlots">
+                        <div class="spellSlot">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                        <div class="spellSlot">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                        <div class="spellSlot hidden">
+                            <input type="checkbox" />
+                            <div class="realSpellSlot"></div>
+                        </div>
+                    </div>
+                    <div id="spell1">
+                        <h4>Bane</h4>
+                        <p>Range - 30ft</p>
+                        <p>Casting Time - 1 action</p>
+                        <p>Components - Verbal, Somatic, Material (a drop of blood)</p>
+                        <p>Duration - 1 minute</p>
+                        <p>DC <input type="number" value="12" /></p>
+                        <p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                    </div>
+                    <div id="spell2">
+                        <h4>Longstrider</h4>
+                        <p>Touch</p>
+                        <p>Casting Time - 1 action</p>
+                        <p>Components - Verbal, Somatic, Material (a pinch of dirt)</p>
+                        <p>Duration - 1 hour</p>
+                        <p>None</p>
+                        <p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. </p>
+                    </div>
+                    <div id="spell3">
+                        <h4>Ailment Control</h4>
+                        <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either afflicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
+                        <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
+                        <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="inventory" id="inventoryHuman">
+                <h2>Inventory</h2>
+                <div class="money">Platinum: <input type="number" value="" /> | Gold: <input type="number" value="100" /> | Silver: <input type="number" value="" /> | Copper <input type="number" value="" /></div>
+                <h3>Equipment</h3>
+                <div class="scaleMail">
+                    <input type="checkbox" class="equip" /><div class="realEquip"></div>
+                    <p>Scale Mail</p>
+                    <p>Wt:&nbsp; <input type="number" value="45" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>50 Gold</p>
+                    <p>14 AC, Stealth at disadvantage</p>
+                </div>
+                <div class="handCrossbow">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Hand Crossbow</p>
+                    <p>Wt:&nbsp; <input type="number" value="3" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>75 Gold</p>
+                    <p>Martial, Ammunition, Range (30/120), Light, Loading, <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="crossbowBolts">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Crossbow Bolts</p>
+                    <p>Wt:&nbsp; <input type="number" value="1.5" /> lbs</p>
+                    <p>Qty: <input type="number" value="20" /></p>
+                    <p>1 Gold</p>
+                    <p>Damage, Combat</p>
+                </div>
+                <div class="handAxe">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Handaxe</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Gold</p>
+                    <p>Simple, Light, Throw, Range (20/60),  <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="handAxe">
+                    <input type="checkbox" class="equip" checked /><div class="realEquip"></div>
+                    <p>Handaxe</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Gold</p>
+                    <p>Simple, Light, Throw, Range (20/60),  <strong><i>Vex</i></strong></p>
+                </div>
+                <div class="arcaneFocus">
+                    <input type="checkbox" style="display: none;" />
+                    <p>Arcane Focus (Crystal in small stone from Schallsea worn as necklace)</p>
+                    <p>-</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>-</p>
+                    <p>Utility</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Backpack</h3>
+                <div class="bedroll">
+                    <p>Bedroll</p>
+                    <p>Wt:&nbsp; <input type="number" value="7" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>1 Gold</p>
+                    <p>Utility</p>
+                </div>
+                <div class="oil">
+                    <p>Oil</p>
+                    <p>Wt:&nbsp; <input type="number" value="2" /> lbs</p>
+                    <p>Qty: <input type="number" value="2" /></p>
+                    <p>2 Silver</p>
+                    <p>Damage, Utility, Combat</p>
+                </div>
+                <div class="rations">
+                    <p>Rations</p>
+                    <p>Wt:&nbsp; <input type="number" value="20" /> lbs</p>
+                    <p>Qty: <input type="number" value="10" /></p>
+                    <p>5 Gold</p>
+                    <p>Social, Utility, Consumable</p>
+                </div>
+                <div class="rope">
+                    <p>Rope</p>
+                    <p>Wt:&nbsp; <input type="number" value="5" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>1 Gold</p>
+                    <p>-</p>
+                </div>
+                <div class="tinderbox">
+                    <p>Tinderbox</p>
+                    <p>Wt:&nbsp; <input type="number" value="1" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>5 Silver</p>
+                    <p>Utility, Explosion</p>
+                </div>
+                <div class="torch">
+                    <p>Torch</p>
+                    <p>Wt:&nbsp; <input type="number" value="10" /> lbs</p>
+                    <p>Qty: <input type="number" value="10" /></p>
+                    <p>1 Silver</p>
+                    <p>Damage, Utility, Exploration, Combat</p>
+                </div>
+                <div class="waterskin">
+                    <p>Waterskin</p>
+                    <p>Wt:&nbsp; <input type="number" value="5" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>2 Silver</p>
+                    <p>Container</p>
+                </div>
+                <div class="dart">
+                    <p>Dart</p>
+                    <p>Wt:&nbsp; <input type="number" value="0.75" /> lbs</p>
+                    <p>Qty: <input type="number" value="3" /></p>
+                    <p>15 Silver</p>
+                    <p>Damage Combat</p>
+                </div>
+                <div class="travlersClothes">
+                    <p>Travler's Clothes</p>
+                    <p>Wt:&nbsp; <input type="number" value="4" /> lbs</p>
+                    <p>Qty: <input type="number" value="1" /></p>
+                    <p>2 Gold</p>
+                    <p>Social, Outerwear</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Attunement</h3>
+                <div class="item1">
+                    <input type="checkbox" />
+                    <p>ITEM_1</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <div class="item2">
+                    <input type="checkbox" />
+                    <p>ITEM_2</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+                <h3>Other Possessions</h3>
+                <div class="item1">
+                    <input type="checkbox" />
+                    <p>ITEM_1</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <div class="item2">
+                    <input type="checkbox" />
+                    <p>ITEM_2</p>
+                    <p>Wt:&nbsp; <input type="number" value="" /> lbs</p>
+                    <p>Qty: <input type="number" value="" /></p>
+                    <p>COST</p>
+                    <p>NOTES</p>
+                </div>
+                <h4>Quick Addition</h4>
+                <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <div class="featTrait" id="featuresTraitsHuman">
+                <h2>Features & Traits</h2>
+                <h3>Class Features</h3>
+                <h4>Conquered Curse - Curse of Lycanthropy</h4>
+                <h4>Lycanthropy Ailments</h4>
+                <p>As a creature afflicted with lycanthropy, you suffer the following ailments:</p>
+                <ul>
+                    <li>You have vulnerability to damage from silvered
+                        weapons.</li>
+                    <li>Due to the enhanced metabolism caused by lycanthropy, you have to consume much more food than a normal creature. At the end of each day that you don't consume at least two pounds of food, you automatically suffer one level of exhaustion.</li>
+                </ul>
+                <h4>Enahnced Senses</h4>
+                <p>At 1st level, you gain proficiency in the Perception skill. Additionally, you have advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+                <h4>Minor Shift</h4>
+                <p>Also starting at 1st level, you learn to control your lycanthropy enough to shift small parts of your body for short periods without giving in to your feral instincts. You count as a shapechanger, in addition to your other types. Your original form is your fully humanoid form for the purpose of the moonbeam spell and similar effects.</p>
+                <p>As you attack, you can shift your teeth into fangs or tusks or your hands into hooves or claws, allowing you to create a natural weapon. You are proficient with your natural weapon, which is a melee weapon that deals 1d4 bludgeoning, piercing, or slashing damage (your choice each time you make an attack with it).</p>
+                <p>Immediately after you take the Attack action on your turn using your natural weapon, you can make an additional natural weapon attack as a bonus action.</p>
+                <p>Your natural weapon's damage increases to 1d6 at 5th level, to 1d8 at 11th level, and to 1d10 at 17th level.</p>
+                <p>Additionally, starting when you reach 6th level in this class, your natural weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+                <h4>Jinx</h4>
+                <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                <ul>
+                    <li>The target has disadvantage on the next ability check it makes.</li>
+                    <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
+                </ul>
+                <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                <h4>Malediction Metamophosis</h4>
+                <p>Starting at 2nd level, your curse begins evolving within you, changed by your manipulation of its purpose. You can guide this mutation to compliment your capabilities, or open new avenues of power for yourself.</p>
+                <p>You gain one malediction metamorphosis of your choice. When you reach certain accursed levels, you gain additional metamorphoses of your choice, as shown in the Malediction Metamorphoses column of the Accursed table.</p>
+                <p><strong><i>Hex Armor</i></strong>: When you're in danger, the magicks of your curse manifest around you like a suit of armor. Your AC can't be less than 13 + your curse ability modifier, regardless of what kind of armor you're wearing.</p>
+                <h4>Spellcasting</h4>
+                <p>At 2nd level, you learn to use your curse's vile magics to fuel the casting of spells. To cast one of these spells, you must expend a spell slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+                <p>Each Conquered Curse has a list of spells &mdash; its curse spells &mdash; that you learn when you reach certain levels in this class. You ignore the material component requirement of a curse spell if it has one.</p>
+                <p>You know the curse spell you gain at 2nd level from your Conquered Curse, and one 1st-level spell of your choice from the accursed spell list, for a total of two spells known.</p>
+                <p>Additionally, when you gain a level in this class, you can choose one of the accursed spells you know &mdash; which can be one of your curse spells &mdash; and replace it with another spell from the accursed spell list, which must also be of a level for which you have spell slots.</p>
+                <ul>
+                    <li>Spell save DC = 8 + proficiency bonus + charisma modifier</li>
+                    <li>Spell attack modifier = proficiency bonus + charisma modifier</li>
+                </ul>
+                <p><strong><i>Arcane Focus</i></strong>: A stone from Lucas' homeland he took with him just before he getting on the boat to leave. By chance, that stone contained a crystal that he could use as an arcane focus. Opted to have it crafted into a necklace he could wear to keep close to his heart.</p>
+                <h5>Accursed Speels</h5>
+                <p><strong><i>Bane</i></strong>: Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                <h5>Lycanthropy Curse Spells</h5>
+                <p><strong><i>Longstrider</i></strong>: You touch a creature. The target's speed increases by 10 feet until the spell ends. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+                <h4>Ailment Control</h4>
+                <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either afflicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
+                <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
+                <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                <h3>Species Traits</h3>
+                <h4>Creature Type</h4>
+                <p>Humanoid</p>
+                <h4>Size</h4>
+                <p>Medium</p>
+                <h4>Speed</h4>
+                <p>30 feet</p>
+                <h4>Resourceful</h4>
+                <p>Gain heroic inspiration after finishing a long rest</p>
+                <h4>Skillful</h4>
+                <p>Gained proficiency in persuasion.</p>
+                <p></p>
+                <h4>Versatile</h4>
+                <p>Gained "Alert" feat</p>
+                <h4>Languages (asides from Common)</h4>
+                <p>Abanasinian, Draconic, Goblin</p>
+                <h3>Feats</h3>
+                <h4>Alert</h4>
+                <p><b><i>Initiative Proficiency</i>.</b> When you roll Initiative, you can add your Proficiency Bonus to the roll.</p>
+                <p><b><i>Initiative Swap</i>.</b> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</p>
+                <h4>Savage Attacker</h4>
+                <p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
+            </div>
+            <div class="details" id="detailsHuman">
+                <h2>Details</h2>
+                <h3>Appearance</h3>
+                <p><strong>Species</strong>: Human</p>
+                <p><strong>Age</strong>: 23 years old</p>
+                <p><strong>Gender</strong>: Male</p>
+                <p><strong>Eye Color</strong>: Green</p>
+                <p><strong>Hair Color</strong>: Black</p>
+                <p><strong>Skin Tone</strong>: Tanned (farmer's tan, fair complexion otherwise)</p>
+                <p><strong>Height</strong>: 5ft 8in</p>
+                <p><strong>Weight</strong>: 165lbs</p>
+                <h3>Background</h3>
+                <p>Born and raised in the port city of Qué-Theh on the isle of Schallsea, Lucas, born , was accustomed to a peaceful quiet life. This stands in stark contrast to his ancestors. Before their relocation to Schallsea, the Qué-Nal, Lucas' people, where a nomadic race warriors from the plains of Abanasinia. It was during this time that a Qué-Nal legend sprung up regarding one of his ancestors. There are variations on the details of the story. In one version he startled Chislev while she was in the guise of a horse, and in some versions of this he tried to catch and tame her. In other versions he was enamored with Chislev and tried to make her his bride. They all share one detail in common: this ancestor was cursed to be a werewolf by Chislev. Some tellers claim those of his descendants born under the red wolf moon while it shares the sky with the planet Chislev carry the curse, and that they too are werewolves. Of course, this was long before the other tribes defeated the Qué-Nal, and they were forced to leave and settle in Schallsea.</p>
+                <p>While there are some tall tales about sporadic distant relatives, Lucas' family never put much stock in them or the legend they stem from. Growing up, Lucas was like any of the other boys in his village. He quarreled with siblings, roughhoused, hunted, fished, and helped his father with whatever needed doing. It was during an argument with one of his siblings that the first signs began to show that there was truth to the old stories. As his mother was coming over to breakup the escalating argument and make peace, she saw Lucas's eyes flash a pale yellow, with the white's of the eye disappearing.</p>
+                <p>As he got older, these incidents became more common for a period of time. Eyes would change yellow, his teeth would become fangs, he would grow claws. As rumors swirled in the village, Lucas was allowed out less and less. In time, Lucas began to show some ability to control these changes, enabling some since of normalcy; he at least could help his father or neighbors. However, he was not allowed to roughhouse or learn to fight to help defend his village. This left him crestfallen; all he could do was watch the other young men of his village as they learned. Sometimes, while alone late at night, Lucas would try to practice what he saw the others learning.</p>
+                <p>It was on a rather calm, beautiful day that his Schallsea was invaded by the Blue Dragon Army. Living in a port city, Lucas' village was among the first hit. He and others not trained or able to fight were forced to leave while others ensured they could make an escape. Lucas knew he needed to help defend his island and retake his home; he needed to learn to fight and rid himself of this curse. Before slipping away in a small boat, he picked up a small stone to carry a piece of his home and remind himself why he's away.</p>
+                <p>Leaving his once serene home to save it -- and his family's future -- was the hardest thing he's ever had to do. As he travels abroad, he adopted the name Lucas Shepard in an attempt to obscure his Qué-Nal identity to avoid any lingering animosity that may still exist from any other Abanasinian Plainsmen he may encounter on his quest.</p>
+                <h4>Soldier</h4>
+                <p>You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.</p>
+                <p>Gained proficiencies in athletics and deception.</p>
+                <p>Gained darts tool proficiency.</p>
+                <p>Gained savage attacker feat.</p>
+                <p>Boosted strength by 1 and constituion by 2.</p>
+                <h3>Backstory</h3>
+                <h3>Alignment</h3>
+                <p>Neutral Good</p>
+                <h3>Allies</h3>
+                <ul>
+                    <li>Good-aligned lycanthropes</li>
+                    <li>Those who give him a chance despite knowing he's a lycanthrope</li>
+                    <li>Isbern Greenshield</li>
+                </ul>
+                <h3>Enemies</h3>
+                <ul>
+                    <li>People who indescriminately hate lycanthropes</li>
+                    <li>Evil-aligned lycanthropes</li>
+                    <li>Blue Dragon Army</li>
+                </ul>
+                <h3>Quick Addition</h3>
+                <textarea name="" id="" class="fastAdd"></textarea>
+            </div>
+            <input type="checkbox" class="menuToggle" />
+            <div class="realMenuToggle">JUMP</div>
+            <div class="menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#initiativeHuman">Initiative</a></li>
+                        <li><a href="#healthHuman">Health</a></li>
+                        <li><a href="#statsHuman">Stats</a></li>
+                        <li><a href="#sensesHuman">Senses</a></li>
+                        <li><a href="#skillsHuman">Skills</a></li>
+                        <li><a href="#actionsHuman">Actions</a></li>
+                        <li><a href="#spellsHuman">Spells</a></li>
+                        <li><a href="#inventoryHuman">Inventory</a></li>
+                        <li><a href="#featuresTraitsHuman">Features & Traits</a></li>
+                        <li><a href="#detailsHuman">Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
