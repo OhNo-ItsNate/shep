@@ -1718,6 +1718,13 @@ select {
 
 @media screen and (min-width: 1422px) {
 
+    .realOffhand {
+        top: 147px;
+    }
+}
+
+@media screen and (min-width: 1422px) {
+
     /* FLEX-DIRECTION */
 
     #human,
