@@ -27,6 +27,7 @@
 .offhand:checked ~ .dmgMod,
 .menuToggle + .realMenuToggle + .menu,
 .masteryDescToggle + .masteryDesc,
+.hybridShiftToggle + .realSpellSlot + .hybridShift,
 input[value="human"] + label + #human,
 input[value="hybrid"] + label + #hybrid,
 input[value="werewolf"] + label + #werewolf {
@@ -44,7 +45,8 @@ input[value="werewolf"] + label + #werewolf {
 
 .inspCheck:checked + .inspIcon,
 .menuToggle:checked + .realMenuToggle + .menu,
-.masteryDescToggle:checked + .masteryDesc {
+.masteryDescToggle:checked + .masteryDesc,
+.hybridShiftToggle:checked + .realSpellSlot + .hybridShift {
     display: initial;
 }
 
@@ -318,7 +320,8 @@ body,
 .equip,
 .realEquip,
 .masteryDescToggle,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     position: absolute;
 }
 
@@ -452,12 +455,13 @@ body,
 }
 
 .sheetSelect[value="hybrid"],
-.sheetSelect[value="hybrid"] + label {
+.sheetSelect[value="hybrid"] + label,
+.stats .container div .modifier {
     left: 50px;
 }
 
-.stats .container div .modifier {
-    left: 50px;
+.hybridShift {
+    left: 25px;
 }
 
 .realExpertise,
@@ -492,12 +496,14 @@ body,
 
 .sheetSelect + label,
 .menu,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     z-index: 98;
 }
 
 .realMenuToggle,
-.masteryDescToggle {
+.masteryDescToggle,
+.hybridShiftToggle {
     z-index: 99;
 }
 
@@ -540,7 +546,8 @@ h4,
 .lang textarea,
 .stats .container,
 .inspCheck,
-.masteryDescToggle {
+.masteryDescToggle,
+.hybridShiftToggle {
     width: 100%;
 }
 
@@ -552,7 +559,8 @@ h4,
     width: 50%;
 }
 
-.weaponAttacks > div {
+.weaponAttacks > div,
+.hybridShift {
     width: 171px;
 }
 
@@ -662,7 +670,8 @@ select,
 }
 
 .saveCheck,
-.masteryDescToggle {
+.masteryDescToggle,
+.hybridShiftToggle {
     height: 20px;
 }
 
@@ -859,7 +868,8 @@ select,
 .frame2:after,
 .realSpellSlot,
 .realEquip,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     border-width: 3px;
 }
 
@@ -901,7 +911,8 @@ select,
 .frame2:after,
 .realSpellSlot,
 .realEquip,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     border-style: solid;
 }
 
@@ -927,7 +938,8 @@ select,
 #hybrid > div:not(.characterBasics):not(.miscInfo1),
 #werewolf > div:not(.characterBasics):not(.miscInfo1),
 .characterImage,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     outline-width: 1px;
 }
 
@@ -941,7 +953,8 @@ select,
 #hybrid > div:not(.characterBasics):not(.miscInfo1),
 #werewolf > div:not(.characterBasics):not(.miscInfo1),
 .characterImage,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     outline-style: solid;
 }
 
@@ -952,7 +965,8 @@ select,
 #werewolf > div:not(.characterBasics):not(.miscInfo1),
 .inspIcon,
 .characterImage,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     outline-offset: 4px;
 }
 
@@ -993,7 +1007,8 @@ select,
 .frame2:before,
 .frame2:after,
 .saveCheck:checked + .realSaveCheck,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     border-color: indianred;
 }
 
@@ -1010,7 +1025,8 @@ select,
 #werewolf > div:not(.characterBasics):not(.miscInfo1),
 .inspIcon,
 .characterImage,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     outline-color: indianred;
 }
 
@@ -1072,7 +1088,8 @@ textarea,
 .offhand + .realOffhand,
 .equip + .realEquip,
 .menu,
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     background-color: blanchedalmond;
 }
 
@@ -1096,7 +1113,8 @@ textarea,
 .saveCheck,
 .equip,
 .menuToggle,
-.masteryDescToggle {
+.masteryDescToggle,
+.hybridShiftToggle {
     opacity: 0;
 }
 
@@ -1220,7 +1238,8 @@ ol,
 #human > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
 #hybrid > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
 #werewolf > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
-.masteryDesc {
+.masteryDesc,
+.hybridShift {
     padding: 15px;
 }
 
@@ -1386,7 +1405,8 @@ select {
         top: 130px;
     }
 
-    .masteryDesc {
+    .masteryDesc,
+    .hybridShift {
         top: 20px;
     }
 
@@ -1631,7 +1651,7 @@ select {
     }
 
     .characterBasics {
-        width: 48%;
+        width: 50%;
     }
 
     .health {
