@@ -67,6 +67,7 @@ input[value="werewolf"] + label + #werewolf {
 .skills p,
 .realOffhand,
 .dmgMod,
+.shiftSlot,
 .realSaveCheck,
 .realMenuToggle {
     display: inline-block;
@@ -96,7 +97,8 @@ input[value="werewolf"]:checked + label + #werewolf,
 .container:not(.actions .container):not(.spells .container),
 .init,
 .insp,
-.realMenuToggle {
+.realMenuToggle,
+.hybridAttacks {
     display: flex;
 }
 
@@ -132,7 +134,8 @@ input[value="werewolf"]:checked + label + #werewolf,
 .cantrips,
 .lvlSpells,
 .weaponAttacks,
-.container {
+.container,
+.hybridAttacks {
     flex-wrap: wrap;
 }
 
@@ -165,7 +168,8 @@ input[value="werewolf"]:checked + label + #werewolf,
 .senses,
 .defCond,
 .weaponAttacks,
-.lvlSpells {
+.lvlSpells,
+.hybridAttacks {
     justify-content: space-between;
 }
 
@@ -286,7 +290,8 @@ body,
 .unarmed,
 .offhand,
 .save,
-.stats .container div:not(.modifier):not(.realSaveCheck) {
+.stats .container div:not(.modifier):not(.realSaveCheck),
+.shiftSlot {
     position: relative;
 }
 
@@ -321,7 +326,8 @@ body,
 .realEquip,
 .masteryDescToggle,
 .masteryDesc,
-.hybridShift {
+.hybridShift,
+.shiftSlot input {
     position: absolute;
 }
 
@@ -515,8 +521,15 @@ body,
 .offhand,
 .equip,
 .menuToggle,
-.sheetSelect {
+.sheetSelect,
+.shiftSlot input {
     z-index: 100;
+}
+
+/* CURSOR */
+
+input {
+    cursor: pointer;
 }
 
 /* WIDTH */
@@ -547,20 +560,24 @@ h4,
 .stats .container,
 .inspCheck,
 .masteryDescToggle,
-.hybridShiftToggle {
+.hybridShiftToggle,
+.shiftSlots {
     width: 100%;
 }
 
 .passPer,
 .passInv,
 .passInv,
-.darkVis,
-.weaponAttacks > div {
+.darkVis {
     width: 50%;
 }
 
-.weaponAttacks > div,
 .hybridShift {
+    width: 342px;
+}
+
+.weaponAttacks > div,
+.hybridAttacks > div {
     width: 171px;
 }
 
@@ -628,13 +645,15 @@ input[type="text"],
 .realExpertise,
 .realMastery,
 .realDisadvantage,
-.realEquip {
+.realEquip,
+.shiftSlot {
     width: 10px;
 }
 
 /* HEIGHT */
 
-.weaponAttacks > div {
+.weaponAttacks > div,
+.hybridAttacks > div {
     height: 172px;
 }
 
@@ -702,7 +721,8 @@ select,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
-.realEquip {
+.realEquip,
+.shiftSlot {
     height: 10px;
 }
 
@@ -1045,7 +1065,10 @@ select {
 .realOffhand,
 .realMenuToggle,
 .health p,
-.health input {
+.health input,
+.hybridShift,
+.hybridAttacks input,
+.hybridAttacks select {
     color: blanchedalmond;
 }
 
@@ -1064,6 +1087,11 @@ select {
     background-color: rgba(250,250,250,0.2);
 }
 
+.hybridShift,
+.hybridShift .masteryDesc {
+    background-color: dimgray;
+}
+
 .sheetSelect + label,
 .health,
 .spellSlot input:checked + .realSpellSlot,
@@ -1072,7 +1100,8 @@ select {
 .disadvantage:checked + .realDisadvantage,
 .offhand:checked + .realOffhand,
 .equip:checked + .realEquip,
-.realMenuToggle {
+.realMenuToggle,
+.shiftSlot input:checked + .realSpellSlot {
     background-color: indianred;
 }
 
@@ -1089,8 +1118,13 @@ textarea,
 .equip + .realEquip,
 .menu,
 .masteryDesc,
-.hybridShift {
+.shiftSlot input + .realSpellSlot {
     background-color: blanchedalmond;
+}
+
+.hybridAttacks input,
+.hybridAttacks select {
+    background-color: rgba(0,0,0,0.5);
 }
 
 /* BACKGROUND */
@@ -1114,7 +1148,8 @@ textarea,
 .equip,
 .menuToggle,
 .masteryDescToggle,
-.hybridShiftToggle {
+.hybridShiftToggle,
+.shiftSlot input {
     opacity: 0;
 }
 
@@ -1170,7 +1205,8 @@ body,
     margin: 0 5px;
 }
 
-.spellSlot {
+.spellSlot,
+.shiftSlot {
     margin: 0 10px;
 }
 
@@ -1206,7 +1242,8 @@ ol,
 .passIns div,
 .darkVis div,
 .money input,
-.menu ul li:not(ul li:last-child) {
+.menu ul li:not(ul li:last-child),
+.shiftSlots {
     margin: 0 0 15px;
 }
 
@@ -1920,7 +1957,8 @@ select {
         margin: 10px 0 0 0;
     }
 
-    .spellSlot {
+    .spellSlot,
+    .shiftSlot {
         margin: 0 10px;
     }
 

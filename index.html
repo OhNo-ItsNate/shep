@@ -425,56 +425,61 @@
                     </ul>
                     <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
                     <h4>Hybrid Shift</h4>
-                    <div class="spellSlot">
-                        <input type="checkbox" class="hybridShiftToggle" />
-                        <div class="realSpellSlot"></div>
-                        <div class="hybridShift">
-                            <p><strong>Duration: 1 minute</strong></p>
-                            <p><strong>At the start of each of your turns:</strong> regain X <!--equal to half accursed level rounded down--> hit points. <em>Doesn't work if attacked with silvered weapons.</em></p>
-                            <div class="bite">
-                                <img src="" alt="" class="attackIcon" /> 
-                                <h4>Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
-                                <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
-                                <p>5ft Reach</p>
-                                <p>+ <input type="number" value="5" /></p>
-                                <div>
-                                    <input type="number" value="1" />
-                                    <select name="dice" class="dice">
-                                        <option value="d4" selected>d4</option>
-                                        <option value="d6">d6</option>
-                                        <option value="d8">d8</option>
-                                        <option value="d10">d10</option>
-                                        <option value="d12">d12</option>
-                                        <option value="d20">d20</option>
-                                        <option value="d100">d100</option>
-                                    </select>
-                                    <input type="checkbox" class="offhand" />
-                                    <div class="realOffhand">Off</div>
-                                    <div class="dmgMod">+ <input type="number" value="3" /></div>
-                                    <img src="" alt="" class="dmgTypeIcon" />
-                                </div>
-                            </div>
-                            <div class="claws">
-                                <img src="" alt="" class="attackIcon" /> 
-                                <h4>Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
-                                <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
-                                <p>5ft Reach</p>
-                                <p>+ <input type="number" value="5" /></p>
-                                <div>
-                                    <input type="number" value="1" />
-                                    <select name="dice" class="dice">
-                                        <option value="d4" selected>d4</option>
-                                        <option value="d6">d6</option>
-                                        <option value="d8">d8</option>
-                                        <option value="d10">d10</option>
-                                        <option value="d12">d12</option>
-                                        <option value="d20">d20</option>
-                                        <option value="d100">d100</option>
-                                    </select>
-                                    <input type="checkbox" class="offhand" />
-                                    <div class="realOffhand">Off</div>
-                                    <div class="dmgMod">+ <input type="number" value="3" /></div>
-                                    <img src="" alt="" class="dmgTypeIcon" />
+                    <div class="shiftSlots">
+                        <div class="shiftSlot">
+                            <input type="checkbox" class="hybridShiftToggle" />
+                            <div class="realSpellSlot"></div>
+                            <div class="hybridShift">
+                                <img src="img/lucasShepardWerewolf.png" alt="Lucas Shepard's hybrid form" class="characterImage" />
+                                <p><strong>Duration: 1 minute</strong></p>
+                                <p><strong>At the start of each of your turns:</strong> regain X <!--equal to half accursed level rounded down--> hit points. <em>Doesn't work if attacked with silvered weapons.</em></p>
+                                <div class="hybridAttacks">
+                                    <div class="bite">
+                                        <img src="" alt="" class="attackIcon" /> 
+                                        <h4>Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
+                                        <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                                        <p>5ft Reach</p>
+                                        <p>+ <input type="number" value="5" /></p>
+                                        <div>
+                                            <input type="number" value="1" />
+                                            <select name="dice" class="dice">
+                                                <option value="d4" selected>d4</option>
+                                                <option value="d6">d6</option>
+                                                <option value="d8">d8</option>
+                                                <option value="d10">d10</option>
+                                                <option value="d12">d12</option>
+                                                <option value="d20">d20</option>
+                                                <option value="d100">d100</option>
+                                            </select>
+                                            <input type="checkbox" class="offhand" />
+                                            <div class="realOffhand">Off</div>
+                                            <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                            <img src="" alt="" class="dmgTypeIcon" />
+                                        </div>
+                                    </div>
+                                    <div class="claws">
+                                        <img src="" alt="" class="attackIcon" /> 
+                                        <h4>Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
+                                        <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                                        <p>5ft Reach</p>
+                                        <p>+ <input type="number" value="5" /></p>
+                                        <div>
+                                            <input type="number" value="1" />
+                                            <select name="dice" class="dice">
+                                                <option value="d4" selected>d4</option>
+                                                <option value="d6">d6</option>
+                                                <option value="d8">d8</option>
+                                                <option value="d10">d10</option>
+                                                <option value="d12">d12</option>
+                                                <option value="d20">d20</option>
+                                                <option value="d100">d100</option>
+                                            </select>
+                                            <input type="checkbox" class="offhand" />
+                                            <div class="realOffhand">Off</div>
+                                            <div class="dmgMod">+ <input type="number" value="3" /></div>
+                                            <img src="" alt="" class="dmgTypeIcon" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
