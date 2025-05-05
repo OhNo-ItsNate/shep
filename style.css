@@ -326,8 +326,7 @@ body,
 .realEquip,
 .masteryDescToggle,
 .masteryDesc,
-.hybridShift,
-.shiftSlot input {
+.hybridShift {
     position: absolute;
 }
 
@@ -521,8 +520,7 @@ body,
 .offhand,
 .equip,
 .menuToggle,
-.sheetSelect,
-.shiftSlot input {
+.sheetSelect {
     z-index: 100;
 }
 
@@ -1068,13 +1066,19 @@ select {
 .health input,
 .hybridShift,
 .hybridAttacks input,
-.hybridAttacks select {
+.hybridAttacks select,
+.hybridAttacks .offhand:checked + .realOffhand {
     color: blanchedalmond;
 }
 
 .menu ul li a {
     color: indianred;
 }
+
+.hybridAttacks .offhand + .realOffhand {
+    color: transparent;
+}
+
 
 /* BACKGROUND-COLOR */
 
@@ -1101,11 +1105,12 @@ select {
 .offhand:checked + .realOffhand,
 .equip:checked + .realEquip,
 .realMenuToggle,
-.shiftSlot input:checked + .realSpellSlot {
+.shiftSlot input:checked + .realSpellSlot,
+.hybridAttacks .offhand:checked + .realOffhand {
     background-color: indianred;
 }
 
-input:not(.health input):not(.initNum),
+input:not(.health input):not(.initNum):not(.shiftSlot input),
 select,
 textarea,
 .modifier,
@@ -1117,13 +1122,13 @@ textarea,
 .offhand + .realOffhand,
 .equip + .realEquip,
 .menu,
-.masteryDesc,
-.shiftSlot input + .realSpellSlot {
+.masteryDesc {
     background-color: blanchedalmond;
 }
 
 .hybridAttacks input,
-.hybridAttacks select {
+.hybridAttacks select,
+.hybridAttacks .offhand + .realOffhand {
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -1148,8 +1153,7 @@ textarea,
 .equip,
 .menuToggle,
 .masteryDescToggle,
-.hybridShiftToggle,
-.shiftSlot input {
+.hybridShiftToggle {
     opacity: 0;
 }
 
@@ -1243,7 +1247,8 @@ ol,
 .darkVis div,
 .money input,
 .menu ul li:not(ul li:last-child),
-.shiftSlots {
+.shiftSlots,
+.hybridShift .characterImage {
     margin: 0 0 15px;
 }
 
@@ -1272,11 +1277,14 @@ ol,
     padding: 15px 15px 40px 15px;
 }
 
+.hybridShift {
+    padding: 15px 15px 25px;
+}
+
 #human > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
 #hybrid > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
 #werewolf > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
-.masteryDesc,
-.hybridShift {
+.masteryDesc {
     padding: 15px;
 }
 
