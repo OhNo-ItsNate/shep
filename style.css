@@ -326,7 +326,8 @@ body,
 .realEquip,
 .masteryDescToggle,
 .masteryDesc,
-.hybridShift {
+.hybridShift,
+.hybridShiftToggle {
     position: absolute;
 }
 
@@ -437,7 +438,9 @@ body,
 }
 
 .realMenuToggle,
-.menu {
+.menu,
+.hybridShiftToggle,
+.hybridShiftToggle + .realSpellSlot {
     bottom: 0;
 }
 
@@ -507,8 +510,7 @@ body,
 }
 
 .realMenuToggle,
-.masteryDescToggle,
-.hybridShiftToggle {
+.masteryDescToggle {
     z-index: 99;
 }
 
@@ -520,7 +522,8 @@ body,
 .offhand,
 .equip,
 .menuToggle,
-.sheetSelect {
+.sheetSelect,
+.hybridShiftToggle {
     z-index: 100;
 }
 
@@ -644,7 +647,8 @@ input[type="text"],
 .realMastery,
 .realDisadvantage,
 .realEquip,
-.shiftSlot {
+.shiftSlot,
+.hybridShiftToggle {
     width: 10px;
 }
 
@@ -687,8 +691,7 @@ select,
 }
 
 .saveCheck,
-.masteryDescToggle,
-.hybridShiftToggle {
+.masteryDescToggle {
     height: 20px;
 }
 
@@ -720,7 +723,7 @@ select,
 .realMastery,
 .realDisadvantage,
 .realEquip,
-.shiftSlot {
+.hybridShiftToggle {
     height: 10px;
 }
 
@@ -1828,9 +1831,9 @@ select {
 
     /* TOP */
 
-    .realSpellSlot {
+    /* .realSpellSlot {
         top: 1px;
-    }
+    } */
 
     /* BOTTOM */
 
