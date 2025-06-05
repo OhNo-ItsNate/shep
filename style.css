@@ -654,6 +654,11 @@ input[type="text"],
 
 /* HEIGHT */
 
+.actions,
+.spells {
+    height: 75rem;
+}
+
 .weaponAttacks > div,
 .hybridAttacks > div {
     height: 172px;
@@ -736,9 +741,9 @@ select,
 
 /* FONT-SIZES */
 
-html {
+/* html {
     font-size: 75%;
-}
+} */
 
 h1 {
     font-size: 2em;
@@ -1394,11 +1399,11 @@ select {
 
     /* HEIGHT */
 
-    .skills,
+    /* .skills,
     .actions,
     .spells {
         height: 995px;
-    }
+    } */
 
     /* MARGIN */
 
@@ -1555,10 +1560,10 @@ select {
 
     /* HEIGHT */
 
-    .actions,
+    /* .actions,
     .spells {
         height: 1065px;
-    }
+    } */
 
     .stats .container > div {
         height: 250px;
@@ -1592,10 +1597,10 @@ select {
     }
 
     /* FONT-SIZE */
-
+/* 
     html {
         font-size: 118.5%;
-    }
+    } */
 
     h1 {
         font-size: 1.4em;
@@ -1733,14 +1738,14 @@ select {
     .actions,
     .skills,
     .spells {
-        height: 1019px;
+        height: 65rem;
     }
 
     /* FONT-SIZE */
-
+/* 
     html {
         font-size: 98%;
-    }
+    } */
 
     /* LINE-HEIGHT */
 
@@ -1884,7 +1889,7 @@ select {
     }
 
     .skills {
-        width: 15.13%;
+        width: 15.39%;
     }
 
     .miscInfo1 {
@@ -1904,11 +1909,11 @@ select {
 
     /* HEIGHT */
 
-    .actions,
+    /* .actions,
     .skills,
     .spells {
         height: 1040px;
-    }
+    } */
 
     .characterBasics,
     .miscInfo1 {
