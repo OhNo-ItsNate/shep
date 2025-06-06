@@ -27,7 +27,7 @@
 .offhand:checked ~ .dmgMod,
 .menuToggle + .realMenuToggle + .menu,
 .masteryDescToggle + .masteryDesc,
-.hybridShiftToggle + .realSpellSlot + .hybridShift,
+.hybridShiftToggle + .hybridShift,
 input[value="human"] + label + #human,
 input[value="hybrid"] + label + #hybrid,
 input[value="werewolf"] + label + #werewolf {
@@ -46,7 +46,7 @@ input[value="werewolf"] + label + #werewolf {
 .inspCheck:checked + .inspIcon,
 .menuToggle:checked + .realMenuToggle + .menu,
 .masteryDescToggle:checked + .masteryDesc,
-.hybridShiftToggle:checked + .realSpellSlot + .hybridShift {
+.hybridShiftToggle:checked + .hybridShift {
     display: initial;
 }
 
@@ -58,6 +58,7 @@ input[value="werewolf"] + label + #werewolf {
 .health *:not(input),
 .spellSlot,
 .realSpellSlot,
+.realShiftSlot,
 .expertise,
 .realExpertise,
 .mastery,
@@ -291,7 +292,8 @@ body,
 .offhand,
 .save,
 .stats .container div:not(.modifier):not(.realSaveCheck),
-.shiftSlot {
+.shiftSlot,
+.hybridShiftContainer {
     position: relative;
 }
 
@@ -316,7 +318,9 @@ body,
 .frame2:before,
 .frame2:after,
 .spellSlot input,
+.shiftSlot input,
 .realSpellSlot,
+.realShiftSlot,
 .expertise,
 .mastery,
 .disadvantage,
@@ -437,10 +441,13 @@ body,
     bottom: 2px;
 }
 
-.realMenuToggle,
+/* .realMenuToggle,
 .menu,
 .hybridShiftToggle,
-.hybridShiftToggle + .realSpellSlot {
+.hybridShiftToggle + .realSpellSlot */
+.realMenuToggle,
+.menu,
+.hybridShiftToggle {
     bottom: 0;
 }
 
@@ -516,6 +523,7 @@ body,
 
 .inspCheck,
 .spellSlot input,
+.shiftSlot input,
 .expertise,
 .mastery,
 .disadvantage,
@@ -561,7 +569,6 @@ h4,
 .stats .container,
 .inspCheck,
 .masteryDescToggle,
-.hybridShiftToggle,
 .shiftSlots {
     width: 100%;
 }
@@ -592,7 +599,8 @@ h4,
 
 .frame,
 .frame1,
-.frame2 {
+.frame2,
+.hybridShiftToggle {
     width: 111px;
 }
 
@@ -643,16 +651,21 @@ input[type="text"],
 .frame2:after,
 .spellSlot,
 .realSpellSlot,
+.realShiftSlot,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
 .realEquip,
-.shiftSlot,
-.hybridShiftToggle {
+.shiftSlot {
     width: 10px;
 }
 
 /* HEIGHT */
+
+.hybridShiftToggle,
+.masteryDescToggle {
+    height: 1.1em;;
+}
 
 .actions,
 .spells {
@@ -695,8 +708,7 @@ select,
     height: 25px;
 }
 
-.saveCheck,
-.masteryDescToggle {
+.saveCheck {
     height: 20px;
 }
 
@@ -723,12 +735,13 @@ select,
 .frame1:after,
 .frame2:after,
 .spellSlot,
+.shiftSlot,
 .realSpellSlot,
+.realShiftSlot,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
-.realEquip,
-.hybridShiftToggle {
+.realEquip {
     height: 10px;
 }
 
@@ -834,6 +847,10 @@ select {
     text-decoration: none;
 }
 
+.clickForDetails {
+    text-decoration: underline;
+}
+
 /* LINE-HEIGHT */
 
 .realOffhand {
@@ -893,6 +910,7 @@ select,
 .frame2:before,
 .frame2:after,
 .realSpellSlot,
+.realShiftSlot,
 .realEquip,
 .masteryDesc,
 .hybridShift {
@@ -936,6 +954,7 @@ select,
 .frame2:before,
 .frame2:after,
 .realSpellSlot,
+.realShiftSlot,
 .realEquip,
 .masteryDesc,
 .hybridShift {
@@ -1040,6 +1059,7 @@ select,
 
 
 .realSpellSlot,
+.realShiftSlot,
 .realEquip {
     border-color:blanchedalmond;
 }
@@ -1087,6 +1107,11 @@ select {
     color: transparent;
 }
 
+/* TEXT-DECORTAION-COLOR */
+
+.clickForDetails {
+    text-decoration-color: indianred;
+}
 
 /* BACKGROUND-COLOR */
 
@@ -1113,17 +1138,18 @@ select {
 .offhand:checked + .realOffhand,
 .equip:checked + .realEquip,
 .realMenuToggle,
-.shiftSlot input:checked + .realSpellSlot,
+.shiftSlot input:checked + .realShiftSlot,
 .hybridAttacks .offhand:checked + .realOffhand {
     background-color: indianred;
 }
 
-input:not(.health input):not(.initNum):not(.shiftSlot input),
+input:not(.health input):not(.initNum):not(.hybridShift input),
 select,
 textarea,
 .modifier,
 .initValue,
 .spellSlot input + .realSpellSlot,
+.shiftSlot input + .realShiftSlot,
 .expertise + .realExpertise,
 .mastery + .realMastery,
 .disadvantage + .realDisadvantage,
@@ -1153,6 +1179,7 @@ textarea,
 .sheetSelect,
 .inspCheck,
 .spellSlot input,
+.shiftSlot input,
 .expertise,
 .mastery,
 .disadvantage,
@@ -1196,6 +1223,7 @@ body,
 .init p:nth-child(2),
 .health p,
 .realSpellSlot,
+.realShiftSlot,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
