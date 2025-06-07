@@ -293,7 +293,8 @@ body,
 .save,
 .stats .container div:not(.modifier):not(.realSaveCheck),
 .shiftSlot,
-.hybridShiftContainer {
+.hybridShiftContainer,
+.masteryContainer {
     position: relative;
 }
 
@@ -356,10 +357,6 @@ body,
 
 .modifier {
     top: 109px;
-}
-
-.masteryDescToggle {
-    top: 10px;
 }
 
 .equip,
@@ -445,6 +442,7 @@ body,
 .menu,
 .hybridShiftToggle,
 .hybridShiftToggle + .realSpellSlot */
+.masteryDescToggle,
 .realMenuToggle,
 .menu,
 .hybridShiftToggle {
@@ -516,10 +514,10 @@ body,
     z-index: 98;
 }
 
-.realMenuToggle,
+/* .realMenuToggle,
 .masteryDescToggle {
     z-index: 99;
-}
+} */
 
 .inspCheck,
 .spellSlot input,
@@ -531,8 +529,16 @@ body,
 .equip,
 .menuToggle,
 .sheetSelect,
-.hybridShiftToggle {
+.hybridShiftToggle,
+.realMenuToggle,
+.masteryDescToggle {
     z-index: 100;
+}
+
+/* FLOAT */
+
+.hybridShiftContainer .hybridShift .characterImage {
+    float: left;
 }
 
 /* CURSOR */
@@ -1292,6 +1298,10 @@ ol,
     margin: 0 0 0 20px;
 }
 
+.hybridShiftContainer .hybridShift .characterImage {
+    margin: 0 15px 0 0;
+}
+
 .realMastery,
 .realDisadvantage {
     margin: 0 5px 0 0;
@@ -1701,10 +1711,6 @@ select {
 
     .modifier {
         top: 120px;
-    }
-
-    .masteryDescToggle {
-        top: 20px;
     }
 
     /* RIGHT */
