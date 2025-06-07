@@ -361,9 +361,11 @@
                             </div>
                         </div>
                         <div class="bite">
-                            <img src="" alt="" class="attackIcon" /> 
-                            <h4 class="clickForDetails">Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
-                            <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                            <img src="" alt="" class="attackIcon" />
+                            <div class="masteryContainer">
+                                <h4>Bite &ndash; <span class="clickForDetails"><em>Sap</em></span></h4><input type="checkbox" class="masteryDescToggle" />
+                                <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                            </div>
                             <p>5ft Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -384,9 +386,11 @@
                             </div>
                         </div>
                         <div class="claws">
-                            <img src="" alt="" class="attackIcon" /> 
-                            <h4 class="clickForDetails">Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
-                            <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                            <img src="" alt="" class="attackIcon" />
+                            <div class="masteryContainer">
+                                <h4>Claws &ndash; <span class="clickForDetails"><em>Vex</em></span></h4><input type="checkbox" class="masteryDescToggle" />
+                                <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                            </div>
                             <p>5ft Reach</p>
                             <p>+ <input type="number" value="5" /></p>
                             <div>
@@ -423,18 +427,22 @@
                         <li>The target has disadvantage on the next ability check it makes.</li>
                         <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
                     </ul>
-                    <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration! or remove curse spells is cast on the target.</p>
+                    <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration, or remove curse spells is cast on the target.</p>
                     <div class="hybridShiftContainer">
                         <h4 class="clickForDetails">Hybrid Shift</h4><input type="checkbox" class="hybridShiftToggle" />
                         <div class="hybridShift">
                             <img src="img/lucasShepardWerewolf.png" alt="Lucas Shepard's hybrid form" class="characterImage" />
-                            <p><strong>Duration: 1 minute</strong></p>
+                            <p><strong>Duration: up to 1 minute</strong> (It ends early if you willingly end it early, your hit points are reduced to 0, or you die)</p>
                             <p><strong>At the start of each of your turns:</strong> regain hit points equal to half accursed level rounded down. <em>Doesn't work if attacked with silvered weapons.</em></p>
+                            <p><strong>Bonus Action:</strong> You can make a natural weapon attack as a bonus action on your turn.</p>
+                            <p>You regain uses of this ability after a short or long rest. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
                             <div class="hybridAttacks">
                                 <div class="bite">
-                                    <img src="" alt="" class="attackIcon" /> 
-                                    <h4 class="clickForDetails">Bite &ndash; <em>Sap</em></h4><input type="checkbox" class="masteryDescToggle" />
-                                    <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                                    <img src="" alt="" class="attackIcon" />
+                                    <div class="masteryContainer">
+                                        <h4>Bite &ndash; <span class="clickForDetails"><em>Sap</em></span><span></span></h4><input type="checkbox" class="masteryDescToggle" />
+                                        <div class="masteryDesc">Creatures hit by this weapon have disadvantage on their next attack roll before the start of your next turn.</div>
+                                    </div>
                                     <p>5ft Reach</p>
                                     <p>+ <input type="number" value="5" /></p>
                                     <div>
@@ -455,9 +463,11 @@
                                     </div>
                                 </div>
                                 <div class="claws">
-                                    <img src="" alt="" class="attackIcon" /> 
-                                    <h4 class="clickForDetails">Claws &ndash; <em>Vex</em></h4><input type="checkbox" class="masteryDescToggle" />
-                                    <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                                    <img src="" alt="" class="attackIcon" />
+                                    <div class="masteryContainer">
+                                        <h4>Claws &ndash; <span class="clickForDetails"><em>Vex</em></span></h4><input type="checkbox" class="masteryDescToggle" />
+                                        <div class="masteryDesc">A successful hit provides advantage to subsequent attack rolls against the same creature until the end of your next turn.</div>
+                                        </div>
                                     <p>5ft Reach</p>
                                     <p>+ <input type="number" value="5" /></p>
                                     <div>
@@ -486,7 +496,7 @@
                             <div class="realShiftSlot"></div>
                         </div>
                     </div>
-                    <p>Also starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
+                    <p>Starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
                     <ul>
                         <li>You can make a natural weapon attack as a bonus action on your turn.</li>
                         <li>Your lycanthropy constantly reknits your wounds to maintain the form. At the start of each of your turns, you regain a number of hit points equal to half your accursed level. If you take damage from a silvered weapon, this benefit doesn't function at the start of your next turn.</li>
