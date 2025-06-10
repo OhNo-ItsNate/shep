@@ -707,7 +707,7 @@ input[type="text"],
     height: 29px;
 }
 
-input[type="number"]:not(.characterOverview input[type="number"]):not(.spells p input[type="number"]),
+input[type="number"]:not(.characterOverview input[type="number"]):not(.spells p input[type="number"]):not(.actions p input[type="number"]),
 input[type="text"],
 select,
 .inspIcon {
