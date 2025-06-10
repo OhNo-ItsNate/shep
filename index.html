@@ -422,12 +422,15 @@
                     <h4>Actions in Combat</h4>
                     <p>Attack, Jinx, Hybrid Shift, Dash, Disengage, Dodge, Grapple, Help, Hide, Improvise, Influence, Magic, Ready, Search, Shove, Study, Utilize</p>
                     <h4>Jinx</h4>
-                    <p>As an action, you can attempt to bestow a minor curse on a creature you can see within 3 feet of you. That creature must succeed on a Wisdom saving throw or become subject to your choice of one of the following jinxes until the end of your next turn:</p>
+                    <p><strong>Range:</strong> 3 feet</p>
+                    <p><strong>Duration:</strong> Indefinite unitl creature successeds on wisdom save;you move more than 90 feet from the target; if any of the dispel magic, greater restoration, or remove curse spells is cast on the target; or if you opt to not extend the effects of the curse on your next turn.</p>
+                    <p><strong>DC:</strong> <input type="number" value="12" /></p>
+                    <p><strong>Effects:</strong></p>
                     <ul>
                         <li>The target has disadvantage on the next ability check it makes.</li>
                         <li>The target has disadvantage on the next attack roll it makes against a creature of your choice that you can see.</li>
                     </ul>
-                    <p>If a creature can see you when you use this feature, it knows that you are the source of the jinx. Until the target makes the type of roll associated with the jinx, you can use your action on subsequent turns to maintain the effect, extending the jinx's duration until the end of your next turn. However, the jinx ends once the target makes the associated type of roll, if you are more than 90 feet from the target, or if any of the dispel magic, greater restoration, or remove curse spells is cast on the target.</p>
+                    <p><strong>Note:</strong>If a creature can see you when you use this feature, it knows that you are the source of the jinx.</p>
                     <div class="hybridShiftContainer">
                         <h4 class="clickForDetails">Hybrid Shift</h4><input type="checkbox" class="hybridShiftToggle" />
                         <div class="hybridShift">
@@ -495,14 +498,9 @@
                             <input type="checkbox" class="shiftSlotToggle" />
                             <div class="realShiftSlot"></div>
                         </div>
-                    </div>
-                    <p>Starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
-                    <ul>
-                        <li>You can make a natural weapon attack as a bonus action on your turn.</li>
-                        <li>Your lycanthropy constantly reknits your wounds to maintain the form. At the start of each of your turns, you regain a number of hit points equal to half your accursed level. If you take damage from a silvered weapon, this benefit doesn't function at the start of your next turn.</li>
-                    </ul>
-                    <p>Your hybrid form lasts for 1 minute. It ends early if you choose to end it (no action required by you), or if you drop to 0 hit points or die.</p>
-                    <p>Once you use this feature, you must finish a short or long rest before you can use it again. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
+                    </div>                    
+                            <p><strong>Duration:</strong> up to 1 minute</p>
+                            <p>You regain uses of this ability after a short or long rest. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
                     <h4>Unarmed Strike</h4>
                     <p>You make a melee attack that involves using your body to deal one of the following effects:</p>
                     <p><b><i>Damgage</i> - You make an attack roll against the creature, and on a hit, you deal 1 + STR Bludgeoning damage.</b></p>
@@ -558,29 +556,39 @@
                     </div>
                     <div id="spell1">
                         <h4>Bane</h4>
-                        <p>Range - 30ft</p>
-                        <p>Casting Time - 1 action</p>
-                        <p>Components - Verbal, Somatic, Material (a drop of blood)</p>
-                        <p>Duration - 1 minute</p>
-                        <p>DC <input type="number" value="12" /></p>
+                        <p><strong>Range:</strong> 30ft</p>
+                        <p><strong>Casting Time:</strong> 1 action</p>
+                        <p><strong>Components:</strong> Verbal, Somatic, Material (a drop of blood)</p>
+                        <p><strong>Duration:</strong> 1 minute</p>
+                        <p><strong>DC:</strong> <input type="number" value="12" /></p>
                         <p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
                         <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
                     </div>
                     <div id="spell2">
                         <h4>Longstrider</h4>
-                        <p>Touch</p>
-                        <p>Casting Time - 1 action</p>
-                        <p>Components - Verbal, Somatic, Material (a pinch of dirt)</p>
-                        <p>Duration - 1 hour</p>
-                        <p>None</p>
+                        <p><strong>Range:</strong> Touch</p>
+                        <p><strong>Casting Time:</strong> 1 action</p>
+                        <p><strong>Components:</strong> Verbal, Somatic, Material (a pinch of dirt)</p>
+                        <p><strong>Duration:</strong> 1 hour</p>
+                        <p><strong>DC:</strong> None</p>
                         <p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p>
-                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. </p>
+                        <p><strong>At Higher Levels</strong>. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
                     </div>
                     <div id="spell3">
                         <h4>Ailment Control</h4>
-                        <p>Starting at 2nd level, you can also use your spell slots to exert control over your curse's ailments, either affliicting another creature with one of your ailments or suppressing your ailments' effects on yourself. The duration of the effect depends on the level of the spell slot expended to use it: 1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher.</p>
-                        <p><strong><i>Afflict</i></strong>. As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration! or remove curse spell cast on the target also ends its affliction.</p>
-                        <p><strong><i>Suppress</i></strong>. As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
+                        <p><strong>Duration:</strong> Varies (1 minute for a 1st-level spell slot, 10 minutes for a 2nd-level, 1 hour for a 3rd-level, 8 hours for a 4th-level, or 24 hours for a spell slot of 5th-level or higher)</p>
+                        <h5>Afflict</h5>
+                        <p><strong>Range:</strong> Touch</p>
+                        <p><strong>Casting Time:</strong> 1 action</p>
+                        <p><strong>Components:</strong> None</p>
+                        <p><strong>DC:</strong> <input type="number" value="12" /></p>
+                        <p>As an action, you can expend a spell slot to attempt to afflict a creature within 30 feet that you can see with your choice of one of your curse's ailments. The creature must succeed on a Wisdom saving throw or suffer the chosen ailment for the duration. At the end of each of an afflicted creature's turns, it can repeat the saving throw, ending its affliction on a successful save. A dispel magic, greater restoration, or remove curse spell cast on the target also ends its affliction.</p>
+                        <h5>Suppress</h5>
+                        <p><strong>Range:</strong> Self</p>
+                        <p><strong>Casting Time:</strong> 1 bonus action</p>
+                        <p><strong>Components:</strong> None</p>
+                        <p><strong>DC:</strong> None</p>
+                        <p>As a bonus action, you can expend a spell slot and choose any number of your curse's ailments. You ignore the effects of the chosen ailments for the duration.</p>
                     </div>
                 </div>
                 </div>
@@ -805,6 +813,16 @@
                 </ul>
                 <p>Your hybrid form lasts for 1 minute. It ends early if you choose to end it (no action required by you), or if you drop to 0 hit points or die.</p>
                 <p>Once you use this feature, you must finish a short or long rest before you can use it again. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
+                <h4>Hybrid Shift</h4>
+                <p>Starting at 3rd level, you can assume a form that is a mix between humanoid and beast. This hybrid form is unstable, though, and can't be maintained for long. You can assume your hybrid form as an action. While you're in your hybrid form, you gain the following benefits:</p>
+                <ul>
+                    <li>You can make a natural weapon attack as a bonus action on your turn.</li>
+                    <li>Your lycanthropy constantly reknits your wounds to maintain the form. At the start of each of your turns, you regain a number of hit points equal to half your accursed level. If you take damage from a silvered weapon, this benefit doesn't function at the start of your next turn.</li>
+                </ul>
+                <p>Your hybrid form lasts for 1 minute. It ends early if you choose to end it (no action required by you), or if you drop to 0 hit points or die.</p>
+                <p>Once you use this feature, you must finish a short or long rest before you can use it again. If you have no remaining uses of this feature, you can instead expend a spell slot of 3rd level or higher to use it again.</p>
+                <h4>Scent Memory</h4>
+                <p>By 3rd level, your enhanced senses have allowed you to create a mental catalogue of scents. Whenever you succeed on a Wisdom (Perception or Survival) check using smell to find or track a creature, you know if you've scented that creature before, and can accurately place the scent to a creature you know if you've smelled it in the last year. This feature has no effect on a creature if it is transformed into a form you don't recognize.</p>
                 <h3>Species Traits</h3>
                 <h4>Creature Type</h4>
                 <p>Humanoid</p>
