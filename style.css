@@ -467,10 +467,14 @@ body,
     left: 100px;
 }
 
-.sheetSelect[value="hybrid"],
+/* .sheetSelect[value="hybrid"],
 .sheetSelect[value="hybrid"] + label,
 .stats .container div .modifier {
     left: 50px;
+} */
+
+.stats .container div .modifier {
+    left: 51px;
 }
 
 .hybridShift {
@@ -514,10 +518,9 @@ body,
     z-index: 98;
 }
 
-/* .realMenuToggle,
-.masteryDescToggle {
+.realMenuToggle {
     z-index: 99;
-} */
+}
 
 .inspCheck,
 .spellSlot input,
@@ -530,7 +533,6 @@ body,
 .menuToggle,
 .sheetSelect,
 .hybridShiftToggle,
-.realMenuToggle,
 .masteryDescToggle {
     z-index: 100;
 }
@@ -620,7 +622,8 @@ h4,
 
 .saveCheck,
 .menuToggle,
-.realMenuToggle {
+.realMenuToggle,
+.stats .container div .modifier {
     width: 40px;
 }
 
@@ -1527,7 +1530,7 @@ select {
     /* LEFT */
 
     .stats .container div .modifier {
-        left: 50px;
+        left: 51px;
     }
 
     /* WIDTH */
@@ -1710,7 +1713,7 @@ select {
     }
 
     .modifier {
-        top: 120px;
+        top: 121px;
     }
 
     /* RIGHT */
@@ -1726,7 +1729,7 @@ select {
     /* LEFT */
 
     .stats .container div .modifier {
-        left: 50x;
+        left: 51x;
     }
 
     /* WIDTH */
