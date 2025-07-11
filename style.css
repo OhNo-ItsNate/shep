@@ -1,20 +1,12 @@
 /* CONTENT */
 
-#human > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):not(.menu):before,
-#human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
-#hybrid > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):not(.menu):before,
-#hybrid > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
-#werewolf > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):not(.menu):before,
-#werewolf > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
+#characterSheet > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):not(.menu):before,
+#characterSheet > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):not(.spells):before,
+#characterSheet > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):after,
+#characterSheet > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):after,
 .container:before,
 .frame1:before,
 .frame2:before,
-#human > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):after,
-#human > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):after,
-#hybrid > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):after,
-#hybrid > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):after,
-#werewolf > div:not(.characterBasics):not(.health):not(.miscInfo1):not(.realMenuToggle):after,
-#werewolf > div h2:not(.stats h2):not(.senses h2):not(.profTrain h2):not(.actions h2):after,
 .container:after,
 .frame1:after,
 .frame2:after {
@@ -27,10 +19,7 @@
 .offhand:checked ~ .dmgMod,
 .menuToggle + .realMenuToggle + .menu,
 .masteryDescToggle + .masteryDesc,
-.hybridShiftToggle + .hybridShift,
-input[value="human"] + label + #human,
-input[value="hybrid"] + label + #hybrid,
-input[value="werewolf"] + label + #werewolf {
+.hybridShiftToggle + .hybridShift {
     display: none;
 }
 
@@ -74,11 +63,7 @@ input[value="werewolf"] + label + #werewolf {
     display: inline-block;
 }
 
-#human,
-input[value="human"]:checked + label + #human,
-#hybrid,
-input[value="hybrid"]:checked + label + #hybrid,
-input[value="werewolf"]:checked + label + #werewolf,
+#characterSheet,
 .characterBasics,
 .stats,
 .miscInfo1,
@@ -119,9 +104,7 @@ input[value="werewolf"]:checked + label + #werewolf,
 
 /* FLEX-WRAP */
 
-#human,
-#hybrid,
-#werewolf,
+#characterSheet,
 .characterBasics,
 .stats,
 .miscInfo1,
@@ -158,9 +141,7 @@ input[value="werewolf"]:checked + label + #werewolf,
     justify-content: space-around;
 }
 
-#human,
-#hybrid,
-#werewolf,
+#characterSheet,
 .health,
 .stats,
 .miscInfo2,
@@ -247,12 +228,8 @@ input[value="werewolf"]:checked + label + #werewolf,
 /* POSITION */
 
 body,
-#human,
-#hybrid,
-#werewolf,
 .characterBasics,
 .stats,
-.health,
 .miscInfo1,
 .miscInfo2,
 .miscInfo3,
@@ -294,23 +271,16 @@ body,
 .stats .container div:not(.modifier):not(.realSaveCheck),
 .shiftSlot,
 .hybridShiftContainer,
-.masteryContainer {
+.masteryContainer,
+#characterSheet {
     position: relative;
 }
 
-#human > div:before,
-#hybrid > div:before,
-#werewolf > div:before,
-#human > div h2:not(.stats h2):before,
-#hybrid > div h2:not(.stats h2):before,
-#werewolf > div h2:not(.stats h2):before,
+#characterSheet > div:before,
+#characterSheet > div h2:not(.stats h2):before,
 .container:before,
-#human > div:after,
-#hybrid > div:after,
-#werewolf > div:after,
-#human > div h2:not(.stats h2):after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div h2:not(.stats h2):after,
+#characterSheet > div:after,
+#characterSheet > div h2:not(.stats h2):after,
 .container:after,
 .modifier,
 .inspIcon,
@@ -344,6 +314,10 @@ body,
     position: fixed;
 }
 
+.health {
+    position: sticky;
+}
+
 /* TOP */
 
 .inspIcon {
@@ -359,6 +333,10 @@ body,
     top: 109px;
 }
 
+.health {
+    top: 40px;
+}
+
 .equip,
 .realEquip {
     top: 4px;
@@ -370,14 +348,10 @@ body,
     top: 0;
 }
 
-#human > div h2:not(.stats h2):before,
-#hybrid > div h2:not(.stats h2):before,
-#werewolf > div h2:not(.stats h2):before,
+#characterSheet > div h2:not(.stats h2):before,
 .container:before,
 .frame2:before,
-#human > div h2:not(.stats h2):after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div h2:not(.stats h2):after,
+#characterSheet > div h2:not(.stats h2):after,
 .container:after,
 .frame2:after {
     top: -8px
@@ -411,14 +385,10 @@ body,
     right: 5px;
 }
 
-#human > div:after,
-#hybrid > div:after,
-#werewolf > div:after,
+#characterSheet > div:after,
 .frame1:after,
 .frame2:after,
-#human > div h2:not(.stats):after,
-#hybrid > div h2:not(.stats):after,
-#werewolf > div h2:not(.stats):after,
+#characterSheet > div h2:not(.stats):after,
 .container:after {
     right: -8px;
 }
@@ -449,29 +419,14 @@ body,
     bottom: 0;
 }
 
-#human > div:before,
-#hybrid > div:before,
-#werewolf > div:before,
+#characterSheet > div:before,
 .frame1:before,
-#human > div:after,
-#hybrid > div:after,
-#werewolf > div:after,
+#characterSheet > div:after,
 .frame1:after {
     bottom: -8px;
 }
 
 /* LEFT */
-
-.sheetSelect[value="werewolf"],
-.sheetSelect[value="werewolf"] + label {
-    left: 100px;
-}
-
-/* .sheetSelect[value="hybrid"],
-.sheetSelect[value="hybrid"] + label,
-.stats .container div .modifier {
-    left: 50px;
-} */
 
 .stats .container div .modifier {
     left: 51px;
@@ -492,14 +447,10 @@ body,
     left: 0;
 }
 
-#human > div:before,
-#hybrid > div:before,
-#werewolf > div:before,
+#characterSheet > div:before,
 .frame1:before,
 .frame2:before,
-#human > div h2:not(.stats):before,
-#hybrid > div h2:not(.stats):before,
-#werewolf > div h2:not(.stats):before,
+#characterSheet > div h2:not(.stats):before,
 .container:before {
     left: -8px;
 }
@@ -533,7 +484,8 @@ body,
 .menuToggle,
 .sheetSelect,
 .hybridShiftToggle,
-.masteryDescToggle {
+.masteryDescToggle,
+.health {
     z-index: 100;
 }
 
@@ -620,8 +572,11 @@ h4,
     width: 100px;
 }
 
+.menuToggle {
+    width: 50px;
+}
+
 .saveCheck,
-.menuToggle,
 .realMenuToggle,
 .stats .container div .modifier {
     width: 40px;
@@ -641,20 +596,12 @@ input[type="text"],
     width: 15px;
 }
 
-#human > div::before,
-#human > div h2:not(.stats):before,
-#hybrid > div::before,
-#hybrid > div h2:not(.stats):before,
-#werewolf > div::before,
-#werewolf > div h2:not(.stats):before,.container:before,
+#characterSheet > div::before,
+#characterSheet > div h2:not(.stats):before,
+#characterSheet > div:after,
+#characterSheet > div h2:not(.stats h2):after,
 .frame1:before,
 .frame2:before,
-#human > div:after,
-#human > div h2:not(.stats h2):after,
-#hybrid > div:after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div:after,
-#werewolf > div h2:not(.stats h2):after,
 .container:after,
 .frame1:after,
 .frame2:after,
@@ -667,6 +614,12 @@ input[type="text"],
 .realEquip,
 .shiftSlot {
     width: 10px;
+}
+
+/* MAX-WIDTH */
+
+#characterSheet {
+    max-width: 1200px;
 }
 
 /* HEIGHT */
@@ -697,6 +650,10 @@ input[type="text"],
     height: 95px;
 }
 
+.menuToggle {
+    height: 50px;
+}
+
 .menuToggle,
 .realMenuToggle {
     height: 40px;
@@ -725,21 +682,13 @@ select,
     height: 15px;
 }
 
-#human > div:before,
-#human > div h2:not(.stats h2):before,
-#hybrid > div:before,
-#hybrid > div h2:not(.stats h2):before,
-#werewolf > div:before,
-#werewolf > div h2:not(.stats h2):before,
+#characterSheet > div:before,
+#characterSheet > div h2:not(.stats h2):before,
+#characterSheet > div:after,
+#characterSheet > div h2:not(.stats h2):after,
 .container:before,
 .frame1:before,
 .frame2:before,
-#human > div:after,
-#human > div h2:not(.stats h2):after,
-#hybrid > div:after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div:after,
-#werewolf > div h2:not(.stats h2):after,
 .container:after,
 .frame1:after,
 .frame2:after,
@@ -893,22 +842,12 @@ select,
 
 /* BORDER-SIZE */
 
-#human > div:not(.characterBasics):not(.miscInfo1):not(.def),
-#human > div:before,
-#human > div h2:not(.stats h2):before,
-#hybrid > div:not(.characterBasics):not(.miscInfo1):not(.def),
-#hybrid > div:before,
-#hybrid > div h2:not(.stats h2):before,
-#werewolf > div:not(.characterBasics):not(.miscInfo1):not(.def),
-#werewolf > div:before,
-#werewolf > div h2:not(.stats h2):before,
+#characterSheet > div:not(.characterBasics):not(.miscInfo1):not(.def),
+#characterSheet > div:before,
+#characterSheet > div h2:not(.stats h2):before,
+#characterSheet > div:after,
+#characterSheet > div h2:not(.stats h2):after,
 .container:before,
-#human > div:after,
-#human > div h2:not(.stats h2):after,
-#hybrid > div:after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div:after,
-#werewolf > div h2:not(.stats h2):after,
 .container:after,
 .stats input,
 .modifier,
@@ -937,22 +876,12 @@ select,
 
 /* BORDER-SOLID */
 
-#human > div:not(.characterBasics):not(.miscInfo1),
-#human > div:before,
-#human > div h2:not(.stats h2):before,
-#hybrid > div:not(.characterBasics):not(.miscInfo1),
-#hybrid > div:before,
-#hybrid > div h2:not(.stats h2):before,
-#werewolf > div:not(.characterBasics):not(.miscInfo1),
-#werewolf > div:before,
-#werewolf > div h2:not(.stats h2):before,
+#characterSheet > div:not(.characterBasics):not(.miscInfo1),
+#characterSheet > div:before,
+#characterSheet > div h2:not(.stats h2):before,
+#characterSheet > div:after,
+#characterSheet > div h2:not(.stats h2):after,
 .container:before,
-#human > div:after,
-#human > div h2:not(.stats h2):after,
-#hybrid > div:after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div:after,
-#werewolf > div h2:not(.stats h2):after,
 .container:after,
 .stats input,
 .modifier,
@@ -988,9 +917,7 @@ select,
     outline-width: 5px;
 }
 
-#human > div:not(.characterBasics):not(.miscInfo1),
-#hybrid > div:not(.characterBasics):not(.miscInfo1),
-#werewolf > div:not(.characterBasics):not(.miscInfo1),
+#characterSheet > div:not(.characterBasics):not(.miscInfo1),
 .characterImage,
 .masteryDesc,
 .hybridShift {
@@ -1003,9 +930,7 @@ select,
     outline-style: dotted;
 }
 
-#human > div:not(.characterBasics):not(.miscInfo1),
-#hybrid > div:not(.characterBasics):not(.miscInfo1),
-#werewolf > div:not(.characterBasics):not(.miscInfo1),
+#characterSheet > div:not(.characterBasics):not(.miscInfo1),
 .characterImage,
 .masteryDesc,
 .hybridShift {
@@ -1014,9 +939,7 @@ select,
 
 /* OUTLINE-OFFSET */
 
-#human > div:not(.characterBasics):not(.miscInfo1),
-#hybrid > div:not(.characterBasics):not(.miscInfo1),
-#werewolf > div:not(.characterBasics):not(.miscInfo1),
+#characterSheet > div:not(.characterBasics):not(.miscInfo1),
 .inspIcon,
 .characterImage,
 .masteryDesc,
@@ -1034,22 +957,12 @@ select,
     border-color: transparent;
 }
 
-#human > div:not(.characterBasics):not(.miscInfo1),
-#human > div:before,
-#human > div h2:not(.stats h2):before,
-#hybrid > div:not(.characterBasics):not(.miscInfo1),
-#hybrid > div:before,
-#hybrid > div h2:not(.stats h2):before,
-#werewolf > div:not(.characterBasics):not(.miscInfo1),
-#werewolf > div:before,
-#werewolf > div h2:not(.stats h2):before,
+#characterSheet > div:not(.characterBasics):not(.miscInfo1),
+#characterSheet > div:before,
+#characterSheet > div h2:not(.stats h2):before,
+#characterSheet > div:after,
+#characterSheet > div h2:not(.stats h2):after,
 .container:before,
-#human > div:after,
-#human > div h2:not(.stats h2):after,
-#hybrid > div:after,
-#hybrid > div h2:not(.stats h2):after,
-#werewolf > div:after,
-#werewolf > div h2:not(.stats h2):after,
 .container:after,
 .abilityScore,
 .modifier,
@@ -1075,9 +988,7 @@ select,
 
 /* OUTLINE-COLOR */
 
-#human > div:not(.characterBasics):not(.miscInfo1),
-#hybrid > div:not(.characterBasics):not(.miscInfo1),
-#werewolf > div:not(.characterBasics):not(.miscInfo1),
+#characterSheet > div:not(.characterBasics):not(.miscInfo1),
 .inspIcon,
 .characterImage,
 .masteryDesc,
@@ -1177,9 +1088,7 @@ textarea,
 
 /* BACKGROUND */
 
-#human,
-#hybrid,
-#werewolf {
+body {
     background: linear-gradient(0deg, rgba(80,40,40,0.2), rgba(85,63,32,0.15)), blanchedalmond
 }
 
@@ -1211,9 +1120,7 @@ textarea,
     margin: 10px 20px;
 } */
 
-#human > div,
-#hybrid > div,
-#werewolf > div,
+#characterSheet > div,
 .menuToggle,
 .realMenuToggle {
     margin: 10px;
@@ -1236,21 +1143,15 @@ body,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
-#human .miscInfo1,
-#hybrid .miscInfo1,
-#werewolf .miscInfo1 {
+.miscInfo1 {
     margin: 0;
 }
 
-#human .init,
-#hybrid .init,
-#werewolf .init {
+.init {
     margin: 0 5px 0 10px;
 }
 
-#human .insp,
-#hybrid .insp,
-#werewolf .insp {
+.insp {
     margin: 0 5px;
 }
 
@@ -1259,9 +1160,7 @@ body,
     margin: 0 10px;
 }
 
-#human .health,
-#hybrid .health,
-#werewolf .health {
+.health {
     margin: 0 10px 10px;
 }
 
@@ -1316,9 +1215,7 @@ ol,
     padding: 25px;
 }
 
-#human,
-#hybrid,
-#werewolf {
+body {
     padding: 10px;
 }
 
@@ -1330,9 +1227,7 @@ ol,
     padding: 15px 15px 25px;
 }
 
-#human > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
-#hybrid > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
-#werewolf > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
+#characterSheet > div:not(.characterBasics):not(.miscInfo1):not(.realMenuToggle):not(.menu),
 .masteryDesc {
     padding: 15px;
 }
@@ -1359,12 +1254,8 @@ input[type="number"]:not(.characterBasics input[type="number"]):not(.abilityScor
     padding: 0 0 0 10px;
 }
 
-#human .realMenuToggle,
-#human .menu ul,
-#hybrid .realMenuToggle,
-#hybrid .menu ul,
-#werewolf .realMenuToggle,
-#werewolf .menu ul {
+.realMenuToggle,
+.menu ul {
     padding: 0;
 }
 
@@ -1448,9 +1339,7 @@ select {
 
     /* MARGIN */
 
-    #human .miscInfo1,
-    #hybrid .miscInfo1,
-    #werewolf .miscInfo1 {
+    .miscInfo1 {
         margin: 20px 10px 0 5px;
     }
 
@@ -1458,9 +1347,7 @@ select {
         margin: 5px 0;
     }
 
-    #human .health,
-    #hybrid .health,
-    #werewolf .health {
+    .health {
         margin: 0 auto 10px ;
     }
 
@@ -1472,8 +1359,6 @@ select {
         margin: auto;
     }
 }
-
-
 
 @media screen and (min-width: 789px) and (min-height: 1199px) {
 
@@ -1554,9 +1439,7 @@ select {
         width: 40%;
     }
     
-    #human .health,
-    #hybrid .health,
-    #werewolf .health {
+    .health {
         width: 35%;
     }
 
@@ -1802,9 +1685,7 @@ select {
         margin: 0 0 20px 0;
     }
 
-    #human .health,
-    #hybrid .health,
-    #werewolf .health {
+    .health {
         margin: 0 auto 10px;
     }
 
@@ -1812,12 +1693,8 @@ select {
         margin: 0;
     }
 
-    #human .init,
-    #human .miscInfo1,
-    #hybrid .init,
-    #hybrid .miscInfo1,
-    #werewolf .init,
-    #werewolf .miscInfo1 {
+    .init,
+    .miscInfo1 {
         margin: 0 auto;
     }
 
@@ -1837,9 +1714,7 @@ select {
 
     /* FLEX-DIRECTION */
 
-    #human,
-    #hybrid,
-    #werewolf,
+    body,
     .characterBasics,
     .health,
     .stats,
@@ -1983,21 +1858,13 @@ select {
         margin: 38px 0 0 0;
     }
 
-    #human > div:not(.menu):not(.realMenuToggle),
-    #human .init,
-    #human .insp,
-    #hybrid > div:not(.menu):not(.realMenuToggle),
-    #hybrid .init,
-    #hybrid .insp,
-    #werewolf > div:not(.menu):not(.realMenuToggle),
-    #werewolf .init,
-    #werewolf .insp {
+    #characterSheet > div:not(.menu):not(.realMenuToggle),
+    .init,
+    .insp {
         margin: 20px;
     }
 
-    #human .realMenuToggle,
-    #hybrid .realMenuToggle,
-    #werewolf .realMenuToggle {
+    .realMenuToggle {
         margin: 10px;
     }
 
@@ -2047,9 +1914,7 @@ select {
         padding: 25px;
     }
 
-    #human,
-    #hybrid,
-    #werewolf {
+    body {
         padding: 20px;
     }
 
@@ -2057,9 +1922,7 @@ select {
         padding: 20px 15px 15px;
     }
 
-    #human > div:not(.characterBasics):not(.miscInfo1):not(.health):not(.realMenuToggle):not(.menu),
-    #hybrid > div:not(.characterBasics):not(.miscInfo1):not(.health):not(.realMenuToggle):not(.menu),
-    #werewolf > div:not(.characterBasics):not(.miscInfo1):not(.health):not(.realMenuToggle):not(.menu) {
+    #characterSheet > div:not(.characterBasics):not(.miscInfo1):not(.health):not(.realMenuToggle):not(.menu) {
         padding: 15px;
     }
 
@@ -2085,9 +1948,7 @@ select {
         padding: 0 0 0 10px;
     }
 
-    #human .realMenuToggle,
-    #hybrid .realMenuToggle,
-    #werewolf .realMenuToggle {
+    .realMenuToggle {
         padding: 0;
     }
 }
