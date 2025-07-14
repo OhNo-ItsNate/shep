@@ -39,7 +39,8 @@
     display: initial;
 }
 
-.realEquip {
+.realEquip,
+.offhandContain {
     display: inline;
 }
 
@@ -272,7 +273,8 @@ body,
 .shiftSlot,
 .hybridShiftContainer,
 .masteryContainer,
-#characterSheet {
+#characterSheet,
+.offhandContain {
     position: relative;
 }
 
@@ -335,6 +337,10 @@ body,
 
 .health {
     top: 40px;
+}
+
+.realOffhand {
+    top: 5px;
 }
 
 .equip,
@@ -401,6 +407,10 @@ body,
     bottom: 13px;
 }
 
+.offhand {
+    bottom: 4px;
+}
+
 .realExpertise,
 .realMastery,
 .realDisadvantage,
@@ -442,8 +452,7 @@ body,
     left: 2px;
 }
 
-.sheetSelect[value="human"],
-.sheetSelect[value="human"] + label {
+.realOffhand {
     left: 0;
 }
 
@@ -619,7 +628,7 @@ input[type="text"],
 /* MAX-WIDTH */
 
 #characterSheet {
-    max-width: 1200px;
+    max-width: 1500px;
 }
 
 /* HEIGHT */
@@ -1134,6 +1143,10 @@ body {
     margin: 10px 0 0 0;
 }
 
+.offhandContain {
+    margin: 5px;
+}
+
 body,
 .characterBasics *,
 .init p:nth-child(2),
@@ -1143,7 +1156,8 @@ body,
 .realExpertise,
 .realMastery,
 .realDisadvantage,
-.miscInfo1 {
+.miscInfo1,
+.offhand {
     margin: 0;
 }
 
@@ -1208,6 +1222,11 @@ ol,
 .realDisadvantage {
     margin: 0 5px 0 0;
 }
+
+#characterSheet {
+    margin: auto;
+}
+
 
 /* PADDING */
 
@@ -1376,9 +1395,9 @@ select {
     
     /* TOP */
 
-    .realOffhand {
+    /* .realOffhand {
         top: 164px;
-    }
+    } */
 
     .modifier {
         top: 130px;
@@ -1591,9 +1610,9 @@ select {
 
     /* TOP */
 
-    .realOffhand {
+    /* .realOffhand {
         top: 156px;
-    }
+    } */
 
     .modifier {
         top: 121px;
@@ -1703,12 +1722,12 @@ select {
     }
 }
 
-@media screen and (min-width: 1422px) {
+/* @media screen and (min-width: 1422px) {
 
     .realOffhand {
         top: 147px;
     }
-}
+} */
 
 @media screen and (min-width: 1422px) {
 
